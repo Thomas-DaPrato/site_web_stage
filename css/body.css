@@ -1,0 +1,97 @@
+@media screen and (min-width: 900px) {
+    #partie_projet   #presentation div {
+        flex-wrap: wrap;
+    }
+    #partie_equipe {
+        flex-wrap: wrap;
+    }
+    .img_logo {
+        flex-wrap: wrap;
+    }
+    #presentation div {
+        flex-wrap: wrap;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Lato,sans-serif;
+    font-size: 20px;
+}
+
+
+#div_projet{
+    display: flex;
+    justify-content: center;
+}
+.img_projet {
+    width: 90%;
+}
+
+.ancre {
+    padding-top: 5px;
+    border-top: dashed;
+}
+
+#partie_equipe {
+    display: flex;
+    justify-content: center;
+}
+
+.contenu {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+footer {
+    background-color: black;
+}
+
+.lien_bas_page {
+    color: white;
+}
+
+.img_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 10%;
+    padding: 0 10px;
+}
+
+#presentation {
+    background-color: #e4e4e4;
+    padding-bottom: 50px;
+}
+
+#presentation div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#phrase_presentation {
+    align-self: center;
+    font-size: 45px;
+    max-width: 500px;
+    font-style: italic;
+}
+
+
+#presentation h1 {
+    color: #0900A8;
+    padding-top: 20px;
+    font-size: 45px;
+}
+
+#img_presentation_cbi {
+    padding: 10px 0;
+    width: 35%;
+}
+

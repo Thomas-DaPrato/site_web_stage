@@ -1,0 +1,20 @@
+.sous-projet {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sous-projet article {
+    background-color: #00AFF0;
+    padding: 90px;
+    margin: 10px;
+}
+
+.introduction {
+    background-color: #32E7E2;
+    font-size: 18px;
+}
+
+.titre_sous_projet {
+    color: white;
+    font-size: 37px;
+}
