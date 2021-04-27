@@ -21,16 +21,16 @@ function getPublication ($url) {
         preg_match("/<strong[^>]*>(.*)<\/strong>/isU", $elem, $out2["titre"]);
         preg_match("/<a target=\"_blank\"[^>]*>(.*)<\/a>/isU", $elem, $out2["doi"]);
         if (isset($out2["auteur"][0])){
-            $out2["auteur"] = $out2["auteur"][0];
+            $out2["auteur"] = strip_tags($out2["auteur"][0]);
         }
 
         if (isset($out2["titre"][0])){
-            $out2["titre"] = $out2["titre"][0];
+            $out2["titre"] = strip_tags($out2["titre"][0],'<a>');
         }
 
         if (isset($out2["doi"][0])){
-            $out2["doi"] = $out2["doi"][0];
-        }
+            $out2["doi"] = strip_tags($out2["doi"][0]);
+        }  
 
         $result[$i+=1] = $out2;
     }
