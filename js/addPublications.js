@@ -23,19 +23,14 @@
                                     else {
                                         $li.append(data[name][publication][information], " ");
                                     }
+
                                 }
                             }
                         }
+                        console.log("publi ajouté");
                         $publications.append($li);
                     }
                 }
-            }
-            let lien_doc = document.getElementsByClassName("doc_publie");
-            for (let lien in lien_doc){
-                let doc = $(lien_doc[lien].innerHTML);
-                doc.attr('href',"https://hal.archives-ouvertes.fr" + doc.attr('href') +'/document');
-                let $doc_publie = $('.doc_publie');
-                $doc_publie.append(doc);
             }
         }).fail(function (jqXHR,textStatus, errorThrown) {
             alert("une erreur est survenue");
