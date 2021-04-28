@@ -2,7 +2,7 @@
 
 session_start();
 
-$publication = array();
+$publications = array();
 
 function getPublication ($url) {
     $fichier = file_get_contents($url);
@@ -17,11 +17,11 @@ function getPublication ($url) {
 
 
     foreach ($out[0] as $elem) {
-        preg_match("/<span class=\"ref-authors\"[^>]*>(.*)<\/span>/isU", $elem, $out2["auteur"]);
+        preg_match("/<span class=\"ref-authors\"[^>]*>(.*)<\/span>/isU", $elem, $out2["auteurs"]);
         preg_match("/<strong[^>]*>(.*)<\/strong>/isU", $elem, $out2["titre"]);
         preg_match("/<a target=\"_blank\"[^>]*>(.*)<\/a>/isU", $elem, $out2["doi"]);
-        if (isset($out2["auteur"][0])){
-            $out2["auteur"] = strip_tags($out2["auteur"][0]);
+        if (isset($out2["auteurs"][0])){
+            $out2["auteurs"] = strip_tags($out2["auteurs"][0]);
         }
 
         if (isset($out2["titre"][0])){
@@ -38,14 +38,32 @@ function getPublication ($url) {
     return $result;
 }
 
-$publication["santiago"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=santiago+arroyave+tobon&submit=&docType_s=ART+OR+COMM+OR+OUV+OR+COUV+OR+DOUV+OR+OTHER+OR+UNDEFINED+OR+REPORT+OR+THESE+OR+HDR+OR+LECTURE");
-$publication["loic"] = getPublication("https://hal.archives-ouvertes.fr/search/index?q=loic+tadrist");
-$publication["jean-marc"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=jean+marc+linares&submit=");
+$publications["santiago"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=santiago+arroyave+tobon&submit=&docType_s=ART+OR+COMM+OR+OUV+OR+COUV+OR+DOUV+OR+OTHER+OR+UNDEFINED+OR+REPORT+OR+THESE+OR+HDR+OR+LECTURE");
+$publications["loic"] = getPublication("https://hal.archives-ouvertes.fr/search/index?q=loic+tadrist");
+$publications["jean-marc"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=jean+marc+linares&submit=");
+
+$BD = mysqli_connect("127.0.0.1","root","") or die("erreur1");
+mysqli_select_db($BD,"cbi-publication") or die("erreur2");
 
 
-//final output
+foreach ($publications as $name) {
+    foreach ($name as $publication) {
+        $requetes = 'Insert into publications (DOI,Auteurs,Titre) values (\'';
+        if (gettype($publication["doi"]) == "string"){
+            $requetes.= $publication["doi"].'\',\'';
+        }
+        else {
+            $requetes.= 'null\',\'';
+        }
+        $requetes.= $publication["auteurs"].'\',\''.$publication["titre"].'\')';
+        mysqli_query($BD,$requetes);
+    }
+}
+
+
+/*//final output
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
-echo json_encode($publication);
+echo json_encode($publications);*/
 
