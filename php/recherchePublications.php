@@ -40,6 +40,7 @@ function getPublication ($url) {
 
 $publication["santiago"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=santiago+arroyave+tobon&submit=&docType_s=ART+OR+COMM+OR+OUV+OR+COUV+OR+DOUV+OR+OTHER+OR+UNDEFINED+OR+REPORT+OR+THESE+OR+HDR+OR+LECTURE");
 $publication["loic"] = getPublication("https://hal.archives-ouvertes.fr/search/index?q=loic+tadrist");
+$publication["jean-marc"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=jean+marc+linares&submit=");
 
 
 //final output

@@ -38,7 +38,6 @@
             let lien_doc = document.getElementsByClassName('doc_publie');
             for (let i = 0; i<lien_doc.length; i++){
                 let lien = $(lien_doc[i].innerHTML);
-                lien = lien.attr("target","blank");
                 let oldLink = lien.attr('href');
                 let newLink = lien.attr('href',"https://hal.archives-ouvertes.fr" + oldLink + "/document");
                 lien_doc[i].innerHTML = lien_doc[i].innerHTML.replace(oldLink,newLink.attr('href'));
