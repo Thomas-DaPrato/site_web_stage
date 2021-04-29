@@ -1,5 +1,7 @@
 <?php
 
+echo 'coucou';
+
 session_start();
 
 $publications = array();
@@ -21,6 +23,7 @@ function getPublication ($url) {
         preg_match("/<span class=\"ref-authors\"[^>]*>(.*)<\/span>/isU", $elem, $out2["auteurs"]);
         preg_match("/<strong[^>]*>(.*)<\/strong>/isU", $elem, $out2["titre"]);
         preg_match("/<a target=\"_blank\"[^>]*>(.*)<\/a>/isU", $elem, $out2["doi"]);
+        preg_match(", * \d{4}",$elem,$out2["année"]);
         if (isset($out2["auteurs"][0])){
             $out2["auteurs"] = str_replace('\'','\\\'',strip_tags($out2["auteurs"][0]));
         }
@@ -43,6 +46,7 @@ $publications["santiago"] = getPublication("https://hal.archives-ouvertes.fr/sea
 $publications["loic"] = getPublication("https://hal.archives-ouvertes.fr/search/index?q=loic+tadrist");
 $publications["jean-marc"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=jean+marc+linares&submit=");
 
+/*
 $tabPersonnes[] = 'santiago';
 $tabPersonnes[] = 'loic';
 $tabPersonnes[] = 'jean-marc';
@@ -83,6 +87,11 @@ for ($i = 0; $i < sizeof($tabPersonnes) - 1; $i++) {
         echo 'requete suppr doublon pas réussi : ',$requetes,'<br>';
 
     }
-}
+}*/
 
+
+header('Cache-Control: no-cache, must-revalidate');
+header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Content-type: application/json');
+echo json_encode($publications);
 

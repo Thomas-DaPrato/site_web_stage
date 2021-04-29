@@ -43,6 +43,10 @@ body {
     justify-content: center;
 }
 
+#partie_equipe img  {
+    align-self: center;
+}
+
 .contenu {
     margin-right: 50px;
     margin-left: 50px;

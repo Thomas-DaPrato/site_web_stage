@@ -8,8 +8,7 @@
             type: "get",
             dataType: "json"
         }).done(function (data) {
-            alert("publication en cours d'ajout");
-            let $publications = $(".publication");
+            let $publications = $(".liste_publication");
             $publications.empty();
                 for (let publication in data){
                     let $li = $("<li />")
