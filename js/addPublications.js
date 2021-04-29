@@ -4,36 +4,34 @@
     $(() => {
         $('.publication').append("chargement");
         $.ajax({
-            url: "../php/recherchePublications.php",
+            url: "../php/publicationBD_to_json.php",
             type: "get",
             dataType: "json"
         }).done(function (data) {
             alert("publication en cours d'ajout");
             let $publications = $(".publication");
             $publications.empty();
-            for (let name in data){
-                if(data.hasOwnProperty(name)){
-                    for (let publication in data[name]){
-                        let $li = $("<li />")
-                        if(data[name].hasOwnProperty(publication)){
-                            for (let information in data[name][publication]){
-                                if (data[name][publication].hasOwnProperty(information)){
-                                    if(information == "titre") {
-                                        $li.append($("<strong class='doc_publie'/>")
-                                            .append(data[name][publication][information], " ")
-                                        );
-                                    }
-                                    else {
-                                        $li.append(data[name][publication][information], " ");
-                                    }
-
+                for (let publication in data){
+                    let $li = $("<li />")
+                    if(data.hasOwnProperty(publication)){
+                        for (let information in data[publication]){
+                            if (data[publication].hasOwnProperty(information)){
+                                if(information == "titre") {
+                                    $li.append($("<strong class='doc_publie'/>")
+                                        .append(data[publication][information], " ")
+                                    );
                                 }
+                                else {
+                                    $li.append(data[publication][information], " ");
+                                }
+
                             }
                         }
-                        $publications.append($li);
                     }
+                    $publications.append($li);
                 }
-            }
+
+
 
             let lien_doc = document.getElementsByClassName('doc_publie');
             for (let i = 0; i<lien_doc.length; i++){
