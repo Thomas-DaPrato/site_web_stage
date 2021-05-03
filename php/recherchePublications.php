@@ -37,11 +37,11 @@ function getPublications ($url) {
         preg_match("/(,( |([a-z]|[A-Z]))* \d{4})/isU",$elem,$out2["annee"]);
 
         if (isset($out2["auteurs"][0])){
-            $out2["auteurs"] = str_replace('\'','\\\'',strip_tags($out2["auteurs"][0]));
+            $out2["auteurs"] = str_replace('\'','&apos;',strip_tags($out2["auteurs"][0]));
         }
 
         if (isset($out2["titre"][0])){
-            $out2["titre"] = str_replace('\'','\\\'',strip_tags($out2["titre"][0],'<a>'));
+            $out2["titre"] = str_replace('\'','&apos;',strip_tags($out2["titre"][0],'<a>'));
         }
 
         if (isset($out2["doi"][0])){
@@ -105,32 +105,37 @@ foreach ($publications as $name) {
 }
 
 // Cherche dans la base de donnée les doublons de publication. Puis on les supprime jusqu'à avoir un exemplaire de chaque publications
+function suppr_doublon ($BD, $type) {
+    $requete_cherche_doublons = 'SELECT count(*) as nb_doublons,'.$type. ' FROM (SELECT * FROM publications) AS t2 WHERE '.$type.' 
+    is not null GROUP BY ' . $type.' HAVING COUNT(*) > 1';
 
-$requete_cherche_doublons = 'SELECT count(*) as nb_doublons, doi FROM (SELECT * FROM publications) AS t2 WHERE doi 
-    is not null GROUP BY doi HAVING COUNT(*) > 1';
-
-$result_cherche_doublons = mysqli_query($BD,$requete_cherche_doublons);
+    $result_cherche_doublons = mysqli_query($BD,$requete_cherche_doublons);
 
 
-if($result_cherche_doublons) {
-    echo 'requete cherche doublons reussi','<br>';
-}
-else {
-    echo 'requete cherche doublons pas reussi','<br>';
-}
+    if($result_cherche_doublons) {
+        echo 'requete cherche doublons reussi','<br>';
+    }
+    else {
+        echo 'requete cherche doublons pas reussi','<br>';
+    }
 
-while ($tabResult = mysqli_fetch_assoc($result_cherche_doublons)){
-    for ($i = 0 ; $i< $tabResult['nb_doublons']-1;$i+=1) {
-        $requete_suppr_doublons = 'delete from publications where id in (select max(id) from (SELECT * FROM publications)
-            AS t1 where doi=\''.$tabResult['doi'].'\')';
-        if(mysqli_query($BD,$requete_suppr_doublons)) {
-            echo 'requete suppr doublons reussi','<br>';
-        }
-        else {
-            echo 'requete suppr doublons pas reussi','<br>';
+    while ($tabResult = mysqli_fetch_assoc($result_cherche_doublons)){
+        for ($i = 0 ; $i< $tabResult['nb_doublons']-1;$i+=1) {
+            $requete_suppr_doublons = 'delete from publications where id in (select max(id) from (SELECT * FROM publications)
+            AS t1 where '.$type.'=\''.$tabResult[$type].'\')';
+            if(mysqli_query($BD,$requete_suppr_doublons)) {
+                echo 'requete suppr doublons reussi','<br>';
+            }
+            else {
+                echo 'requete suppr doublons pas reussi : ' .$requete_suppr_doublons,'<br>';
+            }
         }
     }
 }
+
+suppr_doublon($BD, 'doi');
+suppr_doublon($BD, 'titre');
+
 
 echo 'fini';
 
