@@ -16,8 +16,7 @@ header {
 }
 
 form {
-    position: relative;
-    top: 3em;
+    align-self: center;
 }
 
 .menu {
@@ -30,7 +29,7 @@ form {
 }
 
 
-.liste_menu {
+.menu li {
     display: inline-block;
     width: 300px;
 }
@@ -99,17 +98,17 @@ input:focus input::placeholder {
 }
 
 
-#dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
 }
 
-#fleche {
+.fleche_bas {
     height: 10px;
     width: 10px;
 }
 
-#dropdown:hover #fleche {
+.dropdown:hover .fleche_bas {
     transform: rotate(0.5turn);
 }
 

@@ -35,8 +35,9 @@
         </div>
     </div>
     <ul class="menu" id="nav_barre">
-        <li class="liste_menu" id="dropdown"><a class="lien_menu" href="#projet">Projets</a>
-            <img src="../img/fleche_bas.png" alt="fleche" id="fleche">
+        <li><a class="lien_menu" href="#equipe">L'équipe</a></li>
+        <li class="dropdown"><a class="lien_menu" href="#projet">Projets</a>
+            <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
             <div class="dropdown-content">
                 <a href="projets/structures_bio_inspirees.html">Structure bio-inspirées</a>
                 <a href="projets/liaisons_bio_inspirees.html">Liaisons bio-inspirées</a>
@@ -44,9 +45,19 @@
                     bio-inspirees</a>
             </div>
         </li>
-        <li class="liste_menu"><a class="lien_menu" href="#equipe">L'équipe</a></li>
-        <li class="liste_menu"><a class="lien_menu" href="#stage_these">Offres de stage et thèses</a></li>
-        <li class="liste_menu"><a class="lien_menu" href="#publication">Publications</a></li>
+        <li><a class="lien_menu" href="#stage_these">Offres de stage et thèses</a></li>
+        <li class="dropdown"><a class="lien_menu" href="#publication">Publications</a>
+            <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content">
+                <a href="publications/2020.html">2020</a>
+                <a href="publications/2019.html">2019</a>
+                <a href="publications/2018.html">2018</a>
+                <a href="publications/2017.html">2017</a>
+                <a href="publications/2016.html">2016</a>
+                <a href="publications/2015.html">2015</a>
+                <a href="publications/avant_2015.html">Avant 2015</a>
+            </div>
+        </li>
     </ul>
 </header>
 
@@ -57,6 +68,12 @@
             <img src="../img/presentation_cbi.jpg" alt="presntation du CBI" id="img_presentation_cbi">
             <p id="phrase_presentation">La nature, source d'inspiration de solutions mécaniques optimisées.</p>
         </div>
+    </section>
+
+    <h2 class="ancre" id="equipe">L'équipe</h2>
+    <section class="partie" id="partie_equipe">
+        <img src="../img/dauphin.jpg" alt="image de l'équipe" title="l'équipe">
+        <ul class="liste_membre"></ul>
     </section>
 
     <h2 class="ancre" id="projet">Projets</h2>
@@ -80,18 +97,9 @@
             <p class="mots_cles">Muscle, resilience, technologie, choc, protection</p>
         </article>
         </div>
-        <div class="img_logo">
-            <img src="../img/thales_logo.png" alt="logo de thales" class="logo">
-            <img src="../img/anr_logo.png" alt="logo de l'anr" class="logo">
-            <img src="../img/dassault_systeme_logo.png" alt="logo_dassault" class="logo">
-        </div>
     </section>
 
-    <h2 class="ancre" id="equipe">L'équipe</h2>
-    <section class="partie" id="partie_equipe">
-        <img src="../img/dauphin.jpg" alt="image de l'équipe" title="l'équipe">
-        <ul class="liste_membre"></ul>
-    </section>
+
 
     <h2 class="ancre" id="stage_these">Offres stage et thèses</h2>
     <section class="partie">

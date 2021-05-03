@@ -20,6 +20,9 @@
                                         .append(data[publication][information], " ")
                                     );
                                 }
+                                else if ((information == "annee" || information == "doi") && data[publication][information] == "null"){
+                                    $li.append(" ");
+                                }
                                 else {
                                     $li.append(data[publication][information], " ");
                                 }

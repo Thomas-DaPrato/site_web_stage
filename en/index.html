@@ -20,7 +20,8 @@
 <body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../js/smoothScroll.js" type="module"></script>
-<!--<script src="js/addPublications.js" type="module"></script>-->
+<script src="../js/addPublications.js" type="module"></script>
+<script src="../js/addMember.js" type="module"></script>
 <header>
     <div id="bandeau">
         <a href="index.html"><img id="logo_ism" src="../img/logo_ism.png" alt="logo ism"></a>
@@ -33,17 +34,28 @@
         </div>
     </div>
     <ul class="menu" id="nav_barre">
-        <li class="liste_menu" id="dropdown"><a class="lien_menu" href="#projet">Projects</a>
-            <img src="../img/fleche_bas.png" alt="fleche" id="fleche">
+        <li><a class="lien_menu" href="#equipe">Team</a></li>
+        <li class="dropdown"><a class="lien_menu" href="#projet">Projects</a>
+            <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
             <div class="dropdown-content">
                 <a href="projets/structures_bio_inspirees.html">Bio-Inspired Structure</a>
                 <a href="projets/liaisons_bio_inspirees.html">Bio-Inspired Joint</a>
                 <a href="projets/actionneurs_dissipateurs_bio_inspirees.html">Bio-inspired actuators and dissipators</a>
             </div>
         </li>
-        <li class="liste_menu"><a class="lien_menu" href="#equipe">Team</a></li>
-        <li class="liste_menu"><a class="lien_menu" href="#stage_these">Internship offer and thesis</a></li>
-        <li class="liste_menu"><a class="lien_menu" href="#publication">Publications</a></li>
+        <li><a class="lien_menu" href="#stage_these">Internship offer and thesis</a></li>
+        <li class="dropdown"><a class="lien_menu" href="#publication">Publications</a>
+            <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content">
+                <a href="publications/2020.html">2020</a>
+                <a href="publications/2019.html">2019</a>
+                <a href="publications/2018.html">2018</a>
+                <a href="publications/2017.html">2017</a>
+                <a href="publications/2016.html">2016</a>
+                <a href="publications/2015.html">2015</a>
+                <a href="publications/avant_2015.html">Before 2015</a>
+            </div>
+        </li>
     </ul>
 </header>
 
@@ -55,6 +67,12 @@
             <p id="phrase_presentation">Nature, inspiration source of optimize mechanical solution</p>
         </div>
     </section>
+
+    <h2 class="ancre" id="equipe">Team</h2>
+    <setion class="partie" id="partie_equipe">
+        <img src="../img/dauphin.jpg" alt="image de l'équipe" title="l'équipe">
+        <ul class="liste_membre"></ul>
+    </setion>
 
     <h2 class="ancre" id="projet">Projects</h2>
     <section class="partie" id="partie_projet">
@@ -77,23 +95,9 @@
             <p class="mots_cles">Muscle, resilience, technologies, impact, protection</p>
         </article>
         </div>
-        <div class="img_logo">
-            <img src="../img/thales_logo.png" alt="logo de thales" class="logo">
-            <img src="../img/anr_logo.png" alt="logo de l'anr" class="logo">
-            <img src="../img/dassault_systeme_logo.png" alt="logo_dassault" class="logo">
-        </div>
     </section>
 
-    <h2 class="ancre" id="equipe">Team</h2>
-    <setion class="partie" id="partie_equipe">
-        <img src="../img/dauphin.jpg" alt="image de l'équipe" title="l'équipe">
-        <ul>
-            <li>dauphin 1</li>
-            <li>dauphin 2</li>
-            <li>dauphin 3</li>
-            <li>dauphin 4</li>
-        </ul>
-    </setion>
+
 
     <h2 class="ancre" id="stage_these">Internship offer and thesis</h2>
     <section class="partie">
@@ -105,10 +109,7 @@
 
     <h2 class="ancre" id="publication">Publications</h2>
     <section class="partie">
-        <ul class="publication">
-            <li>document 1</li>
-            <li>document 2</li>
-        </ul>
+        <ul class="liste_publication"></ul>
     </section>
 
 </div>
