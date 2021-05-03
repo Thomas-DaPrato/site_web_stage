@@ -1,4 +1,5 @@
-Jean-Marc LINARES
-Julien CHAVES-JACOB
-Santiago ARROYAVE-TOBON
-Loïc TADRIST
+Jean-Marc Linares : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Jean-Marc+Linares&rows=100
+julien chaves-jacob : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=julien-chaves-jacob&rows=100
+santiago arroyave-tobon : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=santiago-arroyave-tobon&rows=100
+loic tadrist : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Loic+Tadrist&rows=100
+jean-michel sprauel : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Jean-Michel+Sprauel&rows=100

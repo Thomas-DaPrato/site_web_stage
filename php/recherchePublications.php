@@ -1,12 +1,24 @@
 <?php
 
-
 session_start();
-
 
 $publications = array();
 
-function getPublication ($url) {
+// Lecture du fichier permanents.txt pour pouvoir aller chercher leurs publications
+// Récupère le nom du chercheur ainsi qu'un lien vers la page contenant ses publications
+// Stocke toutes les publications du chercheur dans un tableau associatif avec les auteurs de la publications,
+//      son titre, son année et son DOI
+
+$tabPermanents = file("../team/permanents.txt");
+for ($i = 0 ; $i < sizeof($tabPermanents); $i+=1) {
+    if ($i < sizeof($tabPermanents) -1){
+        $tabPermanents[$i] = substr($tabPermanents[$i],0,-2);
+    }
+    $tabPermanents[$i] = explode(' : ',$tabPermanents[$i]);
+}
+
+//fonction qui récupère les publications sur HAL en fonction de l'url de chaque permanent
+function getPublications ($url) {
     $fichier = file_get_contents($url);
     $fichier = stristr($fichier,"<tbody>");
     $fichier = stristr($fichier,"</tbody>",true);
@@ -46,12 +58,13 @@ function getPublication ($url) {
     return $result;
 }
 
+// ajoute au tableau associatif $publications le nom du chercheur avec un son tableau de publications
+foreach ($tabPermanents as $name) {
+    $publications[$name[0]] = getPublications($name[1]);
+}
 
-$publications["santiago"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=santiago-arroyave-tobon");
-$publications["loic"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Loic+Tadrist&rows=100");
-$publications["jean-marc"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Jean-Marc+Linares&rows=100");
-$publications["julien"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=julien-chaves-jacob&rows=100");
-$publications["jean-michel"] = getPublication("https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Jean-Michel+Sprauel&rows=100");
+
+//gestion base de donnée
 
 
 $BD = mysqli_connect("127.0.0.1","root","") or die("erreur de connexion");
@@ -63,6 +76,7 @@ else {
     echo 'requet truncate pas reussi';
 }
 
+// Insere dans la base de donée les publications
 foreach ($publications as $name) {
     foreach ($name as $publication) {
         $requetes = 'Insert into publications (DOI,Auteurs,Titre, annee) values (';
@@ -90,8 +104,10 @@ foreach ($publications as $name) {
     }
 }
 
+// Cherche dans la base de donnée les doublons de publication. Puis on les supprime jusqu'à avoir un exemplaire de chaque publications
 
-$requete_cherche_doublons = 'SELECT count(*) as nb_doublons, doi FROM (SELECT * FROM publications) AS t2 WHERE doi is not null GROUP BY doi HAVING COUNT(*) > 1';
+$requete_cherche_doublons = 'SELECT count(*) as nb_doublons, doi FROM (SELECT * FROM publications) AS t2 WHERE doi 
+    is not null GROUP BY doi HAVING COUNT(*) > 1';
 
 $result_cherche_doublons = mysqli_query($BD,$requete_cherche_doublons);
 
@@ -117,6 +133,8 @@ while ($tabResult = mysqli_fetch_assoc($result_cherche_doublons)){
 }
 
 echo 'fini';
+
+
 /*
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');

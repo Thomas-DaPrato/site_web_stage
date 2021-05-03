@@ -1,0 +1,12 @@
+.publication_annee {
+    text-align: left;
+    font-size: 15px;
+}
+
+.publication_annee li {
+    padding: 10px;
+}
+
+.doc_publie {
+    margin-left: 30px;
+}

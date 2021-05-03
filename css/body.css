@@ -87,7 +87,6 @@ footer {
     font-style: italic;
 }
 
-
 #presentation h1 {
     color: #0900A8;
     padding-top: 20px;
@@ -97,5 +96,18 @@ footer {
 #img_presentation_cbi {
     padding: 10px 0;
     width: 35%;
+}
+
+.liste_publication {
+    text-align: left;
+    font-size: 15px;
+}
+
+.liste_publication li {
+    padding: 10px;
+}
+
+.doc_publie {
+    margin-left: 30px;
 }
 

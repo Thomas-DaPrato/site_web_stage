@@ -1,5 +1,7 @@
 <?php
 
+//gestion base de donnée
+
 $BD = mysqli_connect("127.0.0.1","root","") or die("erreur de connexion");
 mysqli_select_db($BD,"cbi-publication") or die("erreur de connexion a la base de donnée");
 
@@ -8,6 +10,7 @@ $publications = array();
 $querry = '';
 $i = 0;
 
+// Recupère toute les publications d'une même année
 
 if(isset($_GET["annee"])) {
     if ($_GET["annee"] != "avant_2015"){
@@ -19,7 +22,7 @@ if(isset($_GET["annee"])) {
     $resultQuerry = mysqli_query($BD,$querry);
 
     while ($tabPublicationsAnnee = mysqli_fetch_assoc($resultQuerry)) {
-        $publications["auteurs"] = $tabPublicationsAnnee["auteurs"];
+        $publications["auteurs"] = substr($tabPublicationsAnnee["auteurs"],0,-1).':<br>';
         $publications["titre"] = $tabPublicationsAnnee["titre"];
         $publications["doi"] = $tabPublicationsAnnee["doi"];
         $publications["annee"] = $tabPublicationsAnnee["annee"];
