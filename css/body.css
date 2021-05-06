@@ -1,18 +1,3 @@
-@media screen and (max-width: 900px) {
-    #div_projet  {
-        flex-wrap: wrap;
-    }
-    #partie_equipe {
-        flex-wrap: wrap;
-    }
-    .img_logo {
-        flex-wrap: wrap;
-    }
-    #presentation div {
-        flex-wrap: wrap;
-    }
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -43,7 +28,7 @@ body {
     justify-content: center;
 }
 
-#partie_equipe img  {
+#img_equipe  {
     align-self: center;
 }
 
@@ -87,7 +72,7 @@ footer {
     font-style: italic;
 }
 
-#presentation h1 {
+#titre_presentation {
     color: #0900A8;
     padding-top: 20px;
     font-size: 45px;
@@ -107,3 +92,34 @@ footer {
     margin-left: 30px;
 }
 
+
+@media screen and (max-width: 900px) {
+    #div_projet  {
+        flex-wrap: wrap;
+    }
+    #partie_equipe {
+        flex-wrap: wrap;
+    }
+    .img_logo {
+        flex-wrap: wrap;
+    }
+    #presentation div {
+        flex-wrap: wrap;
+    }
+
+    #img_courante {
+        width: 90%;
+    }
+
+    #titre_presentation {
+        font-size: 30px;
+    }
+
+    #img_equipe {
+        width: 100%;
+    }
+
+    .liste_publication {
+        padding: 0;
+    }
+}

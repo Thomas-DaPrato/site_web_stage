@@ -121,3 +121,10 @@ input:focus input::placeholder {
     align-self: center;
     padding-left: 50px;
 }
+
+@media screen and (max-width: 900px) {
+    header {
+        padding: 0 10px;
+    }
+
+}
