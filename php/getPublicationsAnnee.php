@@ -2,7 +2,7 @@
 
 //gestion base de donnée
 
-$BD = mysqli_connect("127.0.0.1","root","") or die("erreur de connexion");
+$BD = mysqli_connect("127.0.0.1","root","Ba\$eDonneeCBI") or die("erreur de connexion");
 mysqli_select_db($BD,"cbi-publication") or die("erreur de connexion a la base de donnée");
 
 $resultPublicationsAnnee = array();

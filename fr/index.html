@@ -16,16 +16,19 @@
     <title>CBI | Conception Bio-Inspirée</title>
 </head>
 
-
 <body>
+
+<!-- SCRIPT -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../js/smoothScroll.js" type="module"></script>
 <script src="../js/addPublications.js" type="module"></script>
 <script src="../js/addMember.js" type="module"></script>
 <script src="../js/defilementImage.js" type="module"></script>
+<script src="../js/menu_tel.js" type="module"></script>
+
 <header>
     <div id="bandeau">
-        <a href="index.html"><img id="logo_ism" src="../img/logo_ism.png" alt="logo ism"></a>
+        <a href="index.html" id="accueil"><img id="logo_ism" src="../img/logo_ism.png" alt="logo ism"></a>
 
         <div class="form_anglais">
             <form action="#" method="post">
@@ -34,6 +37,11 @@
             </form>
             <a href="../en/index.html">EN</a>
         </div>
+    </div>
+    <div id="menu_tel">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
     <ul class="menu" id="nav_barre">
         <li><a class="lien_menu" href="#equipe">L'équipe</a></li>
@@ -117,11 +125,12 @@
 
 </div>
 <footer>
-    <ul class="menu">
-        <li class="liste_menu"><a class="lien_bas_page" href="#">Politique de confidentalité</a></li>
-        <li class="liste_menu"><a class="lien_bas_page" href="#">Condition générale</a></li>
+    <ul >
+        <li ><a class="lien_bas_page" href="#">Politique de confidentalité</a></li>
+        <li ><a class="lien_bas_page" href="#">Condition générale</a></li>
     </ul>
 </footer>
 </body>
 
 </html>
+

@@ -18,3 +18,13 @@
     color: white;
     font-size: 37px;
 }
+
+@media screen and (max-device-width: 900px) {
+    .sous-projet {
+        flex-wrap: wrap;
+    }
+
+    .introduction {
+        font-size: 27px;
+    }
+}
