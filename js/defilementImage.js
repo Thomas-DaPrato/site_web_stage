@@ -1,14 +1,12 @@
-let num_image = 1;
+let i = 0;
+let tabPhoto = ['../img/paysage_fantastique_1.jpg','../img/paysage_fantastique_2.jpg','../img/paysage_fantastique_3.jpg']
 
 function changeImageTimeOut(image_courante) {
-    if (num_image == 3) {
-        image_courante.setAttribute('src',image_courante.getAttribute('src').replace(num_image,1));
-        num_image = 1;
+    i+=1;
+    if (i == 3) {
+        i = 0
     }
-    else {
-        num_image += 1;
-        image_courante.setAttribute('src',image_courante.getAttribute('src').replace(num_image-1,num_image));
-    }
+    image_courante.setAttribute('src',tabPhoto[i]);
 }
 
 function changeImage () {
@@ -19,4 +17,26 @@ function changeImage () {
     $self.fadeIn(1000);
 }
 
+function clickFlecheGauche () {
+    switch (i) {
+        case 0 :
+            i = 1
+            break;
+        case 1:
+            i = 2
+            break;
+        case 2 :
+            i = 0;
+            break;
+    }
+    changeImage();
+
+}
+
+function clickFlecheDroite () {
+    changeImage();
+}
+
+document.getElementById('fleche_gauche').onclick = clickFlecheGauche;
+document.getElementById('fleche_droite').onclick = clickFlecheDroite;
 setInterval(changeImage,10000);

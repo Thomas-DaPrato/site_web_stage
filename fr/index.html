@@ -28,7 +28,10 @@
 
 <header>
     <div id="bandeau">
-        <a href="index.html" id="accueil"><img id="logo_ism" src="../img/logo_ism.png" alt="logo ism"></a>
+        <a href="index.html" id="accueil">
+            <img id="logo_ism" src="../img/logo_ism.png" alt="logo ism">
+            <img id="logo_cbi" src="../img/logo_cbi.png" alt="logo cbi">
+        </a>
 
         <div class="form_anglais">
             <form action="#" method="post">
@@ -74,8 +77,12 @@
     <section id="presentation">
         <h1 id="titre_presentation">Conception Bio-Inspirée (CBI)</h1>
         <div>
-            <img src="../img/paysage_fantastique_1.jpg" alt="presntation du CBI" id="img_courante">
-            <p id="phrase_presentation">La nature, source d'inspiration de solutions mécaniques optimisées.</p>
+            <div>
+                <button><img class="fleche_change_img" id="fleche_gauche" src="../img/fleche_bas.png"></button>
+                <img src="../img/paysage_fantastique_1.jpg" alt="presntation du CBI" id="img_courante">
+                <button><img class="fleche_change_img" id="fleche_droite" src="../img/fleche_bas.png"></button>
+            </div>
+            <p id="phrase_presentation">Comprendre la nature pour développer de nouvelles solutions mécaniques</p>
         </div>
     </section>
 
@@ -88,26 +95,31 @@
     <h2 class="ancre" id="theme_recherche">Thème de recherche</h2>
     <section class="partie" id="partie_projet">
         <div id="div_projet">
-        <article id="structure_bio-inspirees">
-            <a href="projets/structures_bio_inspirees.html"><img src="../img/arbre.jpg" alt="image projet structure bio-inspirées"
-                             title="projet sur les structures bio-inspirées" class="img_projet"></a>
-            <p class="mots_cles">Os, contraintes mécaniques</p>
-        </article>
+            <article id="structure_bio-inspirees">
+                <a href="projets/structures_bio_inspirees.html"><img src="../img/arbre.jpg"
+                                                                     alt="image projet structure bio-inspirées"
+                                                                     title="projet sur les structures bio-inspirées"
+                                                                     class="img_projet"></a>
+                <p class="mots_cles">Os, contraintes mécaniques</p>
+            </article>
 
-        <article id="liaisons_bio-inspirees">
-            <a href="projets/liaisons_bio_inspirees.html"><img src="../img/arbre.jpg" alt="image projet liaison bio-inspirées"
-                             title="projet sur les liaisons bio-inspirées" class="img_projet"></a>
-            <p class="mots_cles">Articulations, topologie, usure</p>
-        </article>
+            <article id="liaisons_bio-inspirees">
+                <a href="projets/liaisons_bio_inspirees.html"><img src="../img/arbre.jpg"
+                                                                   alt="image projet liaison bio-inspirées"
+                                                                   title="projet sur les liaisons bio-inspirées"
+                                                                   class="img_projet"></a>
+                <p class="mots_cles">Articulations, topologie, usure</p>
+            </article>
 
-        <article id="actionneurs_dissipateurs_bio-inspirees">
-            <a href="projets/actionneurs_dissipateurs_bio_inspirees.html"><img src="../img/arbre.jpg" alt="image projet actionneur et dissipateur bio-inspirées"
-                             title="projet sur les actionneurs et dissipateurs bio-inspirées" class="img_projet"></a>
-            <p class="mots_cles">Muscle, resilience, technologie, choc, protection</p>
-        </article>
+            <article id="actionneurs_dissipateurs_bio-inspirees">
+                <a href="projets/actionneurs_dissipateurs_bio_inspirees.html"><img src="../img/arbre.jpg"
+                                                                                   alt="image projet actionneur et dissipateur bio-inspirées"
+                                                                                   title="projet sur les actionneurs et dissipateurs bio-inspirées"
+                                                                                   class="img_projet"></a>
+                <p class="mots_cles">Muscle, resilience, technologie, choc, protection</p>
+            </article>
         </div>
     </section>
-
 
 
     <h2 class="ancre" id="stage_these">Offres stage et thèses</h2>
@@ -125,9 +137,9 @@
 
 </div>
 <footer>
-    <ul >
-        <li ><a class="lien_bas_page" href="#">Politique de confidentalité</a></li>
-        <li ><a class="lien_bas_page" href="#">Condition générale</a></li>
+    <ul>
+        <li><a class="lien_bas_page" href="#">Politique de confidentalité</a></li>
+        <li><a class="lien_bas_page" href="#">Condition générale</a></li>
     </ul>
 </footer>
 </body>

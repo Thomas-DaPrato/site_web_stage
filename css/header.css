@@ -12,7 +12,15 @@ header {
 
 #logo_ism {
     padding: 25px 0;
-    width: 75%;
+    width: 28%;
+}
+
+#logo_cbi {
+    padding-left: 10px;
+    border-left: solid;
+    border-left-width: 1px;
+    width: 28%;
+    margin-left: 10px;
 }
 
 form {
@@ -126,11 +134,11 @@ input:focus input::placeholder {
     display: none;
 }
 
-@media screen and (max-device-width: 900px) {
-    header {
-        height: 164px;
-    }
+#accueil{
+    padding-top: 10px;
+}
 
+@media screen and (max-device-width: 900px) {
     #menu_tel {
         display: block;
         position: absolute;
@@ -188,11 +196,14 @@ input:focus input::placeholder {
         font-size: 30px;
         width: auto;
         margin : 5px 10px;
+
     }
 
     .menu a {
         padding: 5px;
         color: white;
+        border-bottom: solid;
+        border-bottom-width: 1px;
     }
 
     .menu {
@@ -201,7 +212,8 @@ input:focus input::placeholder {
         position: absolute;
         right: 20px;
         top: 75px;
-        background-color: #00CCFF
+        background-color: #00CCFF;
+        padding: 0;
     }
 
     .fleche_bas {

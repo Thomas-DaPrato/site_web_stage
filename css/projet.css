@@ -5,8 +5,9 @@
 
 .sous-projet article {
     background-color: #00AFF0;
-    padding: 90px;
+    padding: 40px;
     margin: 10px;
+    width: 100%;
 }
 
 .introduction {

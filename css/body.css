@@ -41,8 +41,24 @@ footer {
     background-color: black;
 }
 
+footer ul {
+    margin: 0;
+}
+
 .lien_bas_page {
     color: white;
+}
+
+#fleche_droite {
+    width: 20px;
+    height: 20px;
+    transform: rotate(0.75turn);
+}
+
+#fleche_gauche {
+    width: 20px;
+    height: 20px;
+    transform: rotate(0.25turn);
 }
 
 .img_logo {
