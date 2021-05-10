@@ -11,16 +11,8 @@ header {
 }
 
 #logo_ism {
-    padding: 25px 0;
-    width: 28%;
-}
-
-#logo_cbi {
-    padding-left: 10px;
-    border-left: solid;
-    border-left-width: 1px;
-    width: 28%;
-    margin-left: 10px;
+    height: 60px;
+    margin-top: 10px;
 }
 
 form {
@@ -144,7 +136,8 @@ input:focus input::placeholder {
         position: absolute;
         top :0;
         right: 0;
-        padding: 20px;
+        padding-top: 10px;
+        padding-right: 20px;
     }
 
     #menu_tel span {
@@ -183,7 +176,7 @@ input:focus input::placeholder {
     }
 
     #logo_ism {
-        width: initial;
+        height: initial;
     }
 
     .form_anglais a {
