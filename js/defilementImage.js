@@ -15,7 +15,7 @@ let point_img = document.getElementsByClassName('rond_img_courante');
 point_img[0].style.opacity = '1';
 
 function changeImageTimeOut(image_courante) {
-    for (let point = 0; point < point_img.length -1; point +=1) {
+    for (let point = 0; point < point_img.length; point +=1) {
         point_img[point].style.opacity = '0.25';
     }
     i+=1;

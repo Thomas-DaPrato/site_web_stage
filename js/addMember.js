@@ -16,7 +16,7 @@
                 $listeMembre.append($li);
             }
         }).fail(function (jqXHR,textStatus, errorThrown) {
-            alert("une erreur est survenue");
+            alert("une erreur est survenue avec l'ajout des membres");
             let msg = jqXHR.responseText + '\n'+ textStatus + '\n' + errorThrown
             console.log(msg);
         })

@@ -44,7 +44,7 @@
                 lien_doc[i].innerHTML = lien_doc[i].innerHTML.replace('<a','<a target="blank"');
             }
         }).fail(function (jqXHR,textStatus, errorThrown) {
-            alert("une erreur est survenue");
+            alert("une erreur est survenue avec l'ajout des publications");
             let msg = jqXHR.responseText + '\n'+ textStatus + '\n' + errorThrown
             console.log(msg);
         })

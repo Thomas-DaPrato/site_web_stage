@@ -28,4 +28,12 @@
     .introduction {
         font-size: 27px;
     }
+
+    .img_projet {
+        width: 75%;
+    }
+
+    .sous-projet article {
+        height: auto;
+    }
 }
