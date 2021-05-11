@@ -60,7 +60,9 @@ function getPublications ($url) {
 
 // ajoute au tableau associatif $publications le nom du chercheur avec un son tableau de publications
 foreach ($tabPermanents as $name) {
-    $publications[$name[0]] = getPublications($name[1]);
+    if (isset($name[1])) {
+        $publications[$name[0]] = getPublications($name[1]);
+    }
 }
 
 

@@ -25,6 +25,8 @@
 <script src="../js/addMember.js" type="module"></script>
 <script src="../js/defilementImage.js" type="module"></script>
 <script src="../js/menu_tel.js" type="module"></script>
+<script src="../js/addOffre.js" type="module"></script>
+<script src="../js/test.js" type="module"></script>
 
 <header>
     <div id="bandeau">
@@ -44,7 +46,12 @@
         <span></span>
     </div>
     <ul class="menu" id="nav_barre">
-        <li><a class="lien_menu" href="#equipe">L'équipe</a></li>
+        <li class="dropdown"><a class="lien_menu" href="#equipe">L'équipe</a>
+            <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content">
+                <a href="equipe/alumni.html">Alumni</a>
+            </div>
+        </li>
         <li class="dropdown"><a class="lien_menu" href="#theme_recherche">Thème de recherche</a>
             <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
             <div class="dropdown-content">
@@ -89,6 +96,7 @@
     <section class="partie" id="partie_equipe">
         <img src="../img/dauphin.jpg" alt="image de l'équipe" title="l'équipe" id="img_equipe">
         <ul class="liste_membre"></ul>
+        <a href="equipe/alumni.html" id="lien_alumni">Membres Alumni</a>
     </section>
 
     <h2 class="ancre" id="theme_recherche">Thème de recherche</h2>
@@ -123,10 +131,7 @@
 
     <h2 class="ancre" id="stage_these">Offres de stage et thèses</h2>
     <section class="partie">
-        <ul class="offre_stage_these">
-            <li>document 1</li>
-            <li>document 2</li>
-        </ul>
+        <ul class="offre_stage_these"></ul>
     </section>
 
     <h2 class="ancre" id="publication">Publications</h2>

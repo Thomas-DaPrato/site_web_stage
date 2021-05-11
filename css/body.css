@@ -123,7 +123,14 @@ footer ul {
     opacity: 0.25;
 }
 
+.liste_membre {
+    text-align: left;
+}
 
+#lien_alumni {
+    align-self: center;
+    padding-left: 60px;
+}
 
 
 @media screen and (max-device-width: 900px) {

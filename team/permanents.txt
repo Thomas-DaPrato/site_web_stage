@@ -3,3 +3,6 @@ julien chaves-jacob : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authI
 santiago arroyave-tobon : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=santiago-arroyave-tobon&rows=100
 loic tadrist : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Loic+Tadrist&rows=100
 jean-michel sprauel : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Jean-Michel+Sprauel&rows=100
+Emanuel mermoz : https://hal.archives-ouvertes.fr/search/index/?q=%2A&authFullName_s=Emmanuel+Mermoz&rows=100
+Julien Diperi
+Quentin Lopez
