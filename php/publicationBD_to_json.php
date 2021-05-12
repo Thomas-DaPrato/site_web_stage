@@ -13,11 +13,16 @@ $i = 0;
 // Recupère toute les publications de la base de donnée trié par ordre decroissant
 
 $resultQuerry = mysqli_query($BD,$querry);
-while ( $tabPublications = mysqli_fetch_assoc($resultQuerry)){
-    $publications["auteurs"] = substr($tabPublications["auteurs"],0,-1).':<br>';
+while ($tabPublications = mysqli_fetch_assoc($resultQuerry)){
+    $publications["auteurs"] = $tabPublications["auteurs"];
     $publications["titre"] = $tabPublications["titre"];
     $publications["doi"] = $tabPublications["doi"];
     $publications["annee"] = $tabPublications["annee"];
+    $publications["volume"] = $tabPublications["volume"];
+    $publications["page"] = $tabPublications["page"];
+    $publications["titreRevue"] = $tabPublications["titreRevue"];
+    $publications["editeurRevue"] = $tabPublications["editeurRevue"];
+    $publications["id_hal"] = $tabPublications["id_hal"];
     $resultPublications[$i+=1] = $publications;
 }
 

@@ -26,7 +26,6 @@
 <script src="../js/defilementImage.js" type="module"></script>
 <script src="../js/menu_tel.js" type="module"></script>
 <script src="../js/addOffre.js" type="module"></script>
-<script src="../js/test.js" type="module"></script>
 
 <header>
     <div id="bandeau">
@@ -64,7 +63,7 @@
         <li><a class="lien_menu" href="#stage_these">Offres de stage et thèses</a></li>
         <li class="dropdown"><a class="lien_menu" href="#publication">Publications</a>
             <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="publication_annee">
                 <a href="publications/2020.html">2020</a>
                 <a href="publications/2019.html">2019</a>
                 <a href="publications/2018.html">2018</a>
@@ -94,7 +93,7 @@
 
     <h2 class="ancre" id="equipe">L'équipe</h2>
     <section class="partie" id="partie_equipe">
-        <img src="../img/dauphin.jpg" alt="image de l'équipe" title="l'équipe" id="img_equipe">
+        <img src="../img/equipe.jpg" alt="image de l'équipe" title="l'équipe" id="img_equipe">
         <ul class="liste_membre"></ul>
         <a href="equipe/alumni.html" id="lien_alumni">Membres Alumni</a>
     </section>
@@ -136,7 +135,13 @@
 
     <h2 class="ancre" id="publication">Publications</h2>
     <section class="partie">
-        <ul class="liste_publication"></ul>
+        <div id="annee_N"></div>
+        <div id="annee_N-1"></div>
+        <div id="annee_N-2"></div>
+        <div id="annee_N-3"></div>
+        <div id="annee_N-4"></div>
+        <div id="annee_N-5"></div>
+        <div id="avant_annee_N-5"></div>
     </section>
 
 </div>

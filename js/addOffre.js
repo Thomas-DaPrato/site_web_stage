@@ -12,9 +12,7 @@
             if (data.hasOwnProperty(offre)) {
                 for (let infomartions in data[offre]){
                     if (data[offre].hasOwnProperty(infomartions)){
-                        console.log(infomartions);
                         if (infomartions == 'Descriptif') {
-                            console.log('lien');
                             $div_info.append($('<a />').attr('href','../offre/'+data[offre][infomartions]+'.pdf')
                                 .append(data[offre][infomartions]),'<br>');
                         }

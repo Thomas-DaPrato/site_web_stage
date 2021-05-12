@@ -4,7 +4,6 @@
         method: 'get',
         dataType : 'json'
     }).done(function (data) {
-        console.log(data);
         let $membre_alumni = $(".membre_alumni");
         for (let name in data){
             let $li = $("<li />");

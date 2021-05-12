@@ -17,99 +17,72 @@ for ($i = 0 ; $i < sizeof($tabPermanents); $i+=1) {
     $tabPermanents[$i] = explode(' : ',$tabPermanents[$i]);
 }
 
-//fonction qui récupère les publications sur HAL en fonction de l'url de chaque permanent
-function getPublications ($url) {
-    $fichier = file_get_contents($url);
-    $fichier = stristr($fichier,"<tbody>");
-    $fichier = stristr($fichier,"</tbody>",true);
-    $fichier = $fichier . "</tbody>";
-    $out = array();
-    $out2 = array();
-    $result = array();
-    $i = 0;
-    preg_match_all("/<td colspan=\"2\"[^>]*>(.*)<\/td>/isU",$fichier,$out);
-
-
-    foreach ($out[0] as $elem) {
-        preg_match("/<span class=\"ref-authors\"[^>]*>(.*)<\/span>/isU", $elem, $out2["auteurs"]);
-        preg_match("/<strong[^>]*>(.*)<\/strong>/isU", $elem, $out2["titre"]);
-        preg_match("/<a target=\"_blank\"[^>]*>(.*)<\/a>/isU", $elem, $out2["doi"]);
-        preg_match("/(,( |([a-z]|[A-Z]))* \d{4})/isU",$elem,$out2["annee"]);
-
-        if (isset($out2["auteurs"][0])){
-            $out2["auteurs"] = str_replace('\'','&apos;',strip_tags($out2["auteurs"][0]));
-        }
-
-        if (isset($out2["titre"][0])){
-            $out2["titre"] = str_replace('\'','&apos;',strip_tags($out2["titre"][0],'<a>'));
-        }
-
-        if (isset($out2["doi"][0])){
-            $out2["doi"] = strip_tags($out2["doi"][0]);
-        }
-
-        if (isset($out2["annee"][0])){
-            $out2["annee"] = substr($out2["annee"][0],-4);
-        }
-
-        $result[$i+=1] = $out2;
-    }
-
-    return $result;
-}
-
-// ajoute au tableau associatif $publications le nom du chercheur avec un son tableau de publications
-foreach ($tabPermanents as $name) {
-    if (isset($name[1])) {
-        $publications[$name[0]] = getPublications($name[1]);
-    }
-}
-
-
-//gestion base de donnée
-
-
 $BD = mysqli_connect("127.0.0.1","root","Ba\$eDonneeCBI") or die("erreur de connexion");
 mysqli_select_db($BD,"cbi-publication") or die("erreur de connexion a la base de donnée");
-if (mysqli_query($BD, 'TRUNCATE TABLE publications')){
-    echo 'requete truncate reussi','<br>';
-}
-else {
-    echo 'requet truncate pas reussi';
-}
 
-// Insere dans la base de donée les publications
-foreach ($publications as $name) {
-    foreach ($name as $publication) {
-        $requetes = 'Insert into publications (DOI,Auteurs,Titre, annee) values (';
-        if (gettype($publication["doi"]) == "string"){
-            $requetes.= '\''.$publication["doi"].'\',\'';
-        }
-        else {
-            $requetes.= 'null,\'';
-        }
-        $requetes.= $publication["auteurs"].'\',\''.$publication["titre"].'\',';
-        if (gettype($publication["annee"]) == "string"){
-            $requetes.= '\''.$publication["annee"].'\')';
-        }
-        else {
-            $requetes.= 'null)';
-        }
-        if(mysqli_query($BD,$requetes)) {
-            echo 'requete insert reussi','<br>';
-        }
-        else {
-            echo 'requete insert pas réussi : ',$requetes,'<br>';
 
-        }
 
+function getPublications ($BD,$name) {
+    $fichierPublications = json_decode(file_get_contents("https://api.archives-ouvertes.fr/search/?wt=json&rows=100&fl=docid,publicationDateY_i,doiId_s,authFullName_s,journalTitle_s,title_s,journalPublisher_s,volume_s,page_s,halId_s,docType_s&q=".$name));
+    $fichierPublications = (array) $fichierPublications;
+    foreach ($fichierPublications as $publication) {
+        $publication = (array) $publication;
+        foreach ($publication["docs"] as $infoPubli) {
+            $infoPubli = (array) $infoPubli;
+            $requete = 'Insert into publications (doc_id,';
+            $suiteRequete = ' values ('.$infoPubli['docid'].',';
+            if (isset($infoPubli["doiId_s"])) {
+                $requete.= 'doi,';
+                $suiteRequete.= '"'.$infoPubli["doiId_s"].'",';
+            }
+            if (isset($infoPubli["publicationDateY_i"])) {
+                $requete.= 'annee,';
+                $suiteRequete.= ''.$infoPubli["publicationDateY_i"].',';
+            }
+            if (isset($infoPubli["authFullName_s"])) {
+                $infoPubli["authFullName_s"] = implode(', ',$infoPubli["authFullName_s"]).'.';
+                $requete.= 'auteurs,';
+                $suiteRequete.= '"'.$infoPubli["authFullName_s"].'",';
+            }
+            if (isset($infoPubli["title_s"])) {
+                $infoPubli["title_s"] = implode(' ',$infoPubli["title_s"]);
+                $requete.= 'titre,';
+                $suiteRequete.= '"'.$infoPubli["title_s"].'",';
+            }
+            if (isset($infoPubli["journalTitle_s"])) {
+                $requete.= 'titreRevue,';
+                $suiteRequete.= '"'.$infoPubli["journalTitle_s"].'",';
+            }
+            if (isset($infoPubli["journalPublisher_s"])) {
+                $requete.= 'editeurRevue,';
+                $suiteRequete.= '"'.$infoPubli["journalPublisher_s"].'",';
+            }
+            if (isset($infoPubli["volume_s"])) {
+                $requete.= 'volume,';
+                $suiteRequete.= '"'.$infoPubli["volume_s"].'",';
+            }
+            if (isset($infoPubli["page_s"])) {
+                $requete.= 'page,';
+                $suiteRequete.= '"'.$infoPubli["page_s"].'",';
+            }
+            $requete.= 'id_hal)';
+            $suiteRequete .= '"'.$infoPubli["halId_s"].'")';
+            $requete.= $suiteRequete;
+            if(mysqli_query($BD,$requete)) {
+                echo 'requete insert reussi','<br>';
+            }
+            else {
+                echo 'requete insert pas réussi : ',$requete,'<br>';
+
+            }
+        }
     }
 }
 
 // Cherche dans la base de donnée les doublons de publication. Puis on les supprime jusqu'à avoir un exemplaire de chaque publications
 function suppr_doublon ($BD, $type) {
-    $requete_cherche_doublons = 'SELECT count(*) as nb_doublons,'.$type. ' FROM (SELECT * FROM publications) AS t2 WHERE '.$type.' 
-    is not null GROUP BY ' . $type.' HAVING COUNT(*) > 1';
+    $requete_cherche_doublons = 'SELECT count(*) as nb_doublons,'.$type. ' FROM (SELECT * FROM publications) AS t2 '
+        .' GROUP BY ' . $type.' HAVING COUNT(*) > 1';
 
     $result_cherche_doublons = mysqli_query($BD,$requete_cherche_doublons);
 
@@ -118,7 +91,7 @@ function suppr_doublon ($BD, $type) {
         echo 'requete cherche doublons reussi','<br>';
     }
     else {
-        echo 'requete cherche doublons pas reussi','<br>';
+        echo 'requete cherche doublons pas reussi : '.$result_cherche_doublons,'<br>';
     }
 
     while ($tabResult = mysqli_fetch_assoc($result_cherche_doublons)){
@@ -135,8 +108,13 @@ function suppr_doublon ($BD, $type) {
     }
 }
 
-suppr_doublon($BD, 'doi');
-suppr_doublon($BD, 'titre');
+foreach ($tabPermanents as $name) {
+    if (isset($name[1])) {
+        getPublications($BD,str_replace(' ','%',$name[0]));
+    }
+}
+
+suppr_doublon($BD, 'doc_id');
 
 
 echo 'fini';
