@@ -15,8 +15,12 @@ header {
     margin-top: 20px;
 }
 
+#lien_img_cbi {
+    text-align: center;
+}
+
 #logo_cbi {
-    width: 10%;
+    width: 30%;
 }
 
 form {

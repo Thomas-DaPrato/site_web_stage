@@ -26,6 +26,12 @@ while ($tabPublications = mysqli_fetch_assoc($resultQuerry)){
     $resultPublications[$i+=1] = $publications;
 }
 
+$querryAnneeMax = 'select max(annee) from publications';
+$resultQuerryAnneeMax = mysqli_query($BD,$querryAnneeMax);
+while ($result = mysqli_fetch_assoc($resultQuerryAnneeMax)) {
+    $resultPublications["anneeMax"] = $result["max(annee)"];
+}
+
 //final output
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');

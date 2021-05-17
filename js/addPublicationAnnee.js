@@ -1,35 +1,70 @@
 (function () {
     "use strict";
 
+    let annee_url = document.location.href.split('=')[1];
+    annee_url = annee_url.split('_');
+
+    if (annee_url.length < 2) {
+        $('#annee_publication').append(" de ",annee_url[0]);
+    }
+    else {
+        $('#annee_publication').append(' ',annee_url[0],' ',annee_url[1]);
+    }
+
     $(() => {
         $.ajax({
             url: "../../php/getPublicationsAnnee.php",
             type: "get",
-            data: "annee=" + document.getElementById('annee').innerHTML,
+            data: "annee="+document.location.href.split('=')[1],
             dataType: "json"
         }).done(function (data) {
-            let $publicationsAnnee = $(".publication_annee");
-            for (let publication in data){
-                let $li = $("<li />")
-                if(data.hasOwnProperty(publication)){
-                    for (let information in data[publication]){
-                        if (data[publication].hasOwnProperty(information)){
-                            if(information == "titre") {
-                                $li.append($("<strong class='doc_publie'/>")
-                                    .append(data[publication][information], " ")
-                                );
-                            }
-                            else if ( information == "doi" && data[publication][information] == "null"){
-                                $li.append(" ");
-                            }
-                            else {
-                                $li.append(data[publication][information], " ");
-                            }
+            let annee = data["anneeMax"];
 
+            let $publication_annee = $('#publication_annee');
+            $publication_annee.append($('<a />').attr('href','publications_annee.html?annee='+annee).append(annee));
+            $publication_annee.append($('<a />').attr('href','publications_annee.html?annee='+(annee-1)).append(annee-1));
+            $publication_annee.append($('<a />').attr('href','publications_annee.html?annee='+(annee-2)).append(annee-2));
+            $publication_annee.append($('<a />').attr('href','publications_annee.html?annee='+(annee-3)).append(annee-3));
+            $publication_annee.append($('<a />').attr('href','publications_annee.html?annee='+(annee-4)).append(annee-4));
+            $publication_annee.append($('<a />').attr('href','publications_annee.html?annee='+(annee-5)).append(annee-5));
+            $publication_annee.append($('<a />').attr('href','publications_annee.html?annee=avant_'+(annee-5)).append("Avant ",annee-5));
+
+            let $publicationsAnnee = $(".liste_publication");
+            for (let publication in data){
+                if (publication != "anneeMax") {
+                    let $li = $("<li />");
+                    let $a = $('<a />').attr('href','https://hal.archives-ouvertes.fr/'+data[publication]['id_hal'])
+                        .attr('target','blank');
+                    if(data.hasOwnProperty(publication)){
+                        if (data[publication].hasOwnProperty('auteurs') && typeof (data[publication]['auteur']) != 'object'){
+                            $a.append(data[publication]['auteurs'],' ');
+                        }
+                        if (data[publication].hasOwnProperty('titre') && typeof (data[publication]['titre']) != 'object'){
+                            $a.append(data[publication]['titre'],'. ');
+                        }
+                        if (data[publication].hasOwnProperty('titreRevue') && typeof (data[publication]['titreRevue']) != 'object'){
+                            $a.append(data[publication]['titreRevue'],', ');
+                        }
+                        if (data[publication].hasOwnProperty('editeurRevue') && typeof (data[publication]['editeurRevue']) != 'object'){
+                            $a.append(data[publication]['editeurRevue'],', ');
+                        }
+                        if (data[publication].hasOwnProperty('annee') && typeof (data[publication]['annee']) != 'object'){
+                            $a.append(data[publication]['annee'],', ');
+                        }
+                        if (data[publication].hasOwnProperty('volume') && typeof (data[publication]['volume']) != 'object'){
+                            $a.append(data[publication]['volume'],', ');
+                        }
+                        if (data[publication].hasOwnProperty('page') && typeof (data[publication]['page']) != 'object'){
+                            $a.append('pp.',data[publication]['page'],'. ');
+                        }
+                        if (data[publication].hasOwnProperty('doi') && typeof (data[publication]['doi']) != 'object'){
+                            $a.append('&#x27E8;',data[publication]['doi'],'&#x27E9;');
                         }
                     }
+                    $li.append($a);
+                    $publicationsAnnee.append($li);
                 }
-                $publicationsAnnee.append($li);
+
             }
 
 

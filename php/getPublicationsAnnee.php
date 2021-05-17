@@ -10,29 +10,46 @@ $publications = array();
 $querry = '';
 $i = 0;
 
+
 // Recupère toute les publications d'une même année
 
 if(isset($_GET["annee"])) {
-    if ($_GET["annee"] != "avant_2015"){
-        $querry = 'select * from publications where annee =\''.$_GET["annee"].'\'';
+    $annee = explode('_',$_GET['annee']);
+    if (!isset($annee[1])){
+        $querry = 'select * from publications where annee ='.$annee[0];
     }
     else {
-        $querry = 'SELECT * FROM publications WHERE annee < 2015 ORDER BY annee DESC';
+        $querry = 'SELECT * FROM publications WHERE annee < '.$annee[1].' ORDER BY annee DESC';
     }
+
     $resultQuerry = mysqli_query($BD,$querry);
 
+
     while ($tabPublicationsAnnee = mysqli_fetch_assoc($resultQuerry)) {
-        $publications["auteurs"] = substr($tabPublicationsAnnee["auteurs"],0,-1).':<br>';
+        $publications["auteurs"] = $tabPublicationsAnnee["auteurs"];
         $publications["titre"] = $tabPublicationsAnnee["titre"];
         $publications["doi"] = $tabPublicationsAnnee["doi"];
         $publications["annee"] = $tabPublicationsAnnee["annee"];
+        $publications["volume"] = $tabPublicationsAnnee["volume"];
+        $publications["page"] = $tabPublicationsAnnee["page"];
+        $publications["titreRevue"] = $tabPublicationsAnnee["titreRevue"];
+        $publications["editeurRevue"] = $tabPublicationsAnnee["editeurRevue"];
+        $publications["id_hal"] = $tabPublicationsAnnee["id_hal"];
         $resultPublicationsAnnee[$i+=1] = $publications;
     }
 
-    header('Cache-Control: no-cache, must-revalidate');
-    header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
-    header('Content-type: application/json');
-    echo json_encode($resultPublicationsAnnee);
+    $querryAnneeMax = 'select max(annee) from publications';
+    $resultQuerryAnneeMax = mysqli_query($BD,$querryAnneeMax);
+    while ($result = mysqli_fetch_assoc($resultQuerryAnneeMax)) {
+        $resultPublicationsAnnee["anneeMax"] = $result["max(annee)"];
+    }
+
+
 }
+
+header('Cache-Control: no-cache, must-revalidate');
+header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Content-type: application/json');
+echo json_encode($resultPublicationsAnnee);
 
 
