@@ -2,7 +2,6 @@
 
 session_start();
 
-$publications = array();
 
 // Lecture du fichier permanents.txt pour pouvoir aller chercher leurs publications
 // Récupère le nom du chercheur ainsi qu'un lien vers la page contenant ses publications
@@ -34,6 +33,10 @@ function getPublications ($BD,$name) {
             if (isset($infoPubli["doiId_s"])) {
                 $requete.= 'doi,';
                 $suiteRequete.= '"'.$infoPubli["doiId_s"].'",';
+            }
+            if (isset($infoPubli["docType_s"])) {
+                $requete.= 'docType,';
+                $suiteRequete.= '"'.$infoPubli["docType_s"].'",';
             }
             if (isset($infoPubli["publicationDateY_i"])) {
                 $requete.= 'annee,';

@@ -64,6 +64,9 @@
                         if (data[publication].hasOwnProperty('doi') && typeof (data[publication]['doi']) != 'object') {
                             $a.append('&#x27E8;', data[publication]['doi'], '&#x27E9;');
                         }
+                        if (data[publication].hasOwnProperty('docType') && typeof (data[publication]['docType']) != 'object') {
+                            $a.append('    ', data[publication]['docType']);
+                        }
                     }
                     $li.append($a);
                     switch (data[publication]['annee']) {

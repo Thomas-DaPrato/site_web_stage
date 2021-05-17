@@ -23,6 +23,7 @@ while ($tabPublications = mysqli_fetch_assoc($resultQuerry)){
     $publications["titreRevue"] = $tabPublications["titreRevue"];
     $publications["editeurRevue"] = $tabPublications["editeurRevue"];
     $publications["id_hal"] = $tabPublications["id_hal"];
+    $publications["docType"] = $tabPublications["docType"];
     $resultPublications[$i+=1] = $publications;
 }
 
@@ -31,6 +32,12 @@ $resultQuerryAnneeMax = mysqli_query($BD,$querryAnneeMax);
 while ($result = mysqli_fetch_assoc($resultQuerryAnneeMax)) {
     $resultPublications["anneeMax"] = $result["max(annee)"];
 }
+
+/*
+echo '<pre>';
+var_dump($resultPublications);
+echo '<pre/>';*/
+
 
 //final output
 header('Cache-Control: no-cache, must-revalidate');
