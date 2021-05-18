@@ -1,5 +1,7 @@
 <?php
 
+$tab = array();
+
 $BD = mysqli_connect("127.0.0.1","root","Ba\$eDonneeCBI") or die("erreur de connexion");
 mysqli_select_db($BD,"cbi-publication") or die("erreur de connexion a la base de donnée");
 
@@ -10,12 +12,17 @@ function getPublications ($BD,$name) {
     echo '<pre/>';
 }
 
-getPublications($BD,"santiago%arroyave%tobon");
+
+$querry = 'select * from publications where id=1';
+$resultQuerry = mysqli_query($BD,$querry);
+while ($result = mysqli_fetch_assoc($resultQuerry)){
+    $tab[] =  $result['auteurs'];
+}
 
 
-/*
+
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
-echo $file;*/
+echo json_encode($tab);
 

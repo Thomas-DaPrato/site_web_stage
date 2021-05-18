@@ -10,6 +10,7 @@ $publications = array();
 $querry = '';
 $i = 0;
 
+$_GET['annee'] = 2021;
 
 // Recupère toute les publications d'une même année
 
@@ -35,6 +36,7 @@ if(isset($_GET["annee"])) {
         $publications["titreRevue"] = $tabPublicationsAnnee["titreRevue"];
         $publications["editeurRevue"] = $tabPublicationsAnnee["editeurRevue"];
         $publications["id_hal"] = $tabPublicationsAnnee["id_hal"];
+        $publications["docType"] = $tabPublicationsAnnee["docType"];
         $resultPublicationsAnnee[$i+=1] = $publications;
     }
 
@@ -46,10 +48,36 @@ if(isset($_GET["annee"])) {
 
 
 }
+/*
+echo '<pre>';
+var_dump($resultPublicationsAnnee);
+echo '<pre/>';*/
 
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 echo json_encode($resultPublicationsAnnee);
-
-
+/*
+switch (json_last_error()) {
+    case JSON_ERROR_NONE:
+        echo ' - Aucune erreur';
+        break;
+    case JSON_ERROR_DEPTH:
+        echo ' - Profondeur maximale atteinte';
+        break;
+    case JSON_ERROR_STATE_MISMATCH:
+        echo ' - Inadéquation des modes ou underflow';
+        break;
+    case JSON_ERROR_CTRL_CHAR:
+        echo ' - Erreur lors du contrôle des caractères';
+        break;
+    case JSON_ERROR_SYNTAX:
+        echo ' - Erreur de syntaxe ; JSON malformé';
+        break;
+    case JSON_ERROR_UTF8:
+        echo ' - Caractères UTF-8 malformés, probablement une erreur d\'encodage';
+        break;
+    default:
+        echo ' - Erreur inconnue';
+        break;
+}*/

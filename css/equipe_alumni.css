@@ -1,11 +1,26 @@
 .membre_alumni {
     text-align: left;
+    list-style-type: none;
+    padding: 0;
 }
 
 .membre_alumni li {
-    padding: 10px;
+    margin: 10px;
+    display: flex;
+    background-color: #d0d0d0;
+}
+
+.membre_alumni li:hover {
+    color: white;
+    background-color: #0066CC;
 }
 
 .information_alumni {
     margin-left: 10px;
+    align-self: center;
+}
+
+.img_profil {
+    margin-right: 20px;
+    width: 10%;
 }

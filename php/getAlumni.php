@@ -2,7 +2,9 @@
 
 $fichierAlumni = file('../team/alumni.csv');
 
-
+for($i = 0; $i<sizeof($fichierAlumni); $i+=1){
+    $fichierAlumni[$i] = utf8_encode($fichierAlumni[$i]);
+}
 
 $membre = array();
 $infoInitial = explode(';',$fichierAlumni[0]);
