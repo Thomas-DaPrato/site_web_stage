@@ -1,3 +1,7 @@
+/*
+* Fonction permettant de récuperer les membres alumnis stockés dans un fichier au format csv et de les afficher sur la page alumni.html
+* Fonction qui utilise une requête ajax vers le fichier php getAlumni.php et qui reçoit un tableau au format json contenant tous les membres alumnis
+* */
 (function () {
     $.ajax({
         url: '../php/getAlumni.php',

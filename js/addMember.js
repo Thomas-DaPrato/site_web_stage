@@ -1,3 +1,7 @@
+/*
+* Fonction permettant de récuperer les membres de l'année en cours stockés dans un fichier au format txt et de les afficher sur la page index.html
+* Fonction qui utilise une requête ajax vers le fichier php getMember.php et qui reçoit un tableau au format json contenant tous les membres de l'année en cours
+* */
 (function () {
     "use strict";
 

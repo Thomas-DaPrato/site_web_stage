@@ -1,3 +1,4 @@
+/* CSS général */
 html {
     scroll-behavior: smooth;
 }
@@ -9,12 +10,9 @@ body {
     font-size: 20px;
 }
 
-#div_projet{
-    display: flex;
-    justify-content: center;
-}
-.img_theme_recherche {
-    width: 90%;
+.contenu {
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .ancre {
@@ -22,28 +20,8 @@ body {
     border-top: dashed;
 }
 
-#partie_equipe {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 h3 {
     font-size: 20px;
-}
-
-#membres{
-    display: flex;
-    justify-content: center;
-}
-
-#img_equipe  {
-    align-self: center;
-}
-
-.contenu {
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 footer {
@@ -58,28 +36,24 @@ footer ul {
     color: white;
 }
 
-#fleche_droite {
-    width: 20px;
-    height: 20px;
-    transform: rotate(0.75turn);
+a {
+    color: gray;
+    text-decoration: none;
+
+}
+a:hover {
+    color: #0066CC;
 }
 
-#fleche_gauche {
-    width: 20px;
-    height: 20px;
-    transform: rotate(0.25turn);
+button {
+    border: none;
+    background: none;
+}
+button:hover {
+    cursor: pointer;
 }
 
-.img_logo {
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    width: 10%;
-    padding: 0 10px;
-}
-
+/* CSS pour la partie de présentation */
 #presentation {
     background-color: #e4e4e4;
     padding-bottom: 50px;
@@ -103,18 +77,17 @@ footer ul {
     font-size: 45px;
 }
 
-
-.liste_publication {
-    text-align: left;
-    font-size: 15px;
+/* CSS pour les images défilantes */
+#fleche_droite {
+    width: 20px;
+    height: 20px;
+    transform: rotate(0.75turn);
 }
 
-.liste_publication li {
-    padding: 10px;
-}
-
-.doc_publie {
-    margin-left: 30px;
+#fleche_gauche {
+    width: 20px;
+    height: 20px;
+    transform: rotate(0.25turn);
 }
 
 #div_cercle {
@@ -132,6 +105,22 @@ footer ul {
     opacity: 0.25;
 }
 
+/* CSS pour la partie equipe */
+#partie_equipe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#membres{
+    display: flex;
+    justify-content: center;
+}
+
+#img_equipe  {
+    align-self: center;
+}
+
 .liste_membre {
     text-align: left;
 }
@@ -141,6 +130,16 @@ footer ul {
     padding-left: 60px;
 }
 
+/* CSS pour la partie projet de recherche */
+#div_projet{
+    display: flex;
+    justify-content: center;
+}
+.img_theme_recherche {
+    width: 90%;
+}
+
+/* CSS pour la partie offre de stage et thèse */
 .offre_stage_these {
     display: flex;
     justify-content: space-around;
@@ -160,19 +159,39 @@ footer ul {
 }
 
 
+.liste_publication {
+    text-align: left;
+    font-size: 15px;
+}
 
+/* CSS pour la partie publications */
+.liste_publication li {
+    padding: 10px;
+}
+
+.doc_publie {
+    margin-left: 30px;
+}
+
+/* CSS responsif */
 @media screen and (max-device-width: 900px) {
-    #div_projet  {
-        flex-wrap: wrap;
+    /* CSS général */
+    body {
+        font-size: 30px;
     }
-    #partie_equipe {
-        flex-wrap: wrap;
+
+    h3 {
+        font-size: inherit;
     }
-    .img_logo {
-        flex-wrap: wrap;
-    }
+
+    /* CSS pour la partie présentation */
     #suite_presentation {
         flex-wrap: wrap;
+    }
+
+    /* CSS pour les images défilantes */
+    #div_img_defilement {
+        width: 100%;
     }
 
     #img_courante {
@@ -183,29 +202,16 @@ footer ul {
         bottom: unset;
         left: 39%;
     }
-
+    /* CSS pour la partie équipe */
     #img_equipe {
         width: 100%;
     }
 
-    .liste_publication {
-        padding: 0;
-        font-size: 25px;
-    }
-
-    body {
-        font-size: 30px;
-    }
-
-    #img_defilement {
-        width: 100%;
+    partie_equipe {
+         flex-wrap: wrap;
     }
 
     .liste_membre {
-        font-size: 45px;
-    }
-
-    #partie_projet {
         font-size: 45px;
     }
 
@@ -213,11 +219,23 @@ footer ul {
         flex-wrap: wrap;
     }
 
-    h3 {
-        font-size: inherit;
+    /* CSS pour la partie projet de recherche */
+    #div_projet  {
+        flex-wrap: wrap;
     }
 
+    #partie_projet {
+        font-size: 45px;
+    }
+
+    /* CSS pour la partie offre de stage et thèse */
     .offre_stage_these li {
         width: 100%;
+    }
+
+    /* CSS pour la partie publications */
+    .liste_publication {
+        padding: 0;
+        font-size: 25px;
     }
 }

@@ -1,4 +1,7 @@
 <?php
+/*
+ * Code permettant de récuperer toutes les publications stockées dans la base de données et de les convertir au format json pour enuite etre lu par addPublications.js
+ * */
 
 //gestion base de donnée
 

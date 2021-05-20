@@ -1,11 +1,16 @@
+/*
+* Code permettant de changer de langue grâce a un changement de fichier où est stocké tous le contenu du site
+* */
 function switchLangage() {
     let nom = document.location.pathname;
     nom = nom.substring(nom.lastIndexOf('/')+1);
-    nom = nom.replace('.html','.txt')
-    console.log(nom);
+    nom = nom.replace('.html','.txt');
+    if(nom == "") {
+        nom = 'index.txt';
+    }
     $(() => {
         $.ajax({
-            url: '/site_web_stage/php/getLangue.php',
+            url: '/php/getLangue.php',
             type: 'get',
             data: 'langue='+document.getElementById('switch_langage').innerHTML.toLowerCase()+'&fichier='+nom,
             dataType: 'json'

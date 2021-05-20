@@ -1,3 +1,7 @@
+/*
+* Fonction permettant de récuperer les publications d'une année précise stockés dans une base de donnée et de les afficher sur la page publications_annee.html
+* Fonction qui utilise une requête ajax vers le fichier php getPublicationsAnnee.php et qui reçoit un tableau au format json contenant toutes les publications de l'année sélectionnée ainsi que leur informations
+* */
 (function () {
     "use strict";
 

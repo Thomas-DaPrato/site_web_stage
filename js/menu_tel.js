@@ -1,3 +1,6 @@
+/*
+* Code permettant d'afficher le menu sur téléphone
+* */
 let isOnMenuTel = false;
 let isOnFleche = [false,false];
 
@@ -15,6 +18,8 @@ function clickMenuShow () {
 let fleches = document.getElementsByClassName('fleche_bas');
 
 function clickDropDown(i) {
+    console.log(i);
+    console.log(isOnFleche[i]);
     let lienDropdown = document.getElementsByClassName('dropdown-content');
     if (isOnFleche[i]) {
         lienDropdown[i].style.display = "none";

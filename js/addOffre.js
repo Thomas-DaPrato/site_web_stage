@@ -1,3 +1,7 @@
+/*
+* Fonction permettant de récuperer les offres stockés dans un fichier au format csv et de les afficher sur la page index.html
+* Fonction qui utilise une requête ajax vers le fichier php getOffre.php et qui reçoit un tableau au format json contenant toutes les offres aisni que leur informations
+* */
 (function () {
     $.ajax({
         url: 'php/getOffre.php',

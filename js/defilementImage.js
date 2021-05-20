@@ -1,3 +1,6 @@
+/*
+* Code permettant de faire défiler les images sur la page index.html
+* */
 let i = 0;
 let tabPhoto = ['img/logo_cbi.png','img/paysage_fantastique_1.jpg',
     'img/paysage_fantastique_2.jpg','img/paysage_fantastique_3.jpg'];

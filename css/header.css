@@ -1,3 +1,4 @@
+/* CSS général */
 header {
     position: sticky;
     top: 0px;
@@ -10,6 +11,11 @@ header {
     z-index: 1;
 }
 
+#menu_tel {
+    display: none;
+}
+
+/* CSS pour le bandeau */
 #logo_ism {
     height: 60px;
     margin-top: 20px;
@@ -23,6 +29,16 @@ header {
     width: 30%;
 }
 
+#bandeau {
+    display: flex;
+    justify-content: space-around;
+}
+
+#switch_langage {
+    font-size: 15px;
+}
+
+/* CSS pour le menu */
 .menu {
     display: flex;
     justify-content: space-around;
@@ -32,39 +48,10 @@ header {
     text-align: center;
 }
 
-
 .menu li {
     display: inline-block;
     width: 300px;
 }
-
-a {
-    color: gray;
-    text-decoration: none;
-
-}
-a:hover {
-    color: #0066CC;
-}
-
-#bandeau {
-    display: flex;
-    justify-content: space-around;
-}
-
-#loupe {
-    width: 10px;
-    height: 10px;
-}
-
-button {
-    border: none;
-    background: none;
-}
-button:hover {
-    cursor: pointer;
-}
-
 
 .dropdown-content {
     display: none;
@@ -99,20 +86,27 @@ button:hover {
     transform: rotate(0.5turn);
 }
 
-
-#menu_tel {
-    display: none;
-}
-
-#accueil{
-    padding-top: 10px;
-}
-
-#switch_langage {
-    font-size: 15px;
-}
-
+/* CSS responsif */
 @media screen and (max-device-width: 900px) {
+    /* CSS pour le bandeau */
+    #logo_ism {
+        height: initial;
+    }
+
+    #logo_cbi {
+        width: 45%;
+    }
+
+    #bandeau {
+        justify-content: center;
+    }
+
+    #switch_langage {
+        font-size: 40px;
+        position: relative;
+        right: 10%;
+    }
+    /* CSS pour le menu */
     #menu_tel {
         display: block;
         position: absolute;
@@ -133,27 +127,6 @@ button:hover {
 
     #nav_barre{
         display: none;
-    }
-
-    #accueil{
-        text-align: center;
-    }
-
-    #loupe {
-        width: 30px;
-        height: 30px;
-    }
-
-    #logo_ism {
-        height: initial;
-    }
-
-    #logo_cbi {
-        width: 45%;
-    }
-
-    #bandeau {
-        justify-content: center;
     }
 
     .menu li {
@@ -193,10 +166,6 @@ button:hover {
         background-color: #1A78E1;
 
     }
-    #switch_langage {
-        font-size: 40px;
-        position: relative;
-        right: 10%;
-    }
+
 
 }

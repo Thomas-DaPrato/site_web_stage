@@ -1,3 +1,7 @@
+/*
+* Fonction permettant de récuperer toutes les publications stockés dans une base de donnée et de les afficher sur la page index.html
+* Fonction qui utilise une requête ajax vers le fichier php publicationBD_to_json.php et qui reçoit un tableau au format json contenant toutes les publications ainsi que leur informations
+* */
 (function () {
     "use strict";
 

@@ -1,4 +1,7 @@
 <?php
+/*
+ * Code permettant d'ouvrir le equipe_en_cours.txt et de le convertir au format json pour enuite etre lu par addMember.js
+ * */
 
 $fichierMembers = file('../team/equipe_en_cours.txt');
 

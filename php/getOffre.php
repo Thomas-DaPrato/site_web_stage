@@ -1,5 +1,9 @@
 <?php
 
+/*
+ * Code permettant d'ouvrir le fichier offre.csv et de le convertir au format json pour enuite etre lu par addOffre.js
+ * */
+
 $fichierOffre = file('../offre/offre.csv');
 
 

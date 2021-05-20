@@ -1,4 +1,7 @@
 <?php
+/*
+ * Code permettant d'ouvrir le fichier alumni.csv et de le convertir au format json pour enuite etre lu par addAlumni.js
+ * */
 
 $fichierAlumni = file('../team/alumni.csv');
 

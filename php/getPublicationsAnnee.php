@@ -1,5 +1,9 @@
 <?php
 
+/*
+ * Code permettant de récuper les publications d'une année voulue dans la base de donnée et de les convertir au format json pour enuite etre lu par addPublicationAnnee.js
+ * */
+
 //gestion base de donnée
 
 $BD = mysqli_connect("127.0.0.1","root","Ba\$eDonneeCBI") or die("erreur de connexion");
