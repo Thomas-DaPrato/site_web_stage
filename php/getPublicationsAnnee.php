@@ -10,7 +10,6 @@ $publications = array();
 $querry = '';
 $i = 0;
 
-$_GET['annee'] = 2021;
 
 // Recupère toute les publications d'une même année
 

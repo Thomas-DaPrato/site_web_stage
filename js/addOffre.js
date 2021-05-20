@@ -1,6 +1,6 @@
 (function () {
     $.ajax({
-        url: '../php/getOffre.php',
+        url: 'php/getOffre.php',
         method: 'get',
         dataType: 'json'
     }).done(function (data) {
@@ -17,8 +17,8 @@
                     $div_info.append($("<p/>").append("Date limite de candidature : ",data[offre]["Date limite de candidature"], '<br>'));
                 }
                 if (data[offre].hasOwnProperty("Descriptif") && data[offre]["Descriptif"] != '') {
-                    $div_info.append("Descriptif : ",$('<a />').attr('href', '../offre/' + data[offre]["Descriptif"] + '.pdf')
-                        .append($('<img />').attr('src', '../img/document.jpg').attr('alt', 'photo document').attr('class', 'img_doc')), '<br>')
+                    $div_info.append("Descriptif : ",$('<a />').attr('href', 'offre/' + data[offre]["Descriptif"] + '.pdf')
+                        .append($('<img />').attr('src', 'img/document.jpg').attr('alt', 'photo document').attr('class', 'img_doc')), '<br>')
                 } else {
                     $div_info.append('Aucun descriptif donné', '<br>');
                 }

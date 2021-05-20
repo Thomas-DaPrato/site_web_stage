@@ -5,6 +5,7 @@
     annee_url = annee_url.split('_');
 
     if (annee_url.length < 2) {
+
         $('#annee_publication').append(" de ",annee_url[0]);
     }
     else {
@@ -13,7 +14,7 @@
 
     $(() => {
         $.ajax({
-            url: "../../php/getPublicationsAnnee.php",
+            url: "../php/getPublicationsAnnee.php",
             type: "get",
             data: "annee="+document.location.href.split('=')[1],
             dataType: "json"
@@ -37,7 +38,12 @@
                         .attr('target','blank');
                     if(data.hasOwnProperty(publication)){
                         if (data[publication].hasOwnProperty('auteurs') && typeof (data[publication]['auteur']) != 'object'){
-                            $a.append(data[publication]['auteurs'],' ');
+                            if (data[publication]['auteurs'].length < 100){
+                                $a.append(data[publication]['auteurs'], ' ');
+                            }
+                            else {
+                                $a.append(data[publication]['auteurs'].substring(0,data[publication]['auteurs'].indexOf(',',100)-1),' et al.', ' ');
+                            }
                         }
                         if (data[publication].hasOwnProperty('titre') && typeof (data[publication]['titre']) != 'object'){
                             $a.append(data[publication]['titre'],'. ');
@@ -67,16 +73,6 @@
 
             }
 
-
-
-            let lien_doc = document.getElementsByClassName('doc_publie');
-            for (let i = 0; i<lien_doc.length; i++){
-                let lien = $(lien_doc[i].innerHTML);
-                let oldLink = lien.attr('href');
-                let newLink = lien.attr('href',"https://hal.archives-ouvertes.fr" + oldLink + "/document");
-                lien_doc[i].innerHTML = lien_doc[i].innerHTML.replace(oldLink,newLink.attr('href'));
-                lien_doc[i].innerHTML = lien_doc[i].innerHTML.replace('<a','<a target="blank"');
-            }
         }).fail(function (jqXHR,textStatus, errorThrown) {
             alert("une erreur est survenue avec l'ajout des publications");
             let msg = jqXHR.responseText + '\n'+ textStatus + '\n' + errorThrown

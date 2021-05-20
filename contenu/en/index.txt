@@ -1,0 +1,28 @@
+#contenu du bandeau
+
+lien_equipe : Team
+lien_alumni_1 : Old members
+lien_theme_recherche : Research topic
+lien_structure_bio-inspiree : Bio-inspired structure
+lien_liaison_bio-inspiree : Bio-inspired joint
+lien_actionneur_dissipateur_bio-inspiree : Bio-inspired actuators and dissipators
+lien_offre_stage_these : Internship offer and thesis
+lien_publication : Publications
+switch_langage : FR
+
+#contenu du corp
+
+titre_presentation : Bio-Inspired Conception (BIC)
+phrase_presentation : Understanding nature to develop new mechanical solutions 
+equipe : Team
+lien_alumni_2 : Old members
+theme_recherche : Research topic
+titre_structure_bio-inspirees : Project on bio-inspired structure
+mot_cles_structure_bio-inspirees : Bones, mechanical constraints
+titre_liaisons_bio-inspirees : Project on bio-inspired joint
+mot_cles_liaisons_bio-inspirees : Articulation, topologies, wear
+titre_actionneur_dissipateur_bio-inspirees : Project on bio-inspired actuators and dissipators
+mot_cles_actionneur_dissipateur_bio-inspirees : Muscle, resilience, technologies, impact, protection
+stage_these : Internship offer and thesis
+publications : Publications
+mentions_legales : Legal mention

@@ -1,0 +1,9 @@
+#contenu du bandeau
+
+switch_langage : FR
+lien_accueil : Home
+lien_publication : Publications
+
+#contenu du corps
+
+mentions_legales : Legal mention

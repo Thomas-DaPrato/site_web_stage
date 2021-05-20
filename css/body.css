@@ -25,6 +25,16 @@ body {
 #partie_equipe {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+#membres{
+    display: flex;
+    justify-content: center;
 }
 
 #img_equipe  {
@@ -126,7 +136,7 @@ footer ul {
     text-align: left;
 }
 
-#lien_alumni {
+#lien_alumni_2 {
     align-self: center;
     padding-left: 60px;
 }
@@ -197,5 +207,17 @@ footer ul {
 
     #partie_projet {
         font-size: 45px;
+    }
+
+    #membres {
+        flex-wrap: wrap;
+    }
+
+    h3 {
+        font-size: inherit;
+    }
+
+    .offre_stage_these li {
+        width: 100%;
     }
 }

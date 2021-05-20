@@ -3,7 +3,7 @@
 
     $(() => {
         $.ajax({
-            url: "../php/getMember.php",
+            url: "php/getMember.php",
             type: "get",
             dataType: "json"
         }).done(function (data) {

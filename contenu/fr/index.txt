@@ -1,0 +1,28 @@
+#contenu du bandeau
+
+lien_equipe : L'équipe
+lien_alumni_1 : Anciens membres
+lien_theme_recherche : Thème de recherche
+lien_structure_bio-inspiree : Structure bio-inspirées
+lien_liaison_bio-inspiree : Liaisons bio-inspirées
+lien_actionneur_dissipateur_bio-inspiree : Actionneurs et dissipateurs bio-inspirees
+lien_offre_stage_these : Offres de stage et thèses
+lien_publication : Publications
+switch_langage : EN
+
+#contenu du corp
+
+titre_presentation : Conception Bio-Inspirée (CBI)
+phrase_presentation : Comprendre la nature pour développer de nouvelles solutions mécaniques
+equipe : L'équipe
+lien_alumni_2 : Anciens membres
+theme_recherche : Thème de recherche
+titre_structure_bio-inspirees : Projet sur les structures bio-inspirées
+mot_cles_structure_bio-inspirees : Os, contraintes mécaniques
+titre_liaisons_bio-inspirees : Projet sur les liaisons bio-inspirées
+mot_cles_liaisons_bio-inspirees : Articulations, topologie, usure
+titre_actionneur_dissipateur_bio-inspirees : Projet sur les actionneurs et dissipateurs bio-inspirés
+mot_cles_actionneur_dissipateur_bio-inspirees : Muscle, resilience, technologie, choc, protection
+stage_these : Offres de stage et thèses
+publications : Publications
+mentions_legales : Mentions légales

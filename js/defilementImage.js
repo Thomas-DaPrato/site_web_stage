@@ -1,6 +1,6 @@
 let i = 0;
-let tabPhoto = ['../img/logo_cbi.png','../img/paysage_fantastique_1.jpg',
-    '../img/paysage_fantastique_2.jpg','../img/paysage_fantastique_3.jpg'];
+let tabPhoto = ['img/logo_cbi.png','img/paysage_fantastique_1.jpg',
+    'img/paysage_fantastique_2.jpg','img/paysage_fantastique_3.jpg'];
 
 
 (function () {

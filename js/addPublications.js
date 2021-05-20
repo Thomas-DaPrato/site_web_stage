@@ -3,7 +3,7 @@
 
     $(() => {
         $.ajax({
-            url: "../php/publicationBD_to_json.php",
+            url: "php/publicationBD_to_json.php",
             type: "get",
             dataType: "json"
         }).done(function (data) {
@@ -41,7 +41,12 @@
                         .attr('target','blank');
                     if(data.hasOwnProperty(publication) ) {
                         if (data[publication].hasOwnProperty('auteurs') && typeof (data[publication]['auteur']) != 'object') {
-                            $a.append(data[publication]['auteurs'], ' ');
+                            if (data[publication]['auteurs'].length < 100){
+                                $a.append(data[publication]['auteurs'], ' ');
+                            }
+                            else {
+                                $a.append(data[publication]['auteurs'].substring(0,data[publication]['auteurs'].indexOf(',',100)-1),' et al.', ' ');
+                            }
                         }
                         if (data[publication].hasOwnProperty('titre') && typeof (data[publication]['titre']) != 'object') {
                             $a.append(data[publication]['titre'], '. ');
