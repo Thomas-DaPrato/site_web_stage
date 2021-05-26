@@ -21,7 +21,7 @@ body {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 footer {
@@ -137,6 +137,16 @@ button:hover {
 }
 .img_theme_recherche {
     width: 90%;
+    position: relative;
+    z-index: 1;
+}
+.mots_cles {
+    position: relative;
+    bottom: 15%;
+    color: white;
+}
+#div_projet article:hover .img_theme_recherche {
+    z-index: 0;
 }
 
 /* CSS pour la partie offre de stage et thèse */
@@ -226,6 +236,10 @@ button:hover {
 
     #partie_projet {
         font-size: 45px;
+    }
+
+    .mots_cles {
+        display: none;
     }
 
     /* CSS pour la partie offre de stage et thèse */

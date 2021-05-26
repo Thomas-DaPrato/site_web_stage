@@ -14,7 +14,6 @@ $publications = array();
 $querry = '';
 $i = 0;
 
-
 // Recupère toute les publications d'une même année
 
 if(isset($_GET["annee"])) {
@@ -51,8 +50,8 @@ if(isset($_GET["annee"])) {
 
 
 }
-/*
-echo '<pre>';
+
+/*echo '<pre>';
 var_dump($resultPublicationsAnnee);
 echo '<pre/>';*/
 

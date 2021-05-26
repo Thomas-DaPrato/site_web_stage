@@ -10,7 +10,7 @@ function switchLangage() {
     }
     $(() => {
         $.ajax({
-            url: '/php/getLangue.php',
+            url: 'php/getLangue.php',
             type: 'get',
             data: 'langue='+document.getElementById('switch_langage').innerHTML.toLowerCase()+'&fichier='+nom,
             dataType: 'json'

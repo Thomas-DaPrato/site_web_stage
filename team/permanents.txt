@@ -1,8 +1,11 @@
-Jean-Marc Linares : oui
-julien chaves-jacob : oui
-santiago arroyave-tobon : oui
-loic tadrist : oui
-jean-michel sprauel : oui
-Emmanuel mermoz : oui
+#nom du chercheur - id sur hal
+Jean-Marc Linares : 1485058
+julien chaves-jacob : 509114
+santiago arroyave-tobon : 1351426
+loic tadrist : 12290251
+loic tadrist : 1288423
+jean-michel sprauel : 1428800
+Emmanuel mermoz : 1326658
 Julien Diperi
 Quentin Lopez
+

@@ -2,7 +2,7 @@
 * Code permettant d'afficher le menu sur téléphone
 * */
 let isOnMenuTel = false;
-let isOnFleche = [false,false];
+let isOnFleche = [];
 
 function clickMenuShow () {
     if (isOnMenuTel) {
@@ -35,10 +35,12 @@ function clickDropDown(i) {
 
 document.getElementById('menu_tel').onclick = clickMenuShow;
 
-
-for (let i = 0; i<fleches.length; i++){
-    fleches[i].onclick = function () {
-        clickDropDown(i)
-    };
+if (window.screen.width <= 900){
+    for (let i = 0; i<fleches.length; i++){
+        fleches[i].onclick = function () {
+            clickDropDown(i)
+        };
+    }
 }
+
 

@@ -49,7 +49,7 @@
                                 $a.append(data[publication]['auteurs'], ' ');
                             }
                             else {
-                                $a.append(data[publication]['auteurs'].substring(0,data[publication]['auteurs'].indexOf(',',100)-1),' et al.', ' ');
+                                $a.append(data[publication]['auteurs'].substring(0,data[publication]['auteurs'].indexOf(',',80)-1),' et al.', ' ');
                             }
                         }
                         if (data[publication].hasOwnProperty('titre') && typeof (data[publication]['titre']) != 'object') {

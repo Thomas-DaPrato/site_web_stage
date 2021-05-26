@@ -8,7 +8,7 @@ session_start();
 // Stocke toutes les publications du chercheur dans un tableau associatif avec les auteurs de la publications,
 //      son titre, son année,son DOI, son id de document, le titre de la revue, l'editeur de la revue, le volume, la page, son identifiant hal, son type de document
 
-$tabPermanents = file("../team/permanents.txt");
+$tabPermanents = file("team/permanents.txt");
 for ($i = 0; $i < sizeof($tabPermanents); $i += 1) {
     if ($i < sizeof($tabPermanents) - 1) {
         $tabPermanents[$i] = substr($tabPermanents[$i], 0, -2);
@@ -22,7 +22,7 @@ mysqli_select_db($BD, "cbi-publication") or die("erreur de connexion a la base d
 
 function getPublications($BD, $name)
 {
-    $fichierPublications = json_decode(file_get_contents("https://api.archives-ouvertes.fr/search/?wt=json&rows=100&fl=docid,publicationDateY_i,doiId_s,authFullName_s,journalTitle_s,title_s,journalPublisher_s,volume_s,page_s,halId_s,docType_s&q=*&authFullName_s=" . $name));
+    $fichierPublications = json_decode(file_get_contents("https://api.archives-ouvertes.fr/search/?wt=json&rows=100&fl=docid,publicationDateY_i,doiId_s,authFullName_s,journalTitle_s,title_s,journalPublisher_s,volume_s,page_s,halId_s,docType_s&q=authId_i:" . $name));
     $fichierPublications = (array)$fichierPublications;
     foreach ($fichierPublications as $publication) {
         $publication = (array)$publication;
@@ -48,9 +48,8 @@ function getPublications($BD, $name)
                 $suiteRequete .= '"' . $infoPubli["authFullName_s"] . '",';
             }
             if (isset($infoPubli["title_s"])) {
-                $infoPubli["title_s"] = implode(' ', $infoPubli["title_s"]);
                 $requete .= 'titre,';
-                $suiteRequete .= '"' . $infoPubli["title_s"] . '",';
+                $suiteRequete .= '"' . $infoPubli["title_s"][0] . '",';
             }
             if (isset($infoPubli["journalTitle_s"])) {
                 $requete .= 'titreRevue,';
@@ -111,7 +110,7 @@ function suppr_doublon($BD, $type)
 
 foreach ($tabPermanents as $name) {
     if (isset($name[1])) {
-        getPublications($BD, str_replace(' ', '%', $name[0]));
+        getPublications($BD, $name[1]);
     }
 }
 
