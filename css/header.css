@@ -2,13 +2,14 @@
 header {
     position: sticky;
     top: 0px;
-    background-color: #FAFAFA;
+    background-color: white;
     height: auto;
     border-bottom: solid;
     border-width: 1px;
-    border-bottom-color: #00CCFF;
+    border-bottom-color: #c2c2c2;
     text-align: left;
     z-index: 2;
+    color: black;
 }
 
 #menu_tel {
@@ -44,8 +45,10 @@ header {
     justify-content: space-around;
     list-style: none;
     margin: 0;
-    padding: 10px 0;
+    padding-bottom: 10px;
     text-align: center;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .menu li {
@@ -53,22 +56,26 @@ header {
     width: 300px;
 }
 
+
 .dropdown-content {
     display: none;
     position: absolute;
     z-index: 1;
     width: 300px;
-    background-color: #00CCFF;
+    padding-top: 15px;
+    background-color: #e3e3e3;
 
 }
 
-.dropdown-content a {
+.lien_dropdown{
     padding: 5px;
-    color: white;
+    margin-bottom: 1px;
+    background-color: rgba(243,243,243,0.95);
 }
 
-.dropdown-content a:hover {
+.lien_dropdown:hover {
     background-color: #252525;
+    color: white;
 }
 
 
@@ -131,17 +138,18 @@ header {
 
     .menu li {
         display: inline-block;
-        font-size: 60px;
+        font-size: 40px;
+        font-weight: 400;
         width: auto;
         margin : 5px 10px;
+        background-color: #e5e5e5;
+        border-bottom: 1px solid #ddd;
 
     }
 
     .menu a {
         padding: 5px;
-        color: white;
-        border-bottom: solid;
-        border-bottom-width: 1px;
+        color: black;
     }
 
     .menu {
@@ -149,8 +157,9 @@ header {
         text-align: right;
         position: absolute;
         right: 20px;
-        background-color: #00CCFF;
+        background-color: #e5e5e5;
         padding: 0;
+
     }
 
     .fleche_bas {
@@ -163,9 +172,11 @@ header {
         position: relative;
         z-index: 1;
         width: auto;
-        background-color: #1A78E1;
 
     }
 
+    .lien_dropdown {
+        background-color: #f1f1f1;
+    }
 
 }

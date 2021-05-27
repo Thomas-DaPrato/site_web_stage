@@ -1,0 +1,8 @@
+#contenu du bandeau
+
+switch_langage : EN
+lien_accueil : Accueil
+
+#contenu du corps
+
+mentions_legales : Mentions légales

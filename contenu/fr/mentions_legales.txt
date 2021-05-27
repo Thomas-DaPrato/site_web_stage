@@ -1,0 +1,13 @@
+#contenu du bandeau
+
+lien_accueil : Accueil
+switch_langage : EN
+
+#contenu du corps
+
+titre_mentions_legales : Mentions légales
+titre_conception_realisation : Conception et réalisation
+couriel : Courriel
+titre_hebergement : Hébergement
+titre_maj : Contenu editorial et mise à jour
+mentions_legales : Mentions légales

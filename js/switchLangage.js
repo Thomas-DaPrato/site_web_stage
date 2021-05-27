@@ -1,7 +1,7 @@
 /*
 * Code permettant de changer de langue grâce a un changement de fichier où est stocké tous le contenu du site
 * */
-function switchLangage() {
+function switchLangage(langue) {
     let nom = document.location.pathname;
     nom = nom.substring(nom.lastIndexOf('/')+1);
     nom = nom.replace('.html','.txt');
@@ -10,9 +10,9 @@ function switchLangage() {
     }
     $(() => {
         $.ajax({
-            url: 'php/getLangue.php',
+            url: '/site_web_stage/php/getLangue.php',
             type: 'get',
-            data: 'langue='+document.getElementById('switch_langage').innerHTML.toLowerCase()+'&fichier='+nom,
+            data: 'langue='+langue+'&fichier='+nom,
             dataType: 'json'
         }).done(function (data) {
             for (let contenu in data){
@@ -27,6 +27,8 @@ function switchLangage() {
         })
     })
 }
+switchLangage("fr");
 
-
-document.getElementById('switch_langage').onclick = switchLangage;
+document.getElementById('switch_langage').onclick = function () {
+    switchLangage(document.getElementById('switch_langage').innerHTML.toLowerCase());
+}

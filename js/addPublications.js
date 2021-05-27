@@ -14,13 +14,13 @@
             let annee = data["anneeMax"];
 
             let $publication_annee = $('#publication_annee');
-            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+annee).append(annee));
-            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-1)).append(annee-1));
-            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-2)).append(annee-2));
-            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-3)).append(annee-3));
-            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-4)).append(annee-4));
-            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-5)).append(annee-5));
-            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee=avant_'+(annee-5)).append("Avant ",annee-5));
+            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+annee).attr("class","lien_dropdown").append(annee));
+            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-1)).attr("class","lien_dropdown").append(annee-1));
+            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-2)).attr("class","lien_dropdown").append(annee-2));
+            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-3)).attr("class","lien_dropdown").append(annee-3));
+            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-4)).attr("class","lien_dropdown").append(annee-4));
+            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee='+(annee-5)).attr("class","lien_dropdown").append(annee-5));
+            $publication_annee.append($('<a />').attr('href','publications/publications_annee.html?annee=avant_'+(annee-5)).attr("class","lien_dropdown").append("Avant ",annee-5));
 
             let $annee_N = $('#annee_N').append(annee);
             let $annee_N_1 = $('#annee_N-1').append(annee-1);
@@ -42,7 +42,7 @@
                 if(publication != "anneeMax") {
                     let $li = $("<li />");
                     let $a = $('<a />').attr('href','https://hal.archives-ouvertes.fr/'+data[publication]['id_hal'])
-                        .attr('target','blank');
+                        .attr('target','blank').attr("class","lien_publication_to_hal");
                     if(data.hasOwnProperty(publication) ) {
                         if (data[publication].hasOwnProperty('auteurs') && typeof (data[publication]['auteur']) != 'object') {
                             if (data[publication]['auteurs'].length < 100){

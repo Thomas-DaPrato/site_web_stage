@@ -2,11 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Présentation du thème de recherche actionneur et dissipateur bio-inspirée">
+    <meta name="viewport" content="width=900px">
     <link rel="stylesheet" type="text/css" href="../css/header.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="../css/body.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="../css/projet.css" media="all"/>
     <link rel="shortcut icon" href="https://ism.univ-amu.fr/misc/favicon.ico" type="image/vnd.microsoft.icon"/>
-    <title>CBI | Conception Bio-Inspirée AMU</title>
+    <title>CBI | Conception Bio-Inspirée AMU - Actionneurs et Dissipateurs Bio-Inspiree</title>
 </head>
 <body>
 
@@ -27,47 +29,48 @@
         <span></span>
     </div>
     <ul class="menu" id="nav_barre">
-        <li><a class="lien_menu" href="../index.html">Accueil</a>
-        <li><a class="lien_menu" href="structures_bio_inspirees.html">Structure bio-inspirées</a></li>
-        <li><a class="lien_menu" href="liaisons_bio_inspirees.html">Liaisons bio-inspirées</a></li>
-        <li><a class="lien_menu" href="actionneurs_dissipateurs_bio_inspirees.html">Actionneurs et dissipateurs
+        <li><a class="lien_menu" id="lien_accueil" href="../index.html">Accueil</a>
+        <li><a class="lien_menu" id="lien_structures_bio_inspirees" href="structures_bio_inspirees.html">Structure
+            bio-inspirées</a></li>
+        <li><a class="lien_menu" id="lien_liaisons_bio_inspirees" href="liaisons_bio_inspirees.html">Liaisons
+            bio-inspirées</a></li>
+        <li><a class="lien_menu" id="lien_actionneurs_dissipateurs_bio_inspirees"
+               href="actionneurs_dissipateurs_bio_inspirees.html">Actionneurs et dissipateurs
             bio-inspirees</a></li>
     </ul>
 </header>
 
 <div class="contenu">
     <section class="introduction">
-        <h1 class="titre_sous_projet">Actionneurs et dissipateurs bio inspirées</h1>
-
-        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page
-        avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un
-        imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
-        Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son
-        contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset
-        contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en
-        page de texte, comme Aldus PageMaker.
+        <h1 class="titre_sous_projet" id="titre_actionneur_dissipateur">Actionneurs et dissipateurs bio inspirées</h1>
+        <p id="phrase_presentation_actionneur_dissipateur"></p>
     </section>
 
 
     <section class="sous-projet">
-        <h2>Projets de recherche</h2>
-        <article>
-            <h4>Actionneur inspiré du muscle</h4>
-            <img class="img_projet" src="../img/projet_1_axe3.png">
-        </article>
-        <article>
-            <h4>Mécannique d'impact d'un ballon gonflé</h4>
-            <img class="img_projet" src="../img/projet_2_axe3.png">
-        </article>
-        <article>
-            <h4>Prévention des dommages à la tête et protections bio-inspirée</h4>
-            <img class="img_projet" src="../img/projet_3_axe3.png">
-        </article>
+        <h2 id="titre_projet_recherche">Projets de recherche</h2>
+        <div>
+            <article>
+                <h4 id="titre_actionneur_inspire_muscle">Actionneur inspiré du muscle</h4>
+                <img class="img_projet" src="../img/projet_1_axe3.png" alt="photo projet 1">
+                <p id="descriptif_actionneur_inspire_muscle"></p>
+            </article>
+            <article>
+                <h4 id="titre_mecannique_impact_ballon">Mécannique d'impact d'un ballon gonflé</h4>
+                <img class="img_projet" id="projet_2_axe3" src="../img/projet_2_axe3.gif" alt="photo projet 2">
+                <p id="descriptif_mecannique_impact_ballon"></p>
+            </article>
+            <article>
+                <h4 id="titre_prevention_dommage_tete">Prévention des dommages à la tête et protections bio-inspirée</h4>
+                <img class="img_projet" src="../img/projet_3_axe3.png" alt="photo projet 3">
+                <p id="descriptif_prevention_dommage_tete"></p>
+            </article>
+        </div>
     </section>
 </div>
 <footer>
     <ul>
-        <li><a class="lien_bas_page" href="../mentions_legales.html">Mentions légales</a></li>
+        <li><a class="lien_bas_page" href="../mentions_legales.html" id="mentions_legales">Mentions légales</a></li>
     </ul>
 </footer>
 

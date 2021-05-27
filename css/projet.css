@@ -1,5 +1,5 @@
 /* CSS général pour la page projet */
-.sous-projet {
+.sous-projet div {
     display: flex;
     justify-content: space-around;
 }
@@ -12,17 +12,25 @@
 }
 
 .introduction {
-    background-color: #32E7E2;
+    background-color: #e4e4e4;
     font-size: 18px;
 }
 
 .titre_sous_projet {
-    color: white;
+    color: #0900A8;
     font-size: 37px;
 }
 
+#projet_2_axe3 {
+    width: inherit;
+}
+
+article p {
+    font-size: 16px;
+}
+
 @media screen and (max-device-width: 900px) {
-    .sous-projet {
+    .sous-projet div{
         flex-wrap: wrap;
     }
 

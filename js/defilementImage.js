@@ -3,7 +3,7 @@
 * */
 let i = 0;
 let tabPhoto = ['img/logo_cbi.png','img/paysage_fantastique_1.jpg',
-    'img/paysage_fantastique_2.jpg','img/paysage_fantastique_3.jpg'];
+    'img/paysage_fantastique_2.jpg','img/presentation_theme_recherche_actionneur_dissipateur_bio-inspiree.jpg'];
 
 
 (function () {

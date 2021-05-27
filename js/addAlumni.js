@@ -23,14 +23,18 @@
                 }
                 $div_info.append($("<strong />").append(name));
                 if (data[name].hasOwnProperty("Mission") && data[name]["Mission"] != '') {
-                    $div_info.append(', ', data[name]["Mission"]);
+                    $div_info.append('<br>', data[name]["Mission"]);
                 }
                 if (data[name].hasOwnProperty("Sujet") && data[name]["Sujet"] != '') {
-                    $div_info.append(', ', data[name]["Sujet"]);
+                    $div_info.append('<br>', data[name]["Sujet"]);
                 }
                 if (data[name].hasOwnProperty("Date") && data[name]["Date"] != '') {
-                    $div_info.append(', ', data[name]["Date"]);
+                    $div_info.append('<br>', data[name]["Date"]);
                 }
+                if (data[name].hasOwnProperty("Id ORCID") && data[name]["Id ORCID"] != '') {
+                    $div_info.append('<br>','ORCID : ', $('<a />').attr('href','https://orcid.org/'+data[name]["Id ORCID"]).attr('class','lien_orcid').attr('target','_blank').append(data[name]["Id ORCID"]));
+                }
+
 
                 $li.append($div_info);
             }

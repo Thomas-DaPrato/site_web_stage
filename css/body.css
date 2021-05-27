@@ -37,12 +37,11 @@ footer ul {
 }
 
 a {
-    color: gray;
     text-decoration: none;
-
+    color: black;
 }
 a:hover {
-    color: #0066CC;
+    color: #2a68af;
 }
 
 button {
@@ -105,6 +104,11 @@ button:hover {
     opacity: 0.25;
 }
 
+#img_courante {
+    width: 500px;
+    height: 313px;
+}
+
 /* CSS pour la partie equipe */
 #partie_equipe {
     display: flex;
@@ -147,6 +151,7 @@ button:hover {
 }
 #div_projet article:hover .img_theme_recherche {
     z-index: 0;
+    filter: brightness(50%);
 }
 
 /* CSS pour la partie offre de stage et thèse */
@@ -168,19 +173,37 @@ button:hover {
     width: 10%;
 }
 
+.lien_contact {
+    color: gray;
+}
 
+.information_offre {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.information_offre strong {
+    position: relative;
+    left: -20px;
+}
+
+/* CSS pour la partie publications */
 .liste_publication {
     text-align: left;
     font-size: 15px;
 }
 
-/* CSS pour la partie publications */
 .liste_publication li {
     padding: 10px;
 }
 
 .doc_publie {
     margin-left: 30px;
+}
+
+.lien_publication_to_hal:hover {
+    border-bottom: 1px solid #2a68af;
+    color: black;
 }
 
 /* CSS responsif */

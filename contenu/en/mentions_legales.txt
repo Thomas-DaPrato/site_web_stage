@@ -1,0 +1,13 @@
+#contenu du bandeau
+
+lien_accueil : Home
+switch_langage : FR
+
+#contenu du corps
+
+titre_mentions_legales : Legals mentions
+titre_conception_realisation : Conception and realisation
+couriel : Mail
+titre_hebergement : Hosting
+titre_maj : Editorial content and updates
+mentions_legales : Legals mentions

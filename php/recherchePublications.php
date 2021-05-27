@@ -22,7 +22,7 @@ mysqli_select_db($BD, "cbi-publication") or die("erreur de connexion a la base d
 
 function getPublications($BD, $name)
 {
-    $fichierPublications = json_decode(file_get_contents("https://api.archives-ouvertes.fr/search/?wt=json&rows=100&fl=docid,publicationDateY_i,doiId_s,authFullName_s,journalTitle_s,title_s,journalPublisher_s,volume_s,page_s,halId_s,docType_s&q=authId_i:" . $name));
+    $fichierPublications = json_decode(file_get_contents("https://api.archives-ouvertes.fr/search/?wt=json&rows=100&fl=docid,publicationDateY_i,doiId_s,authFullName_s,journalTitle_s,title_s,journalPublisher_s,volume_s,page_s,halId_s,docType_s&q=authId_i:" . $name[1]));
     $fichierPublications = (array)$fichierPublications;
     foreach ($fichierPublications as $publication) {
         $publication = (array)$publication;
@@ -110,7 +110,7 @@ function suppr_doublon($BD, $type)
 
 foreach ($tabPermanents as $name) {
     if (isset($name[1])) {
-        getPublications($BD, $name[1]);
+        getPublications($BD, $name);
     }
 }
 

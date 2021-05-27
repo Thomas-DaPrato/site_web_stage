@@ -27,7 +27,7 @@
                     $div_info.append('Aucun descriptif donné', '<br>');
                 }
                 if (data[offre].hasOwnProperty("Contact")) {
-                    $div_info.append("Contact : ",$('<a />').attr('href','mailto:'+data[offre]["Contact"]).append(data[offre]["Contact"]));
+                    $div_info.append("Contact : ",$('<a />').attr('href','mailto:'+data[offre]["Contact"]).attr("class","lien_contact").append(data[offre]["Contact"]));
                 }
                 $li.append($div_info);
             }
