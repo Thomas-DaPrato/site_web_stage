@@ -2,13 +2,16 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Présentation du thème de recherche liaison bio-inspirée">
+    <meta name="description" content="Pr&#xE9;sentation du th&#xE8;me de recherche liaison bio-inspir&#xE9;e">
     <meta name="viewport" content="width=900px">
-    <link rel="stylesheet" type="text/css" href="../css/header.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="../css/body.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="../css/projet.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../css/header_presentation.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../css/body_presentation.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../css/projet_presentation.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" media="all"/>
+
     <link rel="shortcut icon" href="https://ism.univ-amu.fr/misc/favicon.ico" type="image/vnd.microsoft.icon"/>
-    <title>CBI | Conception Bio-Inspirée AMU - Liaisons Bio-Inspiree</title>
+    <link rel="canonical" href="http://ism-cbi.hopto.org/projets/liaisons_bio_inspirees.html"/>
+    <title>CBI AMU | Liaisons Bio-Inspiree</title>
 </head>
 <body>
 
@@ -16,25 +19,50 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../js/menu_tel.js" type="module"></script>
 <script src="../js/switchLangage.js" type="module"></script>
+<script src="../js/addAnnee_N_to_N_5.js" type="module"></script>
 
 <header>
-    <div id="bandeau">
-        <a href="https://ism.univ-amu.fr/" target="_blank"><img id="logo_ism" src="../img/logo_ism.png" alt="logo ism"></a>
-        <a href="../index.html" id="lien_img_cbi"><img id="logo_cbi" src="../img/logo_cbi.png" alt="logo cbi"></a>
-        <button id="switch_langage">EN</button>
-    </div>
+    <a href="https://ism.univ-amu.fr/" target="_blank"><img class="logo_header" id="logo_ism" src="../img/logo_ism.png"
+                                                            alt="logo ism"></a>
     <div id="menu_tel">
         <span></span>
         <span></span>
         <span></span>
     </div>
     <ul class="menu" id="nav_barre">
-        <li><a class="lien_menu" href="../index.html">Accueil</a>
-        <li><a class="lien_menu" href="structures_bio_inspirees.html">Structure bio-inspirées</a></li>
-        <li><a class="lien_menu" href="liaisons_bio_inspirees.html">Liaisons bio-inspirées</a></li>
-        <li><a class="lien_menu" href="actionneurs_dissipateurs_bio_inspirees.html">Actionneurs et dissipateurs
-            bio-inspirees</a></li>
+        <li class="dropdown"><a class="lien_menu" href="../index.html#theme_recherche" id="lien_theme_recherche">Thème de
+            recherche</a>
+            <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content">
+                <a class="lien_dropdown" href="../projets/structures_bio_inspirees.html" id="lien_structure_bio-inspiree">Structure
+                    bio-inspirées</a>
+                <a class="lien_dropdown" href="../projets/liaisons_bio_inspirees.html" id="lien_liaison_bio-inspiree">Liaisons
+                    bio-inspirées</a>
+                <a class="lien_dropdown" href="../projets/actionneurs_dissipateurs_bio_inspirees.html"
+                   id="lien_actionneur_dissipateur_bio-inspiree">Actionneurs et dissipateurs
+                    bio-inspirees</a>
+            </div>
+        </li>
+        <li class="dropdown"><a class="lien_menu" href="../index.html#equipe" id="lien_equipe">L'équipe</a>
+            <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content">
+                <a class="lien_dropdown" href="../equipe/alumni.html" id="lien_alumni_1">Membres</a>
+            </div>
+        </li>
+        <li><a class="lien_menu" href="../index.html#stage_these" id="lien_offre_stage_these">Offres de stages et thèses</a></li>
+        <li class="dropdown"><a class="lien_menu" href="../index.html#publications" id="lien_publication">Publications</a>
+            <img src="../img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content" id="lien_publication_annee">
+            </div>
+        </li>
+        <li><a class="lien_menu" href="#">ANR BioDesign</a></li>
     </ul>
+    <div id="button_switch_langage">
+        <button id="switch_langage_fr">FR</button>
+        <button id="switch_langage_en">EN</button>
+    </div>
+    <a href="../index.html" id="lien_img_cbi"><img class="logo_header" id="logo_cbi" src="../img/logo_cbi.png" alt="logo cbi"></a>
+
 </header>
 
 <div class="contenu">

@@ -41,14 +41,6 @@ if(isset($_GET["annee"])) {
         $publications["docType"] = $tabPublicationsAnnee["docType"];
         $resultPublicationsAnnee[$i+=1] = $publications;
     }
-
-    $querryAnneeMax = 'select max(annee) from publications';
-    $resultQuerryAnneeMax = mysqli_query($BD,$querryAnneeMax);
-    while ($result = mysqli_fetch_assoc($resultQuerryAnneeMax)) {
-        $resultPublicationsAnnee["anneeMax"] = $result["max(annee)"];
-    }
-
-
 }
 
 /*echo '<pre>';

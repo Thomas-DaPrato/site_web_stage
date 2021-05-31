@@ -1,17 +1,21 @@
 #contenu du bandeau
 
-lien_accueil : Accueil
-lien_structures_bio_inspirees : Structure bio-inspirées
-lien_liaisons_bio_inspirees : Liaisons bio-inspirées
-lien_actionneurs_dissipateurs_bio_inspirees : Actionneurs et dissipateurs bio-inspirees
-switch_langage : EN
+lien_equipe : L'équipe
+lien_alumni_1 : Membres
+lien_theme_recherche : Thème de recherche
+lien_structure_bio-inspiree : Structure bio-inspirées
+lien_liaison_bio-inspiree : Liaisons bio-inspirées
+lien_actionneur_dissipateur_bio-inspiree : Actionneurs et dissipateurs bio-inspirees
+lien_offre_stage_these : Offres de stages et thèses
+lien_publication : Publications
+lien_avant_annee_n-5 : Avant
 
 #contenu du corp
 
 titre_actionneur_dissipateur : Actionneurs et dissipateurs bio inspirées
 phrase_presentation_actionneur_dissipateur : descriptif du thème de recherche
 titre_projet_recherche : Projets de recherche
-titre_actionneur_inspire_muscle : Muscle-inspired actuator
+titre_actionneur_inspire_muscle : Actionneur inspiré du muscle
 descriptif_actionneur_inspire_muscle : L'endommagement d'un actionneur peut compromettre le fonctionnement d'une machine ou d'un véhicule. Par conséquent, les mouvements critiques sont souvent assurés par des actionneurs redondants. Cependant, pour certains véhicules ou applications, la redondance n'est pas autorisée, soit en raison de l'encombrement stérique (par exemple pour les hélicoptères), soit en raison du coût du poids comme pour les applications aéronautiques et spatiales. Le but du projet est de s'inspirer du comportement mécanique exceptionnel des muscles pour créer un actionneur délocalisé résilient aux dommages. 
 titre_mecannique_impact_ballon : Mécannique d'impact d'un ballon gonflé
 descriptif_mecannique_impact_ballon : Les membranes pressurisées sont utilisées dans diverses situations impliquant l'homme (protections, sports, etc.). Dans ce contexte, la mécanique des impacts des membranes est essentielle car une membrane sur ou sous gonflées peut créer des blessures. La pression du gaz et la vitesse d'impact réduisent le temps de contact. Des mesures directes de la pression du gaz et des variations de température (quelques degrés à chaque impact!) Indiquent une compression adiabatique en forte interaction avec la membrane. La compression de gaz rend l'impact avec une membrane pressurisée non linéaire. 

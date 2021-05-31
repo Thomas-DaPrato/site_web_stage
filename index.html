@@ -2,10 +2,12 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Présentation de l'équipe CBI (Conception Bio-Inspiree) au sein d'AMU ainsi que des propositions d'offres de stage et de thèses">
+    <meta name="description"
+          content="Présentation de l'&#xE9;quipe CBI (Conception Bio-Inspir&#xE9;e) au sein d'AMU ainsi que des propositions d'offres de stage et de th&#xE8;ses">
     <meta name="viewport" content="width=900px">
-    <link rel="stylesheet" type="text/css" href="css/body.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/header.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/body_presentation.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/header_presentation.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all"/>
     <link type="text/css" rel="stylesheet"
           href="https://ism.univ-amu.fr/sites/all/themes/startupgrowth_lite/fonts/lato-font.css?qrlgpc" media="all"/>
     <link type="text/css" rel="stylesheet"
@@ -15,6 +17,7 @@
           href="https://ism.univ-amu.fr/sites/all/themes/startupgrowth_lite/fonts/ptserif-blockquote-font.css?qrlgpc"
           media="all"/>
     <link rel="shortcut icon" href="https://ism.univ-amu.fr/misc/favicon.ico" type="image/vnd.microsoft.icon"/>
+    <link rel="canonical" href="http://ism-cbi.hopto.org/index.html">
     <title>CBI | Conception Bio-Inspirée AMU</title>
 </head>
 
@@ -24,82 +27,64 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/smoothScroll.js" type="module"></script>
 <script src="js/addPublications.js" type="module"></script>
+<script src="js/addAnnee_N_to_N_5.js" type="module"></script>
 <script src="js/addMember.js" type="module"></script>
-<script src="js/defilementImage.js" type="module"></script>
 <script src="js/menu_tel.js" type="module"></script>
 <script src="js/addOffre.js" type="module"></script>
 <script src="js/switchLangage.js" type="module"></script>
 
 <header>
-    <div id="bandeau">
-        <a href="https://ism.univ-amu.fr/" target="_blank"><img id="logo_ism" src="img/logo_ism.png" alt="logo ism"></a>
-        <a href="index.html" id="lien_img_cbi"><img id="logo_cbi" src="img/logo_cbi.png" alt="logo cbi"></a>
-        <button id="switch_langage">EN</button>
-    </div>
+    <a href="https://ism.univ-amu.fr/" target="_blank"><img class="logo_header" id="logo_ism" src="img/logo_ism.png"
+                                                            alt="logo ism"></a>
     <div id="menu_tel">
         <span></span>
         <span></span>
         <span></span>
     </div>
     <ul class="menu" id="nav_barre">
+        <li class="dropdown"><a class="lien_menu" href="#theme_recherche" id="lien_theme_recherche">Thème de
+            recherche</a>
+            <img src="img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content">
+                <a class="lien_dropdown" href="projets/structures_bio_inspirees.html" id="lien_structure_bio-inspiree">Structure
+                    bio-inspirées</a>
+                <a class="lien_dropdown" href="projets/liaisons_bio_inspirees.html" id="lien_liaison_bio-inspiree">Liaisons
+                    bio-inspirées</a>
+                <a class="lien_dropdown" href="projets/actionneurs_dissipateurs_bio_inspirees.html"
+                   id="lien_actionneur_dissipateur_bio-inspiree">Actionneurs et dissipateurs
+                    bio-inspirees</a>
+            </div>
+        </li>
         <li class="dropdown"><a class="lien_menu" href="#equipe" id="lien_equipe">L'équipe</a>
             <img src="img/fleche_bas.png" alt="fleche" class="fleche_bas">
             <div class="dropdown-content">
                 <a class="lien_dropdown" href="equipe/alumni.html" id="lien_alumni_1">Membres</a>
             </div>
         </li>
-        <li class="dropdown"><a class="lien_menu" href="#theme_recherche" id="lien_theme_recherche">Thème de recherche</a>
-            <img src="img/fleche_bas.png" alt="fleche" class="fleche_bas">
-            <div class="dropdown-content">
-                <a class="lien_dropdown" href="projets/structures_bio_inspirees.html" id="lien_structure_bio-inspiree">Structure bio-inspirées</a>
-                <a class="lien_dropdown" href="projets/liaisons_bio_inspirees.html" id="lien_liaison_bio-inspiree">Liaisons bio-inspirées</a>
-                <a class="lien_dropdown" href="projets/actionneurs_dissipateurs_bio_inspirees.html" id="lien_actionneur_dissipateur_bio-inspiree">Actionneurs et dissipateurs
-                    bio-inspirees</a>
-            </div>
-        </li>
-        <li><a class="lien_menu" href="#stage_these" id="lien_offre_stage_these">Offres de stage et thèses</a></li>
+        <li><a class="lien_menu" href="#stage_these" id="lien_offre_stage_these">Offres de stages et thèses</a></li>
         <li class="dropdown"><a class="lien_menu" href="#publications" id="lien_publication">Publications</a>
             <img src="img/fleche_bas.png" alt="fleche" class="fleche_bas">
-            <div class="dropdown-content" id="publication_annee">
+            <div class="dropdown-content" id="lien_publication_annee">
             </div>
         </li>
+        <li><a class="lien_menu" href="#">ANR BioDesign</a></li>
     </ul>
+    <div id="button_switch_langage">
+        <button id="switch_langage_fr">FR</button>
+        <button id="switch_langage_en">EN</button>
+    </div>
+    <a href="index.html" id="lien_img_cbi"><img class="logo_header" id="logo_cbi" src="img/logo_cbi.png" alt="logo cbi"></a>
+
 </header>
 
 <div class="contenu">
-    <section id="presentation">
-        <h1 id="titre_presentation">Conception Bio-Inspirée (CBI)</h1>
-        <div id="suite_presentation">
-            <div id="div_img_defilement">
-                <button><img class="fleche_change_img" id="fleche_gauche" src="img/fleche_bas.png"
-                             alt="flèche gauche"></button>
-                <img src="img/logo_cbi.png" alt="presentation du CBI" id="img_courante">
-                <button><img class="fleche_change_img" id="fleche_droite" src="img/fleche_bas.png"
-                             alt="flèxhe droite"></button>
-
-            </div>
-            <p id="phrase_presentation">Comprendre la nature pour développer de nouvelles solutions mécaniques</p>
-        </div>
-        <div id="div_cercle"></div>
-    </section>
-
-
-    <section class="partie" id="partie_equipe">
-        <h2 class="ancre" id="equipe">L'équipe</h2>
-        <div id="membres">
-        <img src="img/equipe.jpg" alt="image de l'équipe" title="l'équipe" id="img_equipe">
-            <div>
-            <ul class="liste_membre"></ul>
-            <a href="equipe/alumni.html" id="lien_alumni_2">Membres</a>
-            </div>
-        </div>
-    </section>
-
+    <h1 id="titre_presentation">Conception Bio-Inspiree (CBI)</h1>
     <section class="partie" id="partie_projet">
         <h2 class="ancre" id="theme_recherche">Thème de recherche</h2>
         <div id="div_projet">
             <article id="structure_bio-inspirees">
-                <h3 id="titre_structure_bio-inspirees">Projet sur les structures bio-inspirées</h3>
+                <h3 class="titre_theme_recherche" id="titre_structure_bio-inspirees">Projet sur les structures
+                    bio-inspirées</h3>
                 <a href="projets/structures_bio_inspirees.html"><img src="img/arbre.jpg"
                                                                      alt="image projet structure bio-inspirées"
                                                                      title="projet sur les structures bio-inspirées"
@@ -108,7 +93,8 @@
             </article>
 
             <article id="liaisons_bio-inspirees">
-                <h3 id="titre_liaisons_bio-inspirees">Projet sur les liaisons bio-inspirées</h3>
+                <h3 class="titre_theme_recherche" id="titre_liaisons_bio-inspirees">Projet sur les liaisons
+                    bio-inspirées</h3>
                 <a href="projets/liaisons_bio_inspirees.html"><img src="img/arbre.jpg"
                                                                    alt="image projet liaison bio-inspirées"
                                                                    title="projet sur les liaisons bio-inspirées"
@@ -117,25 +103,37 @@
             </article>
 
             <article id="actionneurs_dissipateurs_bio-inspirees">
-                <h3 id="titre_actionneur_dissipateur_bio-inspirees">Projet sur les actionneurs et dissipateurs bio-inspirés</h3>
-                <a href="projets/actionneurs_dissipateurs_bio_inspirees.html"><img src="img/presentation_theme_recherche_actionneur_dissipateur_bio-inspiree.jpg"
-                                                                                   alt="image projet actionneur et dissipateur bio-inspirées"
-                                                                                   title="projet sur les actionneurs et dissipateurs bio-inspirées"
-                                                                                   class="img_theme_recherche"></a>
-                <p class="mots_cles" id="mot_cles_actionneur_dissipateur_bio-inspirees">Muscle, resilience, technologie, choc, protection</p>
+                <h3 class="titre_theme_recherche" id="titre_actionneur_dissipateur_bio-inspirees">Projet sur les
+                    actionneurs et dissipateurs
+                    bio-inspirés</h3>
+                <a href="projets/actionneurs_dissipateurs_bio_inspirees.html"><img
+                        src="img/presentation_theme_recherche_actionneur_dissipateur_bio-inspiree.jpg"
+                        alt="image projet actionneur et dissipateur bio-inspirées"
+                        title="projet sur les actionneurs et dissipateurs bio-inspirées"
+                        class="img_theme_recherche"></a>
+                <p class="mots_cles" id="mot_cles_actionneur_dissipateur_bio-inspirees">Muscle, resilience, technologie,
+                    choc, protection</p>
             </article>
+        </div>
+    </section>
+
+    <section class="partie" id="partie_equipe">
+        <h2 class="ancre" id="equipe">L'équipe</h2>
+        <div id="membres">
+            <img src="img/equipe.jpg" alt="image de l'équipe" title="l'équipe" id="img_equipe">
+            <ul class="liste_membre"></ul>
+            <a href="equipe/alumni.html" id="lien_alumni_2">Membres</a>
         </div>
     </section>
 
 
 
-    <section class="partie">
-        <h2 class="ancre" id="stage_these">Offres de stage et thèses</h2>
-        <ul class="offre_stage_these"></ul>
+    <section class="partie" id="partie_offres_stage_these">
+        <h2 class="ancre" id="stage_these">Offres de stages et thèses</h2>
     </section>
 
 
-    <section class="partie">
+    <section class="partie" id="partie_publications">
         <h2 class="ancre" id="publications">Publications</h2>
         <div id="annee_N"></div>
         <div id="annee_N-1"></div>
@@ -148,9 +146,7 @@
 
 </div>
 <footer>
-    <ul>
-        <li><a class="lien_bas_page" href="mentions_legales.html" id="mentions_legales">Mentions légales</a></li>
-    </ul>
+    <a class="lien_bas_page" href="mentions_legales.html" id="mentions_legales">Mentions légales</a>
 </footer>
 </body>
 

@@ -1,10 +1,12 @@
 (function () {
     $.ajax({
-        url: 'http://api.archives-ouvertes.fr/search/?q=*:*&wt=json',
+        url: 'php/test.php',
         method: 'get',
         dataType : 'json'
     }).done(function (data) {
-        console.log(data);
+        let $2 = $("<ul />");
+        $2.append($('<li/>').append('slt'));
+        console.log($2);
     }).fail(function (jqXHR,textStatus, errorThrown) {
         alert("une erreur est survenue");
         let msg = jqXHR.responseText + '\n'+ textStatus + '\n' + errorThrown

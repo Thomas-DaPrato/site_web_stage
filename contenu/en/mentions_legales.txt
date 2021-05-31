@@ -1,7 +1,14 @@
 #contenu du bandeau
 
-lien_accueil : Home
-switch_langage : FR
+lien_equipe : Team
+lien_alumni_1 : Old members
+lien_theme_recherche : Research topic
+lien_structure_bio-inspiree : Bio-inspired structure
+lien_liaison_bio-inspiree : Bio-inspired joint
+lien_actionneur_dissipateur_bio-inspiree : Bio-inspired actuators and dissipators
+lien_offre_stage_these : Internship offer and thesis
+lien_publication : Publications
+lien_avant_annee_n-5 : Before
 
 #contenu du corps
 

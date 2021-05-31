@@ -1,14 +1,14 @@
 /* CSS général */
 header {
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0px;
     background-color: white;
     height: auto;
-    border-bottom: solid;
-    border-width: 1px;
-    border-bottom-color: #c2c2c2;
+    border-bottom : 1px solid #c2c2c2;
     text-align: left;
-    z-index: 2;
+    z-index: 3;
     color: black;
 }
 
@@ -16,27 +16,13 @@ header {
     display: none;
 }
 
-/* CSS pour le bandeau */
-#logo_ism {
-    height: 60px;
-    margin-top: 20px;
-}
-
-#lien_img_cbi {
-    text-align: center;
-}
-
-#logo_cbi {
-    width: 30%;
-}
-
-#bandeau {
-    display: flex;
-    justify-content: space-around;
-}
-
-#switch_langage {
+#button_switch_langage {
     font-size: 15px;
+    align-self: center;
+}
+
+.logo_header {
+    height: 90px;
 }
 
 /* CSS pour le menu */
@@ -44,16 +30,16 @@ header {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin: 0;
-    padding-bottom: 10px;
+    padding: 0;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
+    align-self: center;
 }
 
 .menu li {
     display: inline-block;
-    width: 300px;
+    padding: 5px 10px;
 }
 
 

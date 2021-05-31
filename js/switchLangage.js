@@ -17,6 +17,7 @@ function switchLangage(langue) {
         }).done(function (data) {
             for (let contenu in data){
                 if(data[contenu].length > 1){
+                    console.log(data[contenu]);
                     document.getElementById(data[contenu][0]).innerHTML = data[contenu][1];
                 }
             }
@@ -26,9 +27,21 @@ function switchLangage(langue) {
             console.log(msg);
         })
     })
-}
-switchLangage("fr");
 
-document.getElementById('switch_langage').onclick = function () {
-    switchLangage(document.getElementById('switch_langage').innerHTML.toLowerCase());
+    if (langue == 'fr') {
+        document.getElementById('switch_langage_fr').style.textDecoration = "underline";
+        document.getElementById('switch_langage_en').style.textDecoration = "none";
+    }
+    else {
+        document.getElementById('switch_langage_fr').style.textDecoration = "none";
+        document.getElementById('switch_langage_en').style.textDecoration = "underline";
+    }
+}
+setTimeout(switchLangage("fr"),500);
+
+document.getElementById('switch_langage_fr').onclick = function () {
+    switchLangage("fr");
+}
+document.getElementById('switch_langage_en').onclick = function () {
+    switchLangage("en");
 }

@@ -5,23 +5,21 @@ html {
 
 body {
     margin: 0;
-    text-align: center;
     font-family: Lato,sans-serif;
-    font-size: 20px;
 }
 
 .contenu {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin : 0 50px;
 }
 
 .ancre {
-    padding-top: 5px;
-    border-top: dashed;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+    margin: 5px 0;
 }
 
-h3 {
-    font-size: 17px;
+.partie {
+    margin-bottom: 50px;
 }
 
 footer {
@@ -50,30 +48,6 @@ button {
 }
 button:hover {
     cursor: pointer;
-}
-
-/* CSS pour la partie de présentation */
-#presentation {
-    background-color: #e4e4e4;
-    padding-bottom: 50px;
-}
-
-#presentation div {
-    display: flex;
-    justify-content: space-around;
-}
-
-#phrase_presentation {
-    align-self: center;
-    font-size: 45px;
-    max-width: 500px;
-    font-style: italic;
-}
-
-#titre_presentation {
-    color: #0900A8;
-    padding-top: 20px;
-    font-size: 45px;
 }
 
 /* CSS pour les images défilantes */
@@ -115,23 +89,26 @@ button:hover {
     justify-content: center;
     flex-direction: column;
 }
-
-#membres{
-    display: flex;
-    justify-content: center;
+#img_equipe {
+    width: 100%;
+    display: block;
+    margin: auto;
 }
-
-#img_equipe  {
-    align-self: center;
-}
-
 .liste_membre {
-    text-align: left;
+    padding: 0;
+}
+
+#membres {
+    text-align: center;
+}
+
+.liste_membre li{
+    display: inline-block;
+    padding: 10px;
 }
 
 #lien_alumni_2 {
-    align-self: center;
-    padding-left: 60px;
+    color: gray;
 }
 
 /* CSS pour la partie projet de recherche */
@@ -140,7 +117,8 @@ button:hover {
     justify-content: center;
 }
 .img_theme_recherche {
-    width: 90%;
+    width: 100%;
+    height: 90%;
     position: relative;
     z-index: 1;
 }
@@ -148,57 +126,65 @@ button:hover {
     position: relative;
     bottom: 15%;
     color: white;
+    margin: 10px;
 }
+
+.titre_theme_recherche {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    margin: 10px;
+}
+
+.img_theme_recherche {
+    filter: brightness(50%);
+}
+#div_projet article {
+    margin: 5px;
+}
+
 #div_projet article:hover .img_theme_recherche {
     z-index: 0;
-    filter: brightness(50%);
 }
 
 /* CSS pour la partie offre de stage et thèse */
-.offre_stage_these {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
-
-.offre_stage_these li{
-    width: 500px;
-    background-color: #d0d0d0;
-    margin: 20px;
-    padding: 5px;
-}
-
 .img_doc {
-    width: 10%;
+    width: 5%;
 }
 
-.lien_contact {
-    color: gray;
+#partie_offres_stage_these table {
+    width: 100%;
+}
+
+#partie_offres_stage_these table td {
+    width: 33%;
+}
+
+th {
+    text-align: left;
 }
 
 .information_offre {
-    text-align: left;
-    padding-left: 30px;
-}
-
-.information_offre strong {
-    position: relative;
-    left: -20px;
+    padding-left: 50px;
 }
 
 /* CSS pour la partie publications */
+#annee_N, #annee_N-1, #annee_N-2, #annee_N-3, #annee_N-4, #annee_N-5, #avant_annee_N-5 {
+    margin-left: 25px;
+}
+
+.ART, .COMM, .COUV_THESE {
+    margin-left: 25px;
+}
+
 .liste_publication {
-    text-align: left;
     font-size: 15px;
+    list-style-type: none;
+    padding-left: 25px;
 }
 
 .liste_publication li {
     padding: 10px;
-}
-
-.doc_publie {
-    margin-left: 30px;
 }
 
 .lien_publication_to_hal:hover {

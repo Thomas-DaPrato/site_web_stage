@@ -1,4 +1,8 @@
-Mission;Sujet;Date limite de candidature;Descriptif;Contact
-Stage DUT;Réalisation de 2 sites web + mise en réseau d'ordinateur de calcul;25/06/2021;Stage_DUT;contact
-master;titre sujet;06/03/2021;Stage_DUT2;contact
-thèse;titre thèse;03/05/2021;;contact
+#LIRE LIGNE 1 en entière pour savoir comment ajouter une offre.;Pour ajouter une offre, il vous suffit de remplir les informations demandées. ATTENTION : aucune ligne vide n'est possible. Pour ce qui est du descriptif, il faut rentrer un nom de fichier sans son extension.;" Ce fichier doit obligatoirement etre au format PDF. Si la case est vide, le code affichera ""aucun descriptif donné"".";Pour ce qui est de la mission, il doit obligatoirement avoir un des termes suivants : Postdoct, ATER, Thèse, M1, PFE, M2, L3, DUT. Cela permet de classer les offres sur le site;Merci de ne pas changer le nom des colonnes et de laisser en première position ce commentaire et en seconde position le nom des colonnes 
+Mission;Sujet;Date limite de candidature;Descriptif;
+Stage DUT;Réalisation de 2 sites web + mise en réseau d'ordinateur de calcul;25/06/2021;Stage_DUT;
+M1;titre sujet;06/03/2021;Stage_DUT2;
+Thèse;titre thèse;03/05/2021;;
+PFE;titre sujet PFE;04/06/2021;;
+ATER;titre sujet ATER;07/12/2021;;
+Postdoct;titre sujet Postdoct;08/09/2021;;

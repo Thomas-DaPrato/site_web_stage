@@ -1,8 +1,10 @@
 /* CSS génaral pour la page alumni */
 .membre_alumni {
-    text-align: left;
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .membre_alumni li {
@@ -10,6 +12,7 @@
     display: flex;
     background-color: #d0d0d0;
     color: #4187d1;
+    width: 30%;
 }
 .lien_orcid {
     color: #4187d1;
@@ -36,7 +39,10 @@
 
 .img_profil {
     margin-right: 20px;
-    width: 10%;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    filter: grayscale(100%);
 }
 
 

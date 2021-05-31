@@ -8,7 +8,7 @@ session_start();
 // Stocke toutes les publications du chercheur dans un tableau associatif avec les auteurs de la publications,
 //      son titre, son année,son DOI, son id de document, le titre de la revue, l'editeur de la revue, le volume, la page, son identifiant hal, son type de document
 
-$tabPermanents = file("team/permanents.txt");
+$tabPermanents = file("../team/permanents.txt");
 for ($i = 0; $i < sizeof($tabPermanents); $i += 1) {
     if ($i < sizeof($tabPermanents) - 1) {
         $tabPermanents[$i] = substr($tabPermanents[$i], 0, -2);
@@ -20,9 +20,9 @@ $BD = mysqli_connect("127.0.0.1", "root", "Ba\$eDonneeCBI") or die("erreur de co
 mysqli_select_db($BD, "cbi-publication") or die("erreur de connexion a la base de donnée");
 
 
-function getPublications($BD, $name)
+function getPublications($BD, $id, $tabPermanents)
 {
-    $fichierPublications = json_decode(file_get_contents("https://api.archives-ouvertes.fr/search/?wt=json&rows=100&fl=docid,publicationDateY_i,doiId_s,authFullName_s,journalTitle_s,title_s,journalPublisher_s,volume_s,page_s,halId_s,docType_s&q=authId_i:" . $name[1]));
+    $fichierPublications = json_decode(file_get_contents("https://api.archives-ouvertes.fr/search/?wt=json&rows=100&fl=docid,publicationDateY_i,doiId_s,authFullName_s,journalTitle_s,title_s,journalPublisher_s,volume_s,page_s,halId_s,docType_s,authId_i,files_s&q=authId_i:" . $id[1]));
     $fichierPublications = (array)$fichierPublications;
     foreach ($fichierPublications as $publication) {
         $publication = (array)$publication;
@@ -43,6 +43,16 @@ function getPublications($BD, $name)
                 $suiteRequete .= '' . $infoPubli["publicationDateY_i"] . ',';
             }
             if (isset($infoPubli["authFullName_s"])) {
+                foreach ($tabPermanents as $name) {
+                    if (isset($name[1])) {
+                        for ($i = 0; $i < sizeof($infoPubli["authId_i"]); $i += 1) {
+                            if ($infoPubli["authId_i"][$i] == $name[1]) {
+                                $infoPubli["authFullName_s"][$i] = '<strong>' . $infoPubli["authFullName_s"][$i] . '</strong>';
+                                break;
+                            }
+                        }
+                    }
+                }
                 $infoPubli["authFullName_s"] = implode(', ', $infoPubli["authFullName_s"]) . '.';
                 $requete .= 'auteurs,';
                 $suiteRequete .= '"' . $infoPubli["authFullName_s"] . '",';
@@ -66,6 +76,10 @@ function getPublications($BD, $name)
             if (isset($infoPubli["page_s"])) {
                 $requete .= 'page,';
                 $suiteRequete .= '"' . $infoPubli["page_s"] . '",';
+            }
+            if (isset($infoPubli["files_s"])) {
+                $requete .= 'lien_fichier, ';
+                $suiteRequete .= '"'.$infoPubli['files_s'][0].'", ';
             }
             $requete .= 'id_hal)';
             $suiteRequete .= '"' . $infoPubli["halId_s"] . '")';
@@ -110,7 +124,7 @@ function suppr_doublon($BD, $type)
 
 foreach ($tabPermanents as $name) {
     if (isset($name[1])) {
-        getPublications($BD, $name);
+        getPublications($BD, $name, $tabPermanents);
     }
 }
 

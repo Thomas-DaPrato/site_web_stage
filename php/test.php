@@ -1,9 +1,8 @@
 <?php
+$fichier = array();
+$fichier['coucou'] = 'slt';
 
-$file = scandir('./');
-foreach ($file as $fichier) {
-    echo $fichier,' ';
-    echo gettype($fichier),'<br>';
-}
+echo 3 == 2;
+
 
 

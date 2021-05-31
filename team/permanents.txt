@@ -1,11 +1,16 @@
 #nom du chercheur - id sur hal
 Jean-Marc Linares : 1485058
-julien chaves-jacob : 509114
-santiago arroyave-tobon : 1351426
-loic tadrist : 12290251
-loic tadrist : 1288423
-jean-michel sprauel : 1428800
-Emmanuel mermoz : 1326658
+Jean-Marc Linares : 11348060
+Jean-Marc Linares : 11113050
+Jean-Marc Linares : 12250867
+Julien Chaves-Jacob : 509114
+Santiago Arroyave-Tobon : 1351426
+Loic Tadrist : 12290251
+Loic Tadrist : 1288423
+Jean-Michel Sprauel : 1428800
+Jean-Michel Sprauel : 1326656
+Jean-Michel Sprauel : 1429660
+Emmanuel Mermoz : 1326658
 Julien Diperi
 Quentin Lopez
 

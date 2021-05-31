@@ -9,7 +9,7 @@ $('.lien_menu').click(function(event){
 function click() {
     let lien = this.getAttribute('href');
     lien = lien.replace('#',"");
-    scrollTo(0,document.getElementById(lien).offsetTop - header[0].offsetHeight + 10);
+    scrollTo(0,document.getElementById(lien).offsetTop - header[0].offsetHeight);
 }
 
 let liens = document.getElementsByClassName("lien_menu");

@@ -8,12 +8,10 @@ lien_liaison_bio-inspiree : Bio-inspired joint
 lien_actionneur_dissipateur_bio-inspiree : Bio-inspired actuators and dissipators
 lien_offre_stage_these : Internship offer and thesis
 lien_publication : Publications
-switch_langage : FR
+lien_avant_annee_n-5 : Before
 
 #contenu du corp
 
-titre_presentation : Bio-Inspired Conception (BIC)
-phrase_presentation : Understanding nature to develop new mechanical solutions 
 equipe : Team
 lien_alumni_2 : Old members
 theme_recherche : Research topic
@@ -25,4 +23,26 @@ titre_actionneur_dissipateur_bio-inspirees : Project on bio-inspired actuators a
 mot_cles_actionneur_dissipateur_bio-inspirees : Muscle, resilience, technologies, impact, protection
 stage_these : Internship offer and thesis
 publications : Publications
+art_annee_N : Research article
+art_annee_N_1 : Research article
+art_annee_N_2 : Research article
+art_annee_N_3 : Research article
+art_annee_N_4 : Research article
+art_annee_N_5 : Research article
+art_anneeAvant_N_5 : Research article
+comm_annee_N : Conference
+comm_annee_N_1 : Conference
+comm_annee_N_2 : Conference
+comm_annee_N_3 : Conference
+comm_annee_N_4 : Conference
+comm_annee_N_5: Conference
+comm_anneeAvant_N_5 : Conference
+couv_these_annee_N : Book chapter and thesis
+couv_these_annee_N_1 : Book chapter and thesis
+couv_these_annee_N_2 : Book chapter and thesis
+couv_these_annee_N_3 : Book chapter and thesis
+couv_these_annee_N_4 : Book chapter and thesis
+couv_these_annee_N_5 : Book chapter and thesis
+couv_these_anneeAvant_N_5 : Book chapter and thesis
+paragraphe_avant_annee_n-5 : Before
 mentions_legales : Legal mention

@@ -6,14 +6,12 @@ lien_theme_recherche : Thème de recherche
 lien_structure_bio-inspiree : Structure bio-inspirées
 lien_liaison_bio-inspiree : Liaisons bio-inspirées
 lien_actionneur_dissipateur_bio-inspiree : Actionneurs et dissipateurs bio-inspirees
-lien_offre_stage_these : Offres de stage et thèses
+lien_offre_stage_these : Offres de stages et thèses
 lien_publication : Publications
-switch_langage : EN
+lien_avant_annee_n-5 : Avant
 
 #contenu du corp
 
-titre_presentation : Conception Bio-Inspirée (CBI)
-phrase_presentation : Comprendre la nature pour développer de nouvelles solutions mécaniques
 equipe : L'équipe
 lien_alumni_2 : Membres
 theme_recherche : Thème de recherche
@@ -23,6 +21,28 @@ titre_liaisons_bio-inspirees : Projet sur les liaisons bio-inspirées
 mot_cles_liaisons_bio-inspirees : Articulations, topologie, usure
 titre_actionneur_dissipateur_bio-inspirees : Projet sur les actionneurs et dissipateurs bio-inspirés
 mot_cles_actionneur_dissipateur_bio-inspirees : Muscle, resilience, technologie, choc, protection
-stage_these : Offres de stage et thèses
+stage_these : Offres de stages et thèses
 publications : Publications
+art_annee_N : Articles scientifiques
+art_annee_N_1 : Articles scientifiques
+art_annee_N_2 : Articles scientifiques
+art_annee_N_3 : Articles scientifiques
+art_annee_N_4 : Articles scientifiques
+art_annee_N_5 : Articles scientifiques
+art_anneeAvant_N_5 : Articles scientifiques
+comm_annee_N : Conférences
+comm_annee_N_1 : Conférences
+comm_annee_N_2 : Conférences
+comm_annee_N_3 : Conférences
+comm_annee_N_4 : Conférences
+comm_annee_N_5: Conférences
+comm_anneeAvant_N_5 : Conférences
+couv_these_annee_N : Chapitres d'ouvrage et thèses
+couv_these_annee_N_1 : Chapitres d'ouvrage et thèses
+couv_these_annee_N_2 : Chapitres d'ouvrage et thèses
+couv_these_annee_N_3 : Chapitres d'ouvrage et thèses
+couv_these_annee_N_4 : Chapitres d'ouvrage et thèses
+couv_these_annee_N_5 : Chapitres d'ouvrage et thèses
+couv_these_anneeAvant_N_5 : Chapitres d'ouvrage et thèses
+paragraphe_avant_annee_n-5 : Before
 mentions_legales : Mentions légales

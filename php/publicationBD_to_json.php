@@ -27,6 +27,7 @@ while ($tabPublications = mysqli_fetch_assoc($resultQuerry)){
     $publications["editeurRevue"] = $tabPublications["editeurRevue"];
     $publications["id_hal"] = $tabPublications["id_hal"];
     $publications["docType"] = $tabPublications["docType"];
+    $publications["lien_fichier"] = $tabPublications["lien_fichier"];
     $resultPublications[$i+=1] = $publications;
 }
 
