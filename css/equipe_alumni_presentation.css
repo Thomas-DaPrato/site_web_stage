@@ -49,6 +49,11 @@
 
 @media screen and (max-device-width: 900px) {
     .img_profil {
-        width: unset;
+        width: 250px;
+        height: 250px;
+    }
+
+    .membre_alumni li {
+        width: 100%;
     }
 }

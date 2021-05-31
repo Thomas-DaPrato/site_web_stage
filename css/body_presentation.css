@@ -148,7 +148,7 @@ button:hover {
 }
 
 /* CSS pour la partie offre de stage et thèse */
-.img_doc {
+.img_doc_offre {
     width: 5%;
 }
 
@@ -183,8 +183,20 @@ th {
     padding-left: 25px;
 }
 
-.liste_publication li {
+.liste_publication td {
     padding: 10px;
+}
+
+#td_informations_publication {
+    width: 90%;
+}
+
+#td_fichier_publication {
+    width: 10%;
+}
+
+.img_doc_publication {
+    width: 25%;
 }
 
 .lien_publication_to_hal:hover {
@@ -199,28 +211,6 @@ th {
         font-size: 30px;
     }
 
-    h3 {
-        font-size: inherit;
-    }
-
-    /* CSS pour la partie présentation */
-    #suite_presentation {
-        flex-wrap: wrap;
-    }
-
-    /* CSS pour les images défilantes */
-    #div_img_defilement {
-        width: 100%;
-    }
-
-    #img_courante {
-        width: 90%;
-    }
-
-    #div_cercle {
-        bottom: unset;
-        left: 39%;
-    }
     /* CSS pour la partie équipe */
     #img_equipe {
         width: 100%;
@@ -228,10 +218,6 @@ th {
 
     partie_equipe {
          flex-wrap: wrap;
-    }
-
-    .liste_membre {
-        font-size: 45px;
     }
 
     #membres {
@@ -243,10 +229,6 @@ th {
         flex-wrap: wrap;
     }
 
-    #partie_projet {
-        font-size: 45px;
-    }
-
     .mots_cles {
         display: none;
     }
@@ -254,6 +236,10 @@ th {
     /* CSS pour la partie offre de stage et thèse */
     .offre_stage_these li {
         width: 100%;
+    }
+
+    .img_doc {
+        width: 35%;
     }
 
     /* CSS pour la partie publications */

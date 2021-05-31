@@ -47,48 +47,47 @@
 
 
             //publications concernant annee N
-            let $publicationsArtAnnee_N = $("<ul class='liste_publication'/>");
-            let $publicationsCommAnnee_N = $("<ul class='liste_publication'/>");
-            let $publicationsCouvTheseAnnee_N = $("<ul class='liste_publication'/>");
+            let $publicationsArtAnnee_N = $("<table class='liste_publication'/>");
+            let $publicationsCommAnnee_N = $("<table class='liste_publication'/>");
+            let $publicationsCouvTheseAnnee_N = $("<table class='liste_publication'/>");
 
             //publications concernant annee N-1
-            let $publicationsArtAnnee_N_1 = $("<ul class='liste_publication'/>");
-            let $publicationsCommAnnee_N_1 = $("<ul class='liste_publication'/>");
-            let $publicationsCouvTheseAnnee_N_1 = $("<ul class='liste_publication'/>");
+            let $publicationsArtAnnee_N_1 = $("<table class='liste_publication'/>");
+            let $publicationsCommAnnee_N_1 = $("<table class='liste_publication'/>");
+            let $publicationsCouvTheseAnnee_N_1 = $("<table class='liste_publication'/>");
 
             //publications concernant annee N-2
-            let $publicationsArtAnnee_N_2 = $("<ul class='liste_publication'/>");
-            let $publicationsCommAnnee_N_2 = $("<ul class='liste_publication'/>");
-            let $publicationsCouvTheseAnnee_N_2 = $("<ul class='liste_publication'/>");
+            let $publicationsArtAnnee_N_2 = $("<table class='liste_publication'/>");
+            let $publicationsCommAnnee_N_2 = $("<table class='liste_publication'/>");
+            let $publicationsCouvTheseAnnee_N_2 = $("<table class='liste_publication'/>");
 
             //publications concernant annee N-3
-            let $publicationsArtAnnee_N_3 = $("<ul class='liste_publication'/>");
-            let $publicationsCommAnnee_N_3 = $("<ul class='liste_publication'/>");
-            let $publicationsCouvTheseAnnee_N_3 = $("<ul class='liste_publication'/>");
+            let $publicationsArtAnnee_N_3 = $("<table class='liste_publication'/>");
+            let $publicationsCommAnnee_N_3 = $("<table class='liste_publication'/>");
+            let $publicationsCouvTheseAnnee_N_3 = $("<table class='liste_publication'/>");
 
             //publications concernant annee N-4
-            let $publicationsArtAnnee_N_4 = $("<ul class='liste_publication'/>");
-            let $publicationsCommAnnee_N_4 = $("<ul class='liste_publication'/>");
-            let $publicationsCouvTheseAnnee_N_4 = $("<ul class='liste_publication'/>");
+            let $publicationsArtAnnee_N_4 = $("<table class='liste_publication'/>");
+            let $publicationsCommAnnee_N_4 = $("<table class='liste_publication'/>");
+            let $publicationsCouvTheseAnnee_N_4 = $("<table class='liste_publication'/>");
 
             //publications concernant annee N-5
-            let $publicationsArtAnnee_N_5 = $("<ul class='liste_publication'/>");
-            let $publicationsCommAnnee_N_5 = $("<ul class='liste_publication'/>");
-            let $publicationsCouvTheseAnnee_N_5 = $("<ul class='liste_publication'/>");
+            let $publicationsArtAnnee_N_5 = $("<table class='liste_publication'/>");
+            let $publicationsCommAnnee_N_5 = $("<table class='liste_publication'/>");
+            let $publicationsCouvTheseAnnee_N_5 = $("<table class='liste_publication'/>");
 
             //publications concernant avant N-5
-            let $publicationsArtAvantAnnee_N_5 = $("<ul class='liste_publication'/>");
-            let $publicationsCommAvantAnnee_N_5 = $("<ul class='liste_publication'/>");
-            let $publicationsCouvTheseAvantAnnee_N_5 = $("<ul class='liste_publication'/>");
+            let $publicationsArtAvantAnnee_N_5 = $("<table class='liste_publication'/>");
+            let $publicationsCommAvantAnnee_N_5 = $("<table class='liste_publication'/>");
+            let $publicationsCouvTheseAvantAnnee_N_5 = $("<table class='liste_publication'/>");
 
             for (let publication in data) {
-                let $li = $("<li />");
+                let $tr = $("<tr />");
                 let $a = $('<a />').attr('target', 'blank').attr("class", "lien_publication_to_hal");
+                let $img = $('<a />').attr('target', 'blank');
                 if (data.hasOwnProperty(publication)) {
-                    if (data[publication].hasOwnProperty('lien_fichier')) {
-                        if (typeof (data[publication]['lien_fichier']) != 'object') {
-                            $a.attr('href', data[publication]['lien_fichier']);
-                        } else if (data[publication].hasOwnProperty('doi') && typeof (data[publication]['doi']) != 'object') {
+                    if (data[publication].hasOwnProperty('doi')) {
+                        if (typeof (data[publication]['doi']) != 'object') {
                             $a.attr('href', 'https://dx.doi.org/' + data[publication]['doi']);
                         } else {
                             $a.attr('href', 'https://hal.archives-ouvertes.fr/' + data[publication]['id_hal']);
@@ -118,114 +117,114 @@
                     if (data[publication].hasOwnProperty('doi') && typeof (data[publication]['doi']) != 'object') {
                         $a.append('&#x27E8;', data[publication]['doi'], '&#x27E9;');
                     }
-                    if (data[publication].hasOwnProperty('docType') && typeof (data[publication]['docType']) != 'object') {
-                        $a.append('    ', data[publication]['docType']);
+                    if (data[publication].hasOwnProperty('lien_fichier') && typeof (data[publication]['lien_fichier']) != 'object') {
+                        $img.attr('href',data[publication]['lien_fichier']).append($('<img />').attr('src','/site_web_stage/img/document.jpg').attr('alt', 'photo document').attr('class', 'img_doc_publication'));
                     }
 
-                    $li.append($a);
+                    $tr.append($('<td id="td_informations_publication"/>').append($a),$('<td id="td_fichier_publication"/>').append($img));
                     switch (data[publication]['annee']) {
                         case annee.toString():
                             switch (data[publication]['docType']) {
                                 case 'ART' :
-                                    $publicationsArtAnnee_N.append($li);
+                                    $publicationsArtAnnee_N.append($tr);
                                     $art_annee_N.show();
                                     break;
                                 case 'COMM' :
-                                    $publicationsCommAnnee_N.append($li);
+                                    $publicationsCommAnnee_N.append($tr);
                                     $comm_annee_N.show();
                                     break;
                                 default :
-                                    $publicationsCouvTheseAnnee_N.append($li);
+                                    $publicationsCouvTheseAnnee_N.append($tr);
                                     $couv_these_annee_N.show()
                             }
                             break;
                         case (annee - 1).toString():
                             switch (data[publication]['docType']) {
                                 case 'ART' :
-                                    $publicationsArtAnnee_N_1.append($li);
+                                    $publicationsArtAnnee_N_1.append($tr);
                                     $art_annee_N_1.show();
                                     break;
                                 case 'COMM' :
-                                    $publicationsCommAnnee_N_1.append($li);
+                                    $publicationsCommAnnee_N_1.append($tr);
                                     $comm_annee_N_1.show();
                                     break;
                                 default :
-                                    $publicationsCouvTheseAnnee_N_1.append($li);
+                                    $publicationsCouvTheseAnnee_N_1.append($tr);
                                     $couv_these_annee_N_1.show()
                             }
                             break;
                         case (annee - 2).toString():
                             switch (data[publication]['docType']) {
                                 case 'ART' :
-                                    $publicationsArtAnnee_N_2.append($li);
+                                    $publicationsArtAnnee_N_2.append($tr);
                                     $art_annee_N_2.show();
                                     break;
                                 case 'COMM' :
-                                    $publicationsCommAnnee_N_2.append($li);
+                                    $publicationsCommAnnee_N_2.append($tr);
                                     $comm_annee_N_2.show();
                                     break;
                                 default :
-                                    $publicationsCouvTheseAnnee_N_2.append($li);
+                                    $publicationsCouvTheseAnnee_N_2.append($tr);
                                     $couv_these_annee_N_2.show()
                             }
                             break;
                         case (annee - 3).toString():
                             switch (data[publication]['docType']) {
                                 case 'ART' :
-                                    $publicationsArtAnnee_N_3.append($li);
+                                    $publicationsArtAnnee_N_3.append($tr);
                                     $art_annee_N_3.show();
                                     break;
                                 case 'COMM' :
-                                    $publicationsCommAnnee_N_3.append($li);
+                                    $publicationsCommAnnee_N_3.append($tr);
                                     $comm_annee_N_3.show();
                                     break;
                                 default :
-                                    $publicationsCouvTheseAnnee_N_3.append($li);
+                                    $publicationsCouvTheseAnnee_N_3.append($tr);
                                     $couv_these_annee_N_3.show()
                             }
                             break;
                         case (annee - 4).toString():
                             switch (data[publication]['docType']) {
                                 case 'ART' :
-                                    $publicationsArtAnnee_N_4.append($li);
+                                    $publicationsArtAnnee_N_4.append($tr);
                                     $art_annee_N_4.show();
                                     break;
                                 case 'COMM' :
-                                    $publicationsCommAnnee_N_4.append($li);
+                                    $publicationsCommAnnee_N_4.append($tr);
                                     $comm_annee_N_4.show();
                                     break;
                                 default :
-                                    $publicationsCouvTheseAnnee_N_4.append($li);
+                                    $publicationsCouvTheseAnnee_N_4.append($tr);
                                     $couv_these_annee_N_4.show()
                             }
                             break;
                         case (annee - 5).toString():
                             switch (data[publication]['docType']) {
                                 case 'ART' :
-                                    $publicationsArtAnnee_N_5.append($li);
+                                    $publicationsArtAnnee_N_5.append($tr);
                                     $art_annee_N_5.show();
                                     break;
                                 case 'COMM' :
-                                    $publicationsCommAnnee_N_5.append($li);
+                                    $publicationsCommAnnee_N_5.append($tr);
                                     $comm_annee_N_5.show();
                                     break;
                                 default :
-                                    $publicationsCouvTheseAnnee_N_5.append($li);
+                                    $publicationsCouvTheseAnnee_N_5.append($tr);
                                     $couv_these_annee_N_5.show()
                             }
                             break;
                         default:
                             switch (data[publication]['docType']) {
                                 case 'ART' :
-                                    $publicationsArtAvantAnnee_N_5.append($li);
+                                    $publicationsArtAvantAnnee_N_5.append($tr);
                                     $art_AvantAnnee_N_5.show();
                                     break;
                                 case 'COMM' :
-                                    $publicationsCommAvantAnnee_N_5.append($li);
+                                    $publicationsCommAvantAnnee_N_5.append($tr);
                                     $comm_AvantAnnee_N_5.show();
                                     break;
                                 default :
-                                    $publicationsCouvTheseAvantAnnee_N_5.append($li);
+                                    $publicationsCouvTheseAvantAnnee_N_5.append($tr);
                                     $couv_these_AvantAnnee_N_5.show()
                             }
                     }

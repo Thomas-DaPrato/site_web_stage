@@ -81,32 +81,23 @@ header {
 
 /* CSS responsif */
 @media screen and (max-device-width: 900px){
-    /* CSS pour le bandeau */
-    #logo_ism {
-        height: initial;
+    header {
+        padding-right: 100px;
+    }
+    .logo_header {
+        height: 120px;
     }
 
-    #logo_cbi {
-        width: 45%;
+    #button_switch_langage {
+        font-size: unset;
     }
 
-    #bandeau {
-        justify-content: center;
-    }
-
-    #switch_langage {
-        font-size: 40px;
-        position: relative;
-        right: 10%;
-    }
     /* CSS pour le menu */
     #menu_tel {
         display: block;
         position: absolute;
-        top :0;
-        right: 0;
-        padding-top: 5%;
-        padding-right: 5%;
+        top :20px;
+        right: 20px;
     }
 
     #menu_tel span {
@@ -142,9 +133,10 @@ header {
         flex-direction: column;
         text-align: right;
         position: absolute;
-        right: 20px;
+        right: 0;
         background-color: #e5e5e5;
         padding: 0;
+        top: 100px;
 
     }
 

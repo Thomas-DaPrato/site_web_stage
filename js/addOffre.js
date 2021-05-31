@@ -37,7 +37,7 @@
                     }
                     if (data[offre].hasOwnProperty("Descriptif") && data[offre]["Descriptif"] != '') {
                         $Descriptif.append($('<a />').attr('href', 'offre/' + data[offre]["Descriptif"] + '.pdf').attr("target", "_blank")
-                            .append($('<img />').attr('src', 'img/document.jpg').attr('alt', 'photo document').attr('class', 'img_doc')))
+                            .append($('<img />').attr('src', 'img/document.jpg').attr('alt', 'photo document').attr('class', 'img_doc_offre')))
                     } else {
                         $Descriptif.append('Aucun descriptif donné');
                     }

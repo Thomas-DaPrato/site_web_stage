@@ -24,22 +24,21 @@
         }).done(function (data) {
             let $publicationsAnnee = $("#liste_publications_annee");
 
-            let $publicationsArtAnnee = $("<ul class='liste_publication'/>");
-            let $publicationsCommAnnee = $("<ul class='liste_publication'/>");
-            let $publicationsCouvTheseAnnee = $("<ul class='liste_publication'/>");
+            let $publicationsArtAnnee = $("<table class='liste_publication'/>");
+            let $publicationsCommAnnee = $("<table class='liste_publication'/>");
+            let $publicationsCouvTheseAnnee = $("<table class='liste_publication'/>");
 
             let $art_annee = $('<div class="ART"/>').append($('<h4 id="art_annee"/>').append('Articles scientifiques')).hide();
             let $comm_annee = $('<div class="COMM"/>').append($('<h4 id="comm_annee"/>').append('Conférences')).hide();
             let $couv_these_annee = $('<div class="COUV_THESE"/>').append($('<h4 id="couv_these_annee"/>').append("Chapitres d'ouvrage et thèses")).hide();
 
             for (let publication in data) {
-                let $li = $("<li />");
+                let $tr = $("<tr />");
                 let $a = $('<a />').attr('target', 'blank').attr("class", "lien_publication_to_hal");
+                let $img = $('<a />').attr('target', 'blank');
                 if (data.hasOwnProperty(publication)) {
-                    if (data[publication].hasOwnProperty('lien_fichier')) {
-                        if (typeof (data[publication]['lien_fichier']) != 'object') {
-                            $a.attr('href', data[publication]['lien_fichier']);
-                        } else if (data[publication].hasOwnProperty('doi') && typeof (data[publication]['doi']) != 'object') {
+                    if (data[publication].hasOwnProperty('doi')) {
+                        if (typeof (data[publication]['doi']) != 'object') {
                             $a.attr('href', 'https://dx.doi.org/' + data[publication]['doi']);
                         } else {
                             $a.attr('href', 'https://hal.archives-ouvertes.fr/' + data[publication]['id_hal']);
@@ -72,19 +71,23 @@
                     if (data[publication].hasOwnProperty('docType') && typeof (data[publication]['docType']) != 'object') {
                         $a.append('    ', data[publication]['docType']);
                     }
+                    if (data[publication].hasOwnProperty('lien_fichier') && typeof (data[publication]['lien_fichier']) != 'object') {
+                        $img.attr('href', data[publication]['lien_fichier']).append($('<img />').attr('src', '/site_web_stage/img/document.jpg').attr('alt', 'photo document').attr('class', 'img_doc_publication'));
+                    }
                 }
-                $li.append($a);
+
+                $tr.append($('<td id="td_informations_publication"/>').append($a),$('<td id="td_fichier_publication"/>').append($img));
                 switch (data[publication]['docType']) {
                     case 'ART' :
-                        $publicationsArtAnnee.append($li);
+                        $publicationsArtAnnee.append($tr);
                         $art_annee.show();
                         break;
                     case 'COMM' :
-                        $publicationsCommAnnee.append($li);
+                        $publicationsCommAnnee.append($tr);
                         $comm_annee.show();
                         break;
                     default :
-                        $publicationsCouvTheseAnnee.append($li);
+                        $publicationsCouvTheseAnnee.append($tr);
                         $couv_these_annee.show()
                 }
                 $art_annee.append($publicationsArtAnnee);

@@ -44,5 +44,5 @@ couv_these_annee_N_3 : Chapitres d'ouvrage et thèses
 couv_these_annee_N_4 : Chapitres d'ouvrage et thèses
 couv_these_annee_N_5 : Chapitres d'ouvrage et thèses
 couv_these_anneeAvant_N_5 : Chapitres d'ouvrage et thèses
-paragraphe_avant_annee_n-5 : Before
+paragraphe_avant_annee_n-5 : Avant
 mentions_legales : Mentions légales

@@ -39,6 +39,7 @@ if(isset($_GET["annee"])) {
         $publications["editeurRevue"] = $tabPublicationsAnnee["editeurRevue"];
         $publications["id_hal"] = $tabPublicationsAnnee["id_hal"];
         $publications["docType"] = $tabPublicationsAnnee["docType"];
+        $publications["lien_fichier"] = $tabPublicationsAnnee["lien_fichier"];
         $resultPublicationsAnnee[$i+=1] = $publications;
     }
 }
