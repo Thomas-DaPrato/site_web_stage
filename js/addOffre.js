@@ -25,7 +25,7 @@
                 let $tr2 = $("<tr />");
                 let $Mission = $("<td class='information_offre'/>");
                 let $CAL = $("<td class='information_offre'/>");
-                let $Sujet = $("<td rowspan='2'/>");
+                let $Sujet = $("<td class='information_offre_sujet' rowspan='2'/>");
                 let $Descriptif = $("<td rowspan='2'/>");
                 if (data.hasOwnProperty(offre)) {
                     $Mission.append($("<strong />").append(offre));

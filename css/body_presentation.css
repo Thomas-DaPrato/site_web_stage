@@ -149,15 +149,15 @@ button:hover {
 
 /* CSS pour la partie offre de stage et thèse */
 .img_doc_offre {
-    width: 5%;
+    width: 9%;
 }
 
 #partie_offres_stage_these table {
     width: 100%;
 }
 
-#partie_offres_stage_these table td {
-    width: 33%;
+#partie_offres_stage_these table tr{
+    height: 15px;
 }
 
 th {
@@ -166,6 +166,11 @@ th {
 
 .information_offre {
     padding-left: 50px;
+    width: 25%;
+}
+
+.information_offre_sujet {
+    width: 50%;
 }
 
 /* CSS pour la partie publications */
