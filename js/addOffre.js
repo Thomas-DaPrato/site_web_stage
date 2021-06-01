@@ -14,6 +14,7 @@
         let $tab_offre_M2 = $('<table />').append($('<th/>').append($('<h3 />').append("M2 / PFE")));
         let $tab_offre_M1 = $('<table />').append($('<th/>').append($('<h3 />').append("M1 / L3 / DUT")));
 
+
         $tab_offre_PostDoc.hide();
         $tab_offre_These.hide();
         $tab_offre_M2.hide();
