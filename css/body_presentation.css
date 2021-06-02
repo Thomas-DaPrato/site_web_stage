@@ -50,38 +50,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* CSS pour les images défilantes */
-#fleche_droite {
-    width: 20px;
-    height: 20px;
-    transform: rotate(0.75turn);
-}
 
-#fleche_gauche {
-    width: 20px;
-    height: 20px;
-    transform: rotate(0.25turn);
-}
-
-#div_cercle {
-    position: relative;
-    top: 10px;
-    width: 20%;
-    left: 16%;
-}
-
-.rond_img_courante {
-    background-color: black;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    opacity: 0.25;
-}
-
-#img_courante {
-    width: 500px;
-    height: 313px;
-}
 
 /* CSS pour la partie equipe */
 #partie_equipe {
@@ -124,16 +93,17 @@ button:hover {
 }
 .mots_cles {
     position: relative;
-    bottom: 15%;
+    bottom: 20%;
     color: white;
     margin: 10px;
 }
 
 .titre_theme_recherche {
-    position: absolute;
+    position: relative;
     color: white;
     z-index: 2;
     margin: 10px;
+    bottom: 91%;
 }
 
 .img_theme_recherche {
@@ -221,7 +191,7 @@ th {
         width: 100%;
     }
 
-    partie_equipe {
+    #partie_equipe {
          flex-wrap: wrap;
     }
 
@@ -243,13 +213,17 @@ th {
         width: 100%;
     }
 
-    .img_doc {
-        width: 35%;
+    .img_doc_offre {
+        width: 50%;
     }
 
     /* CSS pour la partie publications */
     .liste_publication {
         padding: 0;
         font-size: 25px;
+    }
+
+    .img_doc_publication {
+        width: 75px;
     }
 }

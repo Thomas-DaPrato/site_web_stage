@@ -10,10 +10,10 @@ for($i = 0; $i<sizeof($fichierAlumni); $i+=1){
 }
 
 $membre = array();
-$infoInitial = explode(';',$fichierAlumni[0]);
+$infoInitial = explode(';',$fichierAlumni[1]);
 $infoInitial[sizeof($infoInitial)-1] = substr($infoInitial[sizeof($infoInitial)-1],0,-2);
 
-for ($i = 1; $i <sizeof($fichierAlumni); $i +=1){
+for ($i = 2; $i <sizeof($fichierAlumni); $i +=1){
     $infoMembre = explode(';',$fichierAlumni[$i]);
     $nomMembre = array_shift($infoMembre);
     $tabInfoMembre = array();

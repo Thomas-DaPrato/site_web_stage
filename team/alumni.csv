@@ -1,3 +1,4 @@
+#LIRE LIGNE 1 pour savoir comment ajouter un membre alumni;Pour ajouter un membre, il vous suffit d'entrer les informations demandées. ATTENTION: aucune ligne n'est disponible. ;Pour ce qui est de la photo, il faut rentrer son nom avec son extension. Il faut que cette photo soit placée dans le dossier img du site.;Merci de ne pas changer le nom des colonnes et de laisser en première position ce commentaire et en seconde position le nom des colonnes ;;
 Membres 2020-2021;Mission;Sujet;Date;photo;Id ORCID
 Jean-Marc LINARES;Enseignant-chercheur;Metrologie, conception;;;0000-0001-7501-0383
 Jean-Michel SPRAUEL;Professeur émérite;;;;0000-0003-1066-1534
@@ -5,8 +6,8 @@ Emmanuel MERMOZ;PAST;;;;
 Loïc TADRIST;Enseignant-chercheur;;;;0000-0001-6200-9842
 Santiago ARROYAVE TOBON;Enseignant-chercheur;;;;0000-0002-6704-0977
 Julien CHAVES-JACOB;Enseignant-chercheur;;;;0000-0002-4798-4276
-Quentin LOPEZ;;;;;
-Julien DIPERI;;;;;
+Quentin LOPEZ;Animateur TechnoPole;;;;
+Julien DIPERI;Technicien CNRS;;;;
 Mathieu BILHERE;Thèse;Allègement bio-inspirée des pièces mécaniques base sur des os longs;;;
 Nicolas CADORET;Stage Master;Allègement bio-inspirée des pièces mécaniques base sur des os longs;Février - Juin 2021;;
 Juliette LEPAGNEUL;Thèse;Méthodologie de dimensionnement des vis a rouleaux;Juin 2021 - Mai 2024;;
@@ -15,7 +16,7 @@ Dylan Pannier;Stage Master;Correlations entre propriétés macroscopiques et carac
 Anima Mlaiki;Stage Master;Modélisation numérique d'une appareil de référence pour quantifier des chocs sur des cellules neurales de rat;Mars - Mai 2021;;
 Amandine REGIS;Thèse;Création de jumeaux numérique pour les ensembles mecaniques des helicoptères;Mars 2020 - Février 2023;;
 Paul HEYMANN;Stage Master;Algorithmes de conception mécanique inspirés de la morphogenèse;Février - Juin 2021;;
-Anton KANIEWSKI;Stage Master;Simulation musculosquelettique de la fourmi Messo Barbarus;Février - Juin 2021;;
-Kalenia MARQUEZ;PostDoc;ANR BioDesign;Mars 2021;;
+Anton KANIEWSKI;Stage Master;Simulation musculosquelettique de la fourmi Messo Barbarus;Février - Juin 2021;anton_kaniewski.jpg;
+Kalenia MARQUEZ-FLOREZ;PostDoc;ANR BioDesign;mars-21;;
 Paul ROUSSEL;Stage Master;Etude allométrique sur l'articulation du coude chez les quadrupèdes;Mars - Mai 2021;;
 Thomas DA-PRATO;Stage DUT informatique;Réalisation de 2 sites webs ainsi que mise en réseau d'ordinateur de calcul;Avril - Juin 2021;;
