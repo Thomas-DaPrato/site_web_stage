@@ -1,5 +1,6 @@
 #contenu du bandeau
 
+lien_accueil : Accueil
 lien_equipe : L'équipe
 lien_alumni_1 : Membres
 lien_theme_recherche : Thème de recherche
@@ -12,8 +13,6 @@ lien_avant_annee_n-5 : Avant
 
 #contenu du corp
 
-titre_actionneur_dissipateur : Actionneurs et dissipateurs bio inspirées
-phrase_presentation_actionneur_dissipateur : descriptif du thème de recherche
 titre_projet_recherche : Projets de recherche
 titre_actionneur_inspire_muscle : Actionneur inspiré du muscle
 descriptif_actionneur_inspire_muscle : L'endommagement d'un actionneur peut compromettre le fonctionnement d'une machine ou d'un véhicule. Par conséquent, les mouvements critiques sont souvent assurés par des actionneurs redondants. Cependant, pour certains véhicules ou applications, la redondance n'est pas autorisée, soit en raison de l'encombrement stérique (par exemple pour les hélicoptères), soit en raison du coût du poids comme pour les applications aéronautiques et spatiales. Le but du projet est de s'inspirer du comportement mécanique exceptionnel des muscles pour créer un actionneur délocalisé résilient aux dommages. 

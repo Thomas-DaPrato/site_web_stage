@@ -1,5 +1,6 @@
-#contenu du bandeau
+#contenu du 
 
+lien_accueil : Accueil
 lien_equipe : L'équipe
 lien_alumni_1 : Membres
 lien_theme_recherche : Thème de recherche

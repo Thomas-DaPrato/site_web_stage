@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Calibri Light",sans-serif;
+    color: #505050;
+}
+
+h2 {
+    margin-top: 60px;
+    border-bottom: 1px solid;
+}
+#Project {
+    margin-top: 0;
+}
+
+.partie p, .partie table{
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #505050;
+}
+a:hover {
+    color: #2a68af;
+}
+
+.contenu {
+    margin : 0 50px
+}
+
+.img_context, .img_objectives{
+    width: 37%;
+    margin: 5px;
+}
+
+#div_img_context, #div_img_objectives {
+    display: flex;
+    justify-content: center;
+}
+
+#hypothese {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+@media screen and (max-device-width: 900px) {
+    body {
+        font-size: 30px;
+    }
+
+    .img_context, .img_objectives{
+        width: 100%;
+        margin: 5px;
+    }
+
+    #div_img_context, #div_img_objectives {
+        flex-wrap: wrap;
+    }
+
+    #hypothese {
+        font-size: 33px;
+    }
+}

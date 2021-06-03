@@ -9,7 +9,7 @@ body {
 }
 
 .contenu {
-    margin : 0 50px;
+    margin : 0 25px;
 }
 
 .ancre {
@@ -106,15 +106,13 @@ button:hover {
     bottom: 91%;
 }
 
-.img_theme_recherche {
-    filter: brightness(50%);
-}
 #div_projet article {
     margin: 5px;
 }
 
 #div_projet article:hover .img_theme_recherche {
     z-index: 0;
+    filter: brightness(50%);
 }
 
 /* CSS pour la partie offre de stage et thèse */

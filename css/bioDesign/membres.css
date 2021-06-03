@@ -1,35 +1,35 @@
-/* CSS génaral pour la page alumni */
-.membre_alumni {
+.membre {
     list-style-type: none;
     padding: 0;
+    font-size: 18px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-.membre_alumni li {
+.membre li {
     margin: 10px;
     display: flex;
     background-color: #d0d0d0;
     color: #4187d1;
-    width: 30%;
+    width: 48%;
 }
 .lien_orcid {
     color: #4187d1;
 }
 
-.membre_alumni li:hover{
+.membre li:hover{
     color: white;
     background-color: #00A2FF;
 }
 
-.membre_alumni li:hover .lien_orcid {
+.membre li:hover .lien_orcid {
     color: white;
 }
 
-.membre_alumni li:hover .lien_orcid:hover {
+.membre li:hover .lien_orcid:hover {
     color: black;
 }
+
 
 
 .information_alumni {
@@ -38,14 +38,12 @@
 }
 
 .img_profil {
-    margin-right: 20px;
     width: 100px;
     height: 100px;
+    margin-right: 20px;
     align-self: center;
     filter: grayscale(100%);
 }
-
-
 
 @media screen and (max-device-width: 900px) {
     .img_profil {
@@ -53,7 +51,11 @@
         height: 250px;
     }
 
-    .membre_alumni li {
+    .membre{
+        font-size: unset;
+    }
+
+    .membre li {
         width: 100%;
     }
 }

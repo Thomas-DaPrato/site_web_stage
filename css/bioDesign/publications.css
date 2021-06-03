@@ -1,0 +1,37 @@
+.liste_publication {
+    font-size: 15px;
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.liste_publication td {
+    padding: 10px;
+}
+
+#td_informations_publication {
+    width: 90%;
+}
+
+#td_fichier_publication {
+    width: 10%;
+}
+
+.img_doc_publication {
+    width: 25%;
+}
+
+.lien_publication_to_hal:hover {
+    border-bottom: 1px solid #2a68af;
+    color: black;
+}
+
+@media screen and (max-device-width: 900px) {
+    .liste_publication {
+        padding: 0;
+        font-size: 25px;
+    }
+
+    .img_doc_publication {
+        width: 75px;
+    }
+}

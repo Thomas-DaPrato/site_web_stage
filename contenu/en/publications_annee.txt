@@ -1,5 +1,6 @@
 #contenu du bandeau
 
+lien_accueil : Home
 lien_equipe : Team
 lien_alumni_1 : Old members
 lien_theme_recherche : Research topic

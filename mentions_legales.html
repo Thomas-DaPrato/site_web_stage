@@ -5,8 +5,8 @@
     <meta name="description"
           content="Mentions l&#xE9;gales du site web de présentation de l'&#xE9;quipe CBI (Conception Bio-Inspir&#xE9;e)">
     <meta name="viewport" content="width=900px, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/body_presentation.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/header_presentation.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/site_presentation/body_presentation.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/site_presentation/header_presentation.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all"/>
     <link type="text/css" rel="stylesheet"
           href="https://ism.univ-amu.fr/sites/all/themes/startupgrowth_lite/fonts/lato-font.css?qrlgpc" media="all"/>
@@ -30,11 +30,8 @@
 <script src="js/smoothScroll.js" type="module"></script>
 
 <header>
-    <div id="bandeau">
-        <a href="https://ism.univ-amu.fr/" target="_blank"><img id="logo_ism" src="img/logo_ism.png" alt="logo ism"></a>
-        <a href="index.html" id="lien_img_cbi"><img id="logo_cbi" src="img/logo_cbi.png" alt="logo cbi"></a>
-        <button id="switch_langage">EN</button>
-    </div>
+    <a href="https://ism.univ-amu.fr/" target="_blank"><img class="logo_header" id="logo_ism" src="img/logo_ism.png"
+                                                            alt="logo ism"></a>
     <div id="menu_tel">
         <span></span>
         <span></span>
@@ -42,7 +39,39 @@
     </div>
     <ul class="menu" id="nav_barre">
         <li><a class="lien_menu" href="index.html" id="lien_accueil">Accueil</a></li>
+        <li class="dropdown"><a class="lien_menu" href="index.html#theme_recherche" id="lien_theme_recherche">Thème de
+            recherche</a>
+            <img src="img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content">
+                <a class="lien_dropdown" href="projets/structures_bio_inspirees.html" id="lien_structure_bio-inspiree">Structure
+                    bio-inspirées</a>
+                <a class="lien_dropdown" href="projets/liaisons_bio_inspirees.html" id="lien_liaison_bio-inspiree">Liaisons
+                    bio-inspirées</a>
+                <a class="lien_dropdown" href="projets/actionneurs_dissipateurs_bio_inspirees.html"
+                   id="lien_actionneur_dissipateur_bio-inspiree">Actionneurs et dissipateurs
+                    bio-inspirees</a>
+            </div>
+        </li>
+        <li class="dropdown"><a class="lien_menu" href="index.html#equipe" id="lien_equipe">L'équipe</a>
+            <img src="img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content">
+                <a class="lien_dropdown" href="equipe/alumni.html" id="lien_alumni_1">Membres</a>
+            </div>
+        </li>
+        <li><a class="lien_menu" href="index.html#stage_these" id="lien_offre_stage_these">Offres de stages et thèses</a></li>
+        <li class="dropdown"><a class="lien_menu" href="index.html#publications" id="lien_publication">Publications</a>
+            <img src="img/fleche_bas.png" alt="fleche" class="fleche_bas">
+            <div class="dropdown-content" id="lien_publication_annee">
+            </div>
+        </li>
+        <li><a class="lien_menu" href="#">ANR BioDesign</a></li>
     </ul>
+    <div id="button_switch_langage">
+        <button id="switch_langage_fr">FR</button>
+        <button id="switch_langage_en">EN</button>
+    </div>
+    <a href="index.html" id="lien_img_cbi"><img class="logo_header" id="logo_cbi" src="img/logo_cbi.png" alt="logo cbi"></a>
+
 </header>
 
 <div class="contenu">

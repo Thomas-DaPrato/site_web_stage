@@ -16,9 +16,9 @@
             if (data.hasOwnProperty(name)) {
                 if (data[name].hasOwnProperty("photo")) {
                     if (data[name]["photo"] == '') {
-                        $li.append($('<img />').attr('src', '../img/photo_anonyme.jpg').attr('class', 'img_profil').attr('alt', 'photo de la personne'));
+                        $li.append($('<img />').attr('src', '../img/membres/photo_anonyme.jpg').attr('class', 'img_profil').attr('alt', 'photo de la personne'));
                     } else {
-                        $li.append($('<img />').attr('src', '../img/' + data[name]["photo"]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
+                        $li.append($('<img />').attr('src', '../img/membres/' + data[name]["photo"]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
                     }
                 }
                 $div_info.append($("<strong />").append(name));
