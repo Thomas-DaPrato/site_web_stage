@@ -11,7 +11,7 @@ if (isset($_GET['langue']) && isset($_GET["fichier"])){
         if ($i < sizeof($fichier) -1){
             $fichier[$i] = substr($fichier[$i],0,-2);
         }
-        $fichier[$i] = explode(' : ',$fichier[$i]);
+        $fichier[$i] = explode(' | ',$fichier[$i]);
     }
 
 

@@ -108,6 +108,7 @@ button:hover {
 
 #div_projet article {
     margin: 5px;
+    width: 100%;
 }
 
 #div_projet article:hover .img_theme_recherche {

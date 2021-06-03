@@ -1,21 +1,21 @@
 #contenu du bandeau
 
-lien_accueil : Home
-lien_equipe : Team
-lien_alumni_1 : Old members
-lien_theme_recherche : Research topic
-lien_structure_bio-inspiree : Bio-inspired structure
-lien_liaison_bio-inspiree : Bio-inspired joint
-lien_actionneur_dissipateur_bio-inspiree : Bio-inspired actuators and dissipators
-lien_offre_stage_these : Internship offer and thesis
-lien_publication : Publications
-lien_avant_annee_n-5 : Before
+lien_accueil | Home
+lien_equipe | Team
+lien_alumni_1 | Old members
+lien_theme_recherche | Research topic
+lien_structure_bio-inspiree | Bio-inspired structure
+lien_liaison_bio-inspiree | Bio-inspired joint
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
+lien_offre_stage_these | Internship offer and thesis
+lien_publication | Publications
+lien_avant_annee_n-5 | Before
 
 #contenu du corps
 
-titre_mentions_legales : Legals mentions
-titre_conception_realisation : Conception and realisation
-couriel : Mail
-titre_hebergement : Hosting
-titre_maj : Editorial content and updates
-mentions_legales : Legals mentions
+titre_mentions_legales | Legals mentions
+titre_conception_realisation | Conception and realisation
+couriel | Mail
+titre_hebergement | Hosting
+titre_maj | Editorial content and updates
+mentions_legales | Legals mentions

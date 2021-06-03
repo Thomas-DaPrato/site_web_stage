@@ -1,21 +1,21 @@
 #contenu du bandeau
 
-lien_accueil : Accueil
-lien_equipe : L'équipe
-lien_alumni_1 : Membres
-lien_theme_recherche : Thème de recherche
-lien_structure_bio-inspiree : Structure bio-inspirées
-lien_liaison_bio-inspiree : Liaisons bio-inspirées
-lien_actionneur_dissipateur_bio-inspiree : Actionneurs et dissipateurs bio-inspirees
-lien_offre_stage_these : Offres de stages et thèses
-lien_publication : Publications
-lien_avant_annee_n-5 : Avant
+lien_accueil | Accueil
+lien_equipe | L'équipe
+lien_alumni_1 | Membres
+lien_theme_recherche | Thème de recherche
+lien_structure_bio-inspiree | Structures bio-inspirées
+lien_liaison_bio-inspiree | Liaisons bio-inspirées
+lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirees
+lien_offre_stage_these | Offres de stages et thèses
+lien_publication | Publications
+lien_avant_annee_n-5 | Avant
 
 #contenu du corps
 
-titre_mentions_legales : Mentions légales
-titre_conception_realisation : Conception et réalisation
-couriel : Courriel
-titre_hebergement : Hébergement
-titre_maj : Contenu editorial et mise à jour
-mentions_legales : Mentions légales
+titre_mentions_legales | Mentions légales
+titre_conception_realisation | Conception et réalisation
+couriel | Courriel
+titre_hebergement | Hébergement
+titre_maj | Contenu editorial et mise à jour
+mentions_legales | Mentions légales

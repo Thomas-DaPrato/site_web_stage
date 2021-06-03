@@ -9,21 +9,12 @@
 .membre li {
     margin: 10px;
     display: flex;
-    background-color: #d0d0d0;
-    color: #4187d1;
+    background-color: #f1f1f1;
+    color: #5A5A5A;
     width: 48%;
 }
 .lien_orcid {
-    color: #4187d1;
-}
-
-.membre li:hover{
-    color: white;
-    background-color: #00A2FF;
-}
-
-.membre li:hover .lien_orcid {
-    color: white;
+    color: #5A5A5A;
 }
 
 .membre li:hover .lien_orcid:hover {
@@ -31,10 +22,14 @@
 }
 
 
-
 .information_alumni {
     margin-left: 10px;
     align-self: center;
+    font-size: 14px;
+}
+
+.information_alumni strong {
+    font-size: 17px;
 }
 
 .img_profil {

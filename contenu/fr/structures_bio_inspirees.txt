@@ -1,0 +1,20 @@
+#contenu du bandeau
+
+lien_accueil | Accueil
+lien_equipe | L'équipe
+lien_alumni_1 | Membres
+lien_theme_recherche | Thème de recherche
+lien_structure_bio-inspiree | Structures bio-inspirées
+lien_liaison_bio-inspiree | Liaisons bio-inspirées
+lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirees
+lien_offre_stage_these | Offres de stages et thèses
+lien_publication | Publications
+lien_avant_annee_n-5 | Avant
+
+#contenu du corps
+
+titre_theme_recherche | Structures bio-inspirées
+presentation_theme_recherche | L’idée de ce projet est de s’inspirer des endosquelettes et de la structure des os pour venir l’appliquer aux pièces mécaniques dans le but de les alléger. De récents travaux de l’équipe CBI ISM [Au. 2018] ont mis en place une méthode de bio-inspiration de la structure de l’os pour l’appliquer aux pièces mécaniques. Ces travaux ont démontré dans le cas de la flexion trois points que la structure bio-inspirée donnait de meilleurs résultats que la méthode d’optimisation topologique couramment utilisée en mécanique. Ces premiers résultats laissent supposer un fort potentiel pour trouver des structures plus optimales en s’inspirant de la nature. Cette bio-inspiration de la structure des os appliquée au design des pièces mécaniques est notamment rendue possible aujourd’hui grâce au développement de la fabrication additive.
+titre_projet_1 | Bio-inspiration de la structure interne des os pour l’allégement de pièces mécaniques
+titre_projet_2 | Fabrication additive métallique
+mentions_legales | Mentions légales

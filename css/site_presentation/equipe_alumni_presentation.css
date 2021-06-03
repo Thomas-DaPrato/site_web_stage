@@ -1,5 +1,5 @@
 /* CSS génaral pour la page alumni */
-.membre_alumni {
+.membres_actuels {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.membre_alumni li {
+.membres_actuels li {
     margin: 10px;
     display: flex;
     background-color: #f1f1f1;
@@ -18,7 +18,7 @@
     color: #5A5A5A;
 }
 
-.membre_alumni li:hover .lien_orcid:hover {
+.membres_actuels li:hover .lien_orcid:hover {
     color: black;
 }
 
@@ -41,6 +41,24 @@
     filter: grayscale(100%);
 }
 
+.ancien_membres {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.ancien_membres tr{
+    height: 20px;
+}
+
+.td_nom, .td_mission, .td_date{
+    width: 10%;
+}
+
+.td_sujet {
+    padding-right: 50px;
+    width: 40%;
+}
+
 
 
 @media screen and (max-device-width: 900px) {
@@ -49,7 +67,7 @@
         height: 250px;
     }
 
-    .membre_alumni li {
+    .membres_actuels li {
         width: 100%;
     }
 }

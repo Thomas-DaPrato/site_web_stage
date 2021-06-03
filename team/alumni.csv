@@ -1,22 +1,22 @@
-#LIRE LIGNE 1 pour savoir comment ajouter un membre alumni;Pour ajouter un membre, il vous suffit d'entrer les informations demandées. ATTENTION: aucune ligne n'est disponible. ;Pour ce qui est de la photo, il faut rentrer son nom avec son extension. Il faut que cette photo soit placée dans le dossier img/membres du site. Mettre des photos carrées pour éviter qu'elles se soit écraser;Merci de ne pas changer le nom des colonnes et de laisser en première position ce commentaire et en seconde position le nom des colonnes ;;
-Membres 2020-2021;Mission;Sujet;Date;photo;Id ORCID
-Emmanuel MERMOZ;PAST;;;emmanuel_mermoz.png;
-Jean-Marc LINARES;Enseignant-chercheur;Metrologie, conception;;jean-marc_linares.png;0000-0001-7501-0383
-Jean-Michel SPRAUEL;Professeur émérite;;;jean-michel_sprauel.jpg;0000-0003-1066-1534
-Loïc TADRIST;Enseignant-chercheur;;;loic_tadrist.JPG;0000-0001-6200-9842
-Julien CHAVES-JACOB;Enseignant-chercheur;;;julien_chaves-jacob.JPG;0000-0002-4798-4276
-Santiago ARROYAVE TOBON;Enseignant-chercheur;;;santiago_arroyave-tobon.JPG;0000-0002-6704-0977
-Quentin LOPEZ;Animateur TechnoPole;;;quentin_lopez.png;
-Julien DIPERI;Technicien CNRS;;;julien_diperi.jpg;
-Amandine REGIS;Thèse;Création de jumeaux numérique pour les ensembles mecaniques des helicoptères;Mars 2020 - Février 2023;amandine_regis.png;
-Anima MLAIKI;Stage Master;Modélisation numérique d'une appareil de référence pour quantifier des chocs sur des cellules neurales de rat;Mars - Mai 2021;;
-Anton KANIEWSKI;Stage Master;Simulation musculosquelettique de la fourmi Messo Barbarus;Février - Juin 2021;anton_kaniewski.jpg;
-Dylan PANNIER;Stage Master;Correlations entre propriétés macroscopiques et caractéristique musculaires chez tous les animaux;Mars - Mai 2021;;
-Juliette LEPAGNEUL;Thèse;Méthodologie de dimensionnement des vis a rouleaux;Juin 2021 - Mai 2024;juliette_lepagneul.png;
-Kalenia MARQUEZ-FLOREZ;PostDoc;ANR BioDesign;Mars 2021 - 2024;kalenia_marquez-florez.jpg;
-Mathieu BILHERE;Thèse;Allègement bio-inspirée des pièces mécaniques base sur des os longs;;mathieu_bilhere.JPG;
-Nicolas CADORET;Stage Master;Allègement bio-inspirée des pièces mécaniques base sur des os longs;Février - Juin 2021;nicolas_cadoret.JPG;
-Paul HEYMANN;Stage Master;Algorithmes de conception mécanique inspirés de la morphogenèse;Février - Juin 2021;paul_heymann.JPG;
-Paul ROUSSEL;Stage Master;Etude allométrique sur l'articulation du coude chez les quadrupèdes;Mars - Mai 2021;;
-Raphël PERRIER;Stage Master;Conception d'un actionneur bio-inspirer du muscle;Février - Juin 2021;raphael_perrier.JPG;
-Thomas DA-PRATO;Stage DUT informatique;Réalisation de 2 sites webs ainsi que mise en réseau d'ordinateur de calcul;Avril - Juin 2021;thomas_da-prato.JPG;
+#LIRE LIGNE 1 pour savoir comment ajouter un membre alumni;Pour ajouter un membre, il vous suffit d'entrer les informations demandées. ATTENTION: aucune ligne vide n'est possible;Pour ce qui est de la photo, il faut rentrer son nom avec son extension. Il faut que cette photo soit placée dans le dossier img/membres du site. Mettre des photos carrées pour éviter qu'elles se soit écraser;Merci de ne pas changer le nom des colonnes et de laisser en première position ce commentaire et en seconde position le nom des colonnes ;;;;
+Membres 2020-2021;Mission;Sujet;Date;Photo;Id ORCID;Ancien;Document
+Emmanuel MERMOZ;PAST;;;emmanuel_mermoz.png;;;
+Jean-Marc LINARES;Enseignant-chercheur;Metrologie, conception;;jean-marc_linares.png;0000-0001-7501-0383;;
+Jean-Michel SPRAUEL;Professeur émérite;;;jean-michel_sprauel.jpg;0000-0003-1066-1534;;
+Loïc TADRIST;Enseignant-chercheur;;;loic_tadrist.JPG;0000-0001-6200-9842;;
+Julien CHAVES-JACOB;Enseignant-chercheur;;;julien_chaves-jacob.JPG;0000-0002-4798-4276;;
+Santiago ARROYAVE TOBON;Enseignant-chercheur;;;santiago_arroyave-tobon.JPG;0000-0002-6704-0977;;
+Quentin LOPEZ;Animateur TechnoPole;;;quentin_lopez.png;;;
+Julien DIPERI;Technicien CNRS;;;julien_diperi.jpg;;;
+Amandine REGIS;Thèse;Création de jumeaux numérique pour les ensembles mecaniques des helicoptères;Mars 2020 - Février 2023;amandine_regis.png;;;
+Anima MLAIKI;Stage Master;Modélisation numérique d'une appareil de référence pour quantifier des chocs sur des cellules neurales de rat;Mars - Mai 2021;;;oui;rapport_de_stage
+Anton KANIEWSKI;Stage Master;Simulation musculosquelettique de la fourmi Messo Barbarus;Février - Juin 2021;anton_kaniewski.jpg;;;
+Dylan PANNIER;Stage Master;Correlations entre propriétés macroscopiques et caractéristique musculaires chez tous les animaux;Mars - Mai 2021;;;oui;
+Juliette LEPAGNEUL;Thèse;Méthodologie de dimensionnement des vis a rouleaux;Juin 2021 - Mai 2024;juliette_lepagneul.png;;;
+Kalenia MARQUEZ-FLOREZ;PostDoc;ANR BioDesign;Mars 2021 - 2024;kalenia_marquez-florez.jpg;0000-0001-6388-3208;;
+Mathieu BILHERE;Thèse;Allègement bio-inspirée des pièces mécaniques base sur des os longs;;mathieu_bilhere.JPG;;;
+Nicolas CADORET;Stage Master;Allègement bio-inspirée des pièces mécaniques base sur des os longs;Février - Juin 2021;nicolas_cadoret.JPG;;;
+Paul HEYMANN;Stage Master;Algorithmes de conception mécanique inspirés de la morphogenèse;Février - Juin 2021;paul_heymann.JPG;;;
+Paul ROUSSEL;Stage Master;Etude allométrique sur l'articulation du coude chez les quadrupèdes;Mars - Mai 2021;;;oui;
+Raphaël PERRIER;Stage Master;Conception d'un actionneur bio-inspirer du muscle;Février - Juin 2021;raphael_perrier.JPG;;;
+Thomas DA-PRATO;Stage DUT informatique;Réalisation de 2 sites webs ainsi que mise en réseau d'ordinateur de calcul;Avril - Juin 2021;thomas_da-prato.JPG;;;

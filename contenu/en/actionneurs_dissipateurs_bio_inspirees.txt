@@ -1,26 +1,26 @@
 #contenu du bandeau
 
-lien_accueil : Home
-lien_equipe : Team
-lien_alumni_1 : Old members
-lien_theme_recherche : Research topic
-lien_structure_bio-inspiree : Bio-inspired structure
-lien_liaison_bio-inspiree : Bio-inspired joint
-lien_actionneur_dissipateur_bio-inspiree : Bio-inspired actuators and dissipators
-lien_offre_stage_these : Internship offer and thesis
-lien_publication : Publications
-lien_avant_annee_n-5 : Before
+lien_accueil | Home
+lien_equipe | Team
+lien_alumni_1 | Old members
+lien_theme_recherche | Research topic
+lien_structure_bio-inspiree | Bio-inspired structure
+lien_liaison_bio-inspiree | Bio-inspired joint
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
+lien_offre_stage_these | Internship offer and thesis
+lien_publication | Publications
+lien_avant_annee_n-5 | Before
 
 #contenu du corp
 
-titre_actionneur_dissipateur : Bio-inspired actuators and dissipators
-phrase_presentation_actionneur_dissipateur : Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-titre_projet_recherche : Research project
-titre_actionneur_inspire_muscle : Muscle actuators inspired 
-descriptif_actionneur_inspire_muscle : Damage of an actuator may jeopardize the functioning of a machine or a vehicle. Hence, critical motions are often ensured by redundant actuators. However, for some vehicles or applications, redundancy is not permitted, either because of steric hindering (e.g. for helicopters) or because of weight cost as for aeronautical and spatial applications. The aim of the project is to draw inspiration from the outstanding mechanical behaviour of muscles to create a delocalised actuator resilient to damage. 
-titre_mecannique_impact_ballon : Impacts of pressurized membranes
-descriptif_mecannique_impact_ballon : Pressurised membranes are used in various situations involving humans (protections, sports, etc). In this context, impacts mechanics of membranes is critical since under or over inflated membranes may create injuries. Both gas pressure and impact speed decrease contact time. Direct measurements of gas pressure and temperature variations (few degrees at each impact !) indicate an adiabatic compression in strong interaction with the membrane. The gas compression makes the impact with a pressurized membrane non-linear. 
-titre_prevention_dommage_tete : Head impacts: prevention and protection
-descriptif_prevention_dommage_tete : Brain damages consecutives to head impacts cannot be diagnosed immediately. This leads to underestimation of injury seriousness and renewed risk-taking before recovery. There is no effective therapeutic solution for Traumatic Brain Injury (TBI), making it even more urgent to improve injury prevention devices. 
-mentions_legales : Legal mention
+titre_actionneur_dissipateur | Bio-inspired actuators and dissipators
+phrase_presentation_actionneur_dissipateur | Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+titre_projet_recherche | Research project
+titre_actionneur_inspire_muscle | Muscle actuators inspired 
+descriptif_actionneur_inspire_muscle | Damage of an actuator may jeopardize the functioning of a machine or a vehicle. Hence, critical motions are often ensured by redundant actuators. However, for some vehicles or applications, redundancy is not permitted, either because of steric hindering (e.g. for helicopters) or because of weight cost as for aeronautical and spatial applications. The aim of the project is to draw inspiration from the outstanding mechanical behaviour of muscles to create a delocalised actuator resilient to damage. 
+titre_mecannique_impact_ballon | Impacts of pressurized membranes
+descriptif_mecannique_impact_ballon | Pressurised membranes are used in various situations involving humans (protections, sports, etc). In this context, impacts mechanics of membranes is critical since under or over inflated membranes may create injuries. Both gas pressure and impact speed decrease contact time. Direct measurements of gas pressure and temperature variations (few degrees at each impact !) indicate an adiabatic compression in strong interaction with the membrane. The gas compression makes the impact with a pressurized membrane non-linear. 
+titre_prevention_dommage_tete | Head impacts: prevention and protection
+descriptif_prevention_dommage_tete | Brain damages consecutives to head impacts cannot be diagnosed immediately. This leads to underestimation of injury seriousness and renewed risk-taking before recovery. There is no effective therapeutic solution for Traumatic Brain Injury (TBI), making it even more urgent to improve injury prevention devices. 
+mentions_legales | Legal mention
 
