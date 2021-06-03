@@ -3,8 +3,9 @@
 * */
 let header = document.getElementsByTagName('header');
 if(document.location.href.includes('index.html')) {
-    $('.lien_menu').click(function(event){
+    $('.disable').click(function(event){
         event.preventDefault();
+
     });
 }
 

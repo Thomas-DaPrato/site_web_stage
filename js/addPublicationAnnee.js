@@ -17,7 +17,7 @@
 
     $(() => {
         $.ajax({
-            url: "../php/getPublicationsAnnee.php",
+            url: "php/getPublicationsAnnee.php",
             type: "get",
             data: "annee=" + document.location.href.split('=')[1],
             dataType: "json"
