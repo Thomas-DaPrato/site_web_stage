@@ -1,5 +1,5 @@
 /* CSS général pour la page projet */
-.sous-projet div {
+.div_projet {
     display: flex;
     justify-content: space-around;
 }
@@ -23,6 +23,18 @@ article p {
 }
 .img_projet {
     width: 100%;
+}
+
+.logo_projet {
+    width: 35%;
+}
+
+.div_logo_projet {
+    text-align: center;
+}
+
+.liste_membre_projet {
+    list-style-type: none;
 }
 
 

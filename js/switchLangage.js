@@ -17,7 +17,6 @@ function switchLangage(langue) {
         }).done(function (data) {
             for (let contenu in data){
                 if(data[contenu].length > 1){
-                    console.log(data[contenu]);
                     document.getElementById(data[contenu][0]).innerHTML = data[contenu][1];
                 }
             }

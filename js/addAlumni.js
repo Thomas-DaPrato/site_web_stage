@@ -22,9 +22,21 @@
                         if (data[name]["Photo"] == '') {
                             $li.append($('<img />').attr('src', 'img/membres/photo_anonyme.jpg').attr('class', 'img_profil').attr('alt', 'photo de la personne'));
                         } else {
-                            $li.append($('<img />').attr('src', 'img/membres/' + data[name]["Photo"]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
+                            $.ajax({
+                                url : 'php/getImage.php',
+                                method: 'get',
+                                data : 'nomImg=' + data[name]["Photo"],
+                                dataType: 'json'
+                            }).done(function (dataImg) {
+                                $li.prepend($('<img />').attr('src', 'img/membres/' + dataImg[0]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
+                            }).fail(function (jqXHR, textStatus, errorThrown) {
+                                alert("une erreur est survenue avec l'ajout des photos des membres");
+                                let msg = jqXHR.responseText + '\n' + textStatus + '\n' + errorThrown
+                                console.log(msg);
+                            })
                         }
                     }
+
                     $div_info.append($("<strong />").append(name));
                     if (data[name].hasOwnProperty("Mission") && data[name]["Mission"] != '') {
                         $div_info.append('<br>', data[name]["Mission"]);

@@ -15,7 +15,15 @@ lien_avant_annee_n-5 | Before
 
 titre_mentions_legales | Legals mentions
 titre_conception_realisation | Conception and realisation
-couriel | Mail
+couriel | Email
 titre_hebergement | Hosting
+hebergement | The site is hosted at the following address
 titre_maj | Editorial content and updates
+descriptif_maj | The information made available on the site is only indicative. We point out that the content of the website may contain errors or omissions, and that it is liable to be modified or updated without notice. The responsibility of the University of Aix-Marseille can in no way be engaged as to the content of the information appearing on its site or the consequences that may result from their use or interpretation. The hypertext links on our website point to other resources on the Internet, however, the university cannot be held liable for a third party site reached via our site. 
+titre_procedure_notification | Procedure de notification
+descriptif_procedure_notification | The user who notices inaccuracies, erroneous information or information of a manifestly illegal nature, is required to inform the person in charge of the publication so that this one puts an end to it.
+titre_modification_notice_legale | Modification of the legal notice
+descriptif_modification_notice_legale | The University of Aix-Marseille, owner and operator of the site, reserves the right to modify this notice at any time. The user therefore undertakes to consult it regularly. 
+titre_informatique_liberte | Computing and freedom
+descriptif_informatique_liberte | This website contains personal information concerning staff, students or partners of the University of Aix-Marseille. In accordance with the law n ° 78-17 of January 6, 1978, relating to data processing, files and freedoms (article 38, 39, 40), you have the right to access, rectify and delete data concerning you, online on this site. To exercise this right, you can contact the establishment's Data Protection Officer. 
 mentions_legales | Legals mentions

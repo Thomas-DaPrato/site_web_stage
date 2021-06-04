@@ -43,11 +43,11 @@
 
 .ancien_membres {
     width: 100%;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 .ancien_membres tr{
-    height: 20px;
+    height: 60px;
 }
 
 .td_nom, .td_mission, .td_date{
