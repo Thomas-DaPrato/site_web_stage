@@ -30,7 +30,7 @@ descritif_projet_2_partie_4 | Ce projet est une collaboration entre le Centre de
 titre_membres_projet_2 | Membres du projet
 
 #projet 3
-titre_projet_2 | Digital twins d’ensembles d’helicopters
+titre_projet_3 | Digital twins d’ensembles d’helicopters
 descritif_projet_3_partie_1 | Un jumeau numérique est un modèle de produit réel qui utilise comme valeurs d'entrée certaines données extraites de ce produit afin de fournir des informations supplémentaires sur le comportement de ce produit en fonctionnement. Les jumeaux numériques de systèmes dynamiques d'hélicoptères peuvent être très utiles car l'instrumentation de toutes les pièces mécaniques en vol est très difficile.
 descritif_projet_3_partie_2 | Les travaux proposés s’inscrivent dans le cadre de l’amélioration de l’utilisation des ensembles mécaniques d’hélicoptères par l’utilisation couplée de modèle de simulation et de données enregistrées en service.
 descritif_projet_3_partie_3 | L’objectif de ce projet est de mettre au point une méthodologie de création de jumeaux numériques d’un ensemble mécanique d’hélicoptère ou chaque utilisation particulière est prise en compte pour estimer l’endommagement réel de la pièce et les périodicités de surveillance les plus adaptées. La zone d’application de cette recherche s’étendra des turbines jusqu’au rotor. Cette zone d’étude a généré de nombreuses activités de recherche entre les partenaires industriel et universitaire, ces dernières années. 
