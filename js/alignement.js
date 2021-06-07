@@ -13,4 +13,7 @@ function alignement() {
         divMembre[i].style.height = maxHeight + 'px';
     }
 }
-setTimeout(alignement,500);
+
+if (window.screen.width > 900) {
+    setTimeout(alignement, 500);
+}

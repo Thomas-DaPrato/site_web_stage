@@ -46,7 +46,7 @@
     padding-left: 50px;
 }
 
-.ancien_membres tr{
+.tr_normal{
     height: 60px;
 }
 
@@ -59,6 +59,10 @@
     width: 40%;
 }
 
+.img_doc_anciens_membres {
+    width: 9%;
+}
+
 
 
 @media screen and (max-device-width: 900px) {
@@ -69,5 +73,31 @@
 
     .membres_actuels li {
         width: 100%;
+    }
+
+    .information_alumni {
+        font-size: unset;
+    }
+
+    .information_alumni strong {
+        font-size: unset;
+    }
+
+    .td_sujet {
+        width: 60%;
+        padding-right: 0;
+    }
+
+    .td_date {
+        width: 30%;
+        padding-left: 15px;
+    }
+
+    .td_mission {
+        padding-left: 15px;
+    }
+
+    .img_doc_anciens_membres {
+        width: 60%;
     }
 }

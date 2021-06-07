@@ -1,5 +1,5 @@
 #LIRE LIGNE 1 pour savoir comment ajouter un membre alumni;Pour ajouter un membre, il vous suffit d'entrer les informations demandées. ATTENTION: aucune ligne vide n'est possible;Pour ce qui est de la photo, il faut rentrer son nom et la placée dans le dossier img/membres du site. Mettre des photos carrées pour éviter qu'elles se retrouvent écraser;Merci de ne pas changer le nom des colonnes et de laisser en première position ce commentaire et en seconde position le nom des colonnes ;Merci de s'assurer que le caractère de séparation soit un point-virgule;;;
-Membres 2020-2021;Mission;Sujet;Date;Photo;Id ORCID;Ancien;Document
+Membres;Mission;Sujet;Date;Photo;Id ORCID;Ancien;Document
 Emmanuel MERMOZ;PAST;Conception systèmes complexes;;emmanuel_mermoz;;;
 Jean-Marc LINARES;Enseignant-chercheur;Biomécanique, Métrologie, Conception;;jean-marc_linares;0000-0001-7501-0383;;
 Jean-Michel SPRAUEL;Professeur émérite;Biomécanique, Mécanique matériaux;;jean-michel_sprauel;0000-0003-1066-1534;;
@@ -9,7 +9,7 @@ Santiago ARROYAVE TOBON;Enseignant-chercheur;Biomécanique, Conception bio-inspir
 Quentin LOPEZ;Animateur TechnoPole;Fabrication systèmes;;quentin_lopez;;;
 Julien DIPERI;Technicien CNRS;Experimentation, Fabrication systèmes;;julien_diperi;;;
 Amandine REGIS;Thèse;Contribution à la création de jumeaux numérique pour les ensembles mecaniques des helicoptères;Mars 2020 - Février 2023;amandine_regis;;;
-Anima MLAIKI;Stage Master;Modélisation numérique d'une appareil de référence pour quantifier des chocs sur des cellules neurales de rat;Mars - Mai 2021;;;oui;rapport_de_stage
+Amina MLAIKI;Stage Master;Modélisation numérique d'une appareil de référence pour quantifier des chocs sur des cellules neurales de rat;Mars - Mai 2021;;;oui;rapport_de_stage
 Anton KANIEWSKI;Stage Master;Simulation musculosquelettique de la fourmi Messo Barbarus;Février - Juin 2021;anton_kaniewski;;;
 Dylan PANNIER;Stage Master;Correlations entre propriétés macroscopiques et caractéristique musculaires chez tous les animaux;Mars - Mai 2021;;;oui;
 Juliette LEPAGNEUL;Thèse;Méthodologie de dimensionnement des vis a rouleaux;Juin 2021 - Mai 2024;juliette_lepagneul;;;

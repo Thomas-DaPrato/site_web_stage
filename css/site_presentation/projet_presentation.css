@@ -54,5 +54,12 @@ article p {
 
     .sous-projet article {
         height: auto;
+        border-top: 1px solid;
+        padding-top: 30px;
+    }
+
+    .img_projet {
+        height: unset;
+        width: 100%;
     }
 }
