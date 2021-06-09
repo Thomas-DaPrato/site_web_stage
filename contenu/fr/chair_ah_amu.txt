@@ -1,0 +1,25 @@
+#contenu du bandeau
+
+lien_accueil | Accueil
+lien_equipe | L'équipe
+lien_alumni_1 | Membres
+lien_partenaires | Partenaires
+lien_theme_recherche | Thème de recherche
+lien_structure_bio-inspiree | Structures bio-inspirées
+lien_liaison_bio-inspiree | Liaisons bio-inspirées
+lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirees
+lien_offre_stage_these | Offres de stages et thèses
+lien_publication | Publications
+lien_avant_annee_n-5 | Avant
+
+#contenu du corps
+
+titre_projet_recherche | Chair AH / AMU 2015 - 2020
+titre_projet_1 | Conception inverse et robuste à l'aide d'outils applicables à la modélisation des liaisons bio-inspirées
+descriptif_projet_1_partie_1 | Cette thématique sera menée sur la démarche de conception inverse permettant d’obtenir des liaisons bio-inspirées constituées de surfaces de contact cinématiquement compatibles avec les mouvements associés aux mécanismes de transmission de mouvement.
+descriptif_projet_1_partie_2 | Les liaisons biologiques ou bio-inspirées sont, à la fois hyperstatiques pour mieux répartir les efforts transmis et sont constituées d'éléments de surface complexes (surfaces gauches). Aujourd'hui, les méthodes numériques telles que les éléments finis permettent d'assurer cette tâche quel que soit le degré d'hyperstaticité d'une ou d'un ensemble de liaisons mécaniques. Ceci permet d'envisager la mise en œuvre d'un nouveau mode de conception de systèmes hyperstatiques.
+titre_membres_projet_1 | Membres du projet
+titre_projet_2 | Fabrication, contrôle et validation des liaisons bio-inspirées
+descriptif_projet_2_partie_1 | Cette thématique sera menée sur l'obtention et le contrôle des liaisons bio-inspirées basées sur des surfaces gauches de haute qualité géométrique et d'état de surface. Des essais seront mis en œuvre afin de valider le fonctionnement et la tenue en service des liaisons ainsi réalisées.
+descriptif_projet_2_partie_2 | Les verrous scientifiques de cette thématique sont centrés sur le passage du modèle théorique au réel. Cette tâche de validation, fondamentale en recherche, est souvent délaissée au profit d'une validation modèle/modèle. La réalisation et les essais demanderont la mise au point de nouvelles stratégies de finition des surfaces complexes ainsi que la mise au point d'expérimentations permettant de mesurer les performances des liaisons complexes (pression de contact, usure, rendement...).
+titre_membres_projet_2 | Membres du projet

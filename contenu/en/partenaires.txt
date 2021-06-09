@@ -1,0 +1,21 @@
+#contenu du bandeau
+
+lien_accueil | Home
+lien_equipe | Team
+lien_alumni_1 | Members
+lien_partenaires | Partners
+lien_theme_recherche | Research topic
+lien_structure_bio-inspiree | Bio-inspired structure
+lien_liaison_bio-inspiree | Bio-inspired joint
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
+lien_offre_stage_these | Internship offer and thesis
+lien_publication | Publications
+lien_avant_annee_n-5 | Before
+
+
+#contenu du corps
+
+titre_collaborations_universitaires | Academic partnerships
+titre_collaborations_recherche_applique | Industrial partnerships
+titre_professeur_invite | Visiting professors
+mentions_legales | Legals mentions

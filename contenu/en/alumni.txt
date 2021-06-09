@@ -2,7 +2,8 @@
 
 lien_accueil | Home
 lien_equipe | Team
-lien_alumni_1 | Old members
+lien_alumni_1 | Members
+lien_partenaires | Partners
 lien_theme_recherche | Research topic
 lien_structure_bio-inspiree | Bio-inspired structure
 lien_liaison_bio-inspiree | Bio-inspired joint
@@ -13,4 +14,6 @@ lien_avant_annee_n-5 | Before
 
 #contenu du corps
 
+titre_membres_actuels | Actual members
+titre_anciens_membres | Old members
 mentions_legales | Legals mentions

@@ -8,12 +8,10 @@
         method: 'get',
         dataType: 'json'
     }).done(function (data) {
-        let $listeMembre = $('.liste_membre');
         let $membre_actuels = $(".membres_actuels");
         let $ancien_membres = $('.ancien_membres');
         for (let name in data) {
             let $liActuel = $("<li />");
-            let $liAlumni = $("<li />");
             let $tr1 = $('<tr class="tr_normal"/>');
             let $tr2 = $('<tr class="tr_responsive"/>');
             let $div_info = $('<div class="information_alumni"/>');
@@ -23,7 +21,7 @@
 
                     if (data[name].hasOwnProperty("Photo")) {
                         if (data[name]["Photo"] == '') {
-                            $liAlumni.append($('<img />').attr('src', 'img/membres/photo_anonyme.jpg').attr('class', 'img_profil').attr('alt', 'photo de la personne'));
+                            $liActuel.append($('<img />').attr('src', 'img/membres/photo_anonyme.jpg').attr('class', 'img_profil').attr('alt', 'photo de la personne'));
                         } else {
                             $.ajax({
                                 url : 'php/getImage.php',
@@ -31,7 +29,7 @@
                                 data : 'nomImg=' + data[name]["Photo"],
                                 dataType: 'json'
                             }).done(function (dataImg) {
-                                $liAlumni.prepend($('<img />').attr('src', 'img/membres/' + dataImg[0]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
+                                $liActuel.prepend($('<img />').attr('src', 'img/membres/' + dataImg[0]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
                             }).fail(function (jqXHR, textStatus, errorThrown) {
                                 alert("une erreur est survenue avec l'ajout des photos des membres");
                                 let msg = jqXHR.responseText + '\n' + textStatus + '\n' + errorThrown
@@ -41,8 +39,6 @@
                     }
 
                     $div_info.append($("<strong />").append(name));
-                    $liActuel.append(name);
-                    $listeMembre.append($liActuel);
                     if (data[name].hasOwnProperty("Mission") && data[name]["Mission"] != '') {
                         $div_info.append('<br>', data[name]["Mission"]);
                     }
@@ -55,8 +51,8 @@
                     if (data[name].hasOwnProperty("Id ORCID") && data[name]["Id ORCID"] != '') {
                         $div_info.append('<br>', 'ORCID : ', $('<a />').attr('href', 'https://orcid.org/' + data[name]["Id ORCID"]).attr('class', 'lien_orcid').attr('target', '_blank').append(data[name]["Id ORCID"]));
                     }
-                    $liAlumni.append($div_info);
-                    $membre_actuels.append($liAlumni);
+                    $liActuel.append($div_info);
+                    $membre_actuels.append($liActuel);
                 }
                 else {
                     $tr1.append($('<td class="td_nom" />').append($("<strong />").append(name)));

@@ -1,0 +1,25 @@
+#contenu du bandeau
+
+lien_accueil | Home
+lien_equipe | Team
+lien_alumni_1 | Members
+lien_partenaires | Partners
+lien_theme_recherche | Research topic
+lien_structure_bio-inspiree | Bio-inspired structure
+lien_liaison_bio-inspiree | Bio-inspired joint
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
+lien_offre_stage_these | Internship offer and thesis
+lien_publication | Publications
+lien_avant_annee_n-5 | Before
+
+#contenu du corps
+
+titre_projet_recherche | Chair AH / AMU 2015 - 2020
+titre_projet_1 | Inverse and robust design using tools applicable to the modeling of bio-inspired joints
+descriptif_projet_1_partie_1 | This theme is about the reverse design approach to obtain bio-inspired mechanical joints. These joints must be made up of contact surfaces kinematically compatible with the movements associated with the mechanisms of transmission of movement. 
+descriptif_projet_1_partie_2 | Biological or bio-inspired mechanical joints are both hyperstatic to better distribute the transmitted forces and are made of complex surface elements. Today, numerical methods such as finite elements allow to ensure this task whatever the degree of hyperstaticity of one or a set of mechanical joints. Which allows to consider the implementation of a new mode of design of hyperstatic systems.
+titre_membres_projet_1 | Project members
+titre_projet_2 | Fabrication, control and validation of bio-inspired joints 
+descriptif_projet_2_partie_1 | This theme is about the production and control of bio-inspired mechanical joints based on complex surfaces of high geometric quality and surface finish. Tests will be carried were to validate the operation and the service life of the links thus created. 
+descriptif_projet_2_partie_2 | The scientific challenges of this theme are centered on the transition from the theoretical model to reality. This validation task, fundamental in research, is often neglected in favor of a model/model validation. The realization and the tests require the development of new strategies of finishing of the complex surfaces as well as the development of experiments making it possible to measure the performances of the complex connections (pressure of contact, wear, output?). 
+titre_membres_projet_2 | Project members

@@ -4,7 +4,6 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .membres_actuels li {
@@ -12,7 +11,7 @@
     display: flex;
     background-color: #f1f1f1;
     color: #5A5A5A;
-    width: 30%;
+    width: 32%;
 }
 .lien_orcid {
     color: #5A5A5A;

@@ -1,0 +1,20 @@
+#contenu du bandeau
+
+lien_accueil | Accueil
+lien_equipe | L'équipe
+lien_alumni_1 | Membres
+lien_partenaires | Partenaires
+lien_theme_recherche | Thème de recherche
+lien_structure_bio-inspiree | Structures bio-inspirées
+lien_liaison_bio-inspiree | Liaisons bio-inspirées
+lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirees
+lien_offre_stage_these | Offres de stages et thèses
+lien_publication | Publications
+lien_avant_annee_n-5 | Avant
+
+#contenu du corps
+
+titre_collaborations_universitaires | Collaborations universitaires
+titre_collaborations_recherche_applique | Collaborations recherche apliquées
+titre_professeur_invite | Professeurs Invités
+mentions_legales | Mentions légales
