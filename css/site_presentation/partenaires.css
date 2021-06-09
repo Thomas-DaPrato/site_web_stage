@@ -30,5 +30,10 @@
 @media screen and (max-device-width: 900px){
     .collaborations li {
         width: 100%;
+        height: unset;
+    }
+
+    .img_logo {
+        min-width: 300px;
     }
 }

@@ -1,6 +1,7 @@
 /*
 * Code permettant de changer de langue grâce a un changement de fichier où est stocké tous le contenu du site
 * */
+
 function switchLangage(langue) {
     let nom = document.location.pathname;
     nom = nom.substring(nom.lastIndexOf('/')+1);
@@ -38,9 +39,9 @@ function switchLangage(langue) {
 }
 setTimeout(switchLangage("fr"),500);
 
-document.getElementById('switch_langage_fr').onclick = function () {
-    switchLangage("fr");
-}
-document.getElementById('switch_langage_en').onclick = function () {
-    switchLangage("en");
-}
+document.getElementById('switch_langage_fr').addEventListener("click",function () {
+        switchLangage("fr");
+})
+document.getElementById('switch_langage_en').addEventListener("click",function () {
+        switchLangage("en");
+})

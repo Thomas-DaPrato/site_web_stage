@@ -1,0 +1,24 @@
+#LIRE LIGNE 1 pour savoir comment ajouter un membre alumni;Pour ajouter un membre, il vous suffit d'entrer les informations demandées. ATTENTION: aucune ligne vide n'est possible;Pour ce qui est de la photo, il faut rentrer son nom et la placée dans le dossier img/membres du site. Mettre des photos carrées pour éviter qu'elles se retrouvent écraser;Merci de ne pas changer le nom des colonnes et de laisser en première position ce commentaire et en seconde position le nom des colonnes ;Merci de s'assurer que le caractère de séparation soit un point-virgule;;;
+Membres;Mission;Sujet;Date;Photo;Id ORCID;Ancien;Document
+Jean-Marc LINARES;Team Manager, University professor;Biomechanic, Metrology, Conception;;jean-marc_linares;0000-0001-7501-0383;;
+Jean-Michel SPRAUEL;Emeritus Professor;Biomechanic, Materials mechanic;;jean-michel_sprauel;0000-0003-1066-1534;;
+Emmanuel MERMOZ;Associated Professor ST - Airbus H;Complexe système conception;;emmanuel_mermoz;;;
+Loïc TADRIST;Associate professor;Biomechanic, Theoretical mechanic;;loic_tadrist;0000-0001-6200-9842;;
+Julien CHAVES-JACOB;Associate professor;Biomechanic, Bio-inspired structure, Additive fabrication;;julien_chaves-jacob;0000-0002-4798-4276;;
+Santiago ARROYAVE TOBON;Associate professor;Biomechanic, Bio-inspired conception;;santiago_arroyave-tobon;0000-0002-6704-0977;;
+Quentin LOPEZ;TechnoPole host;System fabrication;;quentin_lopez;;;
+Julien DIPERI;CNRS technician;Experimentation, Système fabrication;;julien_diperi;;;
+Amandine REGIS;Thesis;Contribution to the creation of digital twins of mechanical set of helicopter.;Mars 2020 - Février 2023;amandine_regis;;;
+Amina MLAIKI;Master 1 internship;Numerical modelisatioin of a reference device to quantify chocs on rat neural cell.;Mars - Mai 2021;;;oui;RStage_Mlaiki_Amina_M1_2021
+Anton KANIEWSKI;Master intership; Musculoskeletal simulation of Messo Barbarus ant.;Février - Juin 2021;anton_kaniewski;;;
+Dylan PANNIER;Stage Master 1;Correlation between macroscopic property and muscular caracteristic among every animals;Mars - Mai 2021;;;oui;RStage_Pannier_Dylan_M1_2021
+Juliette LEPAGNEUL;Thesis;Methodoligy of roller screw sizing.;Juin 2021 - Mai 2024;juliette_lepagneul;;;
+Kalenia MARQUEZ-FLOREZ;PostDoc;ANR BioDesign;Mars 2021 - 2024;kalenia_marquez-florez;0000-0001-6388-3208;;
+Mathieu BILHERE-DIEUZEIDE;Thesis;Bio-inspired reduction of mechanical piece base on long bone.;Nov 2020 - Oct 2023;mathieu_bilhere;;;
+Nicolas CADORET;Master intership;Bio-inspired reduction of mechanical piece base on long bone.;Février - Juin 2021;nicolas_cadoret;;;
+Paul HEYMANN;Master intership;Algorithmes de conception mécanique inspirés de la morphogenèse. Algorithm of mechanical conception inspired by morphogenesis;Février - Juin 2021;paul_heymann;;;
+Paul ROUSSEL;Master 1 internship;Allometric study on elbow articulation among quadrupedes.;Mars - Mai 2021;;;oui;RStage_2021_M1_Paul_Roussel
+Raphaël PERRIER;Master intership;Conception of bio-inspired muscle actuator;Février - Juin 2021;raphael_perrier;;;
+Thomas DA-PRATO;DUT computer sciences intership;Realisation of 2 websites plus networking of calcul computer.;Avril - Juin 2021;thomas_da-prato;;;
+Aliona SANZ-IDIRIN;Degree In Biomedical Engineering;Study The Contact Performance Of Bio-Inspired Mechanical Joints;Nov 2020 - Juin 2021;;;oui;RStage_2020_M1_Aliona
+Tanguy PULUHEN;Stage Master 1 IEAP;Développement d'un modèle multi-corps de fourmi Messor Barbarus;Mars - Mai 2020;;;oui;RStage_2020_M1_Puluhen_Tanguy

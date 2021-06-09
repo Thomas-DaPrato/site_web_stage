@@ -2,14 +2,15 @@
 * Fonction permettant de récuperer les membres alumnis stockés dans un fichier au format csv et de les afficher sur la page alumni.html
 * Fonction qui utilise une requête ajax vers le fichier php getAlumni.php et qui reçoit un tableau au format json contenant tous les membres alumnis
 * */
-(function () {
+function addAlumni(langue) {
     $.ajax({
         url: 'php/getAlumni.php',
         method: 'get',
+        data: 'langueAlumni=' + langue,
         dataType: 'json'
     }).done(function (data) {
-        let $membre_actuels = $(".membres_actuels");
-        let $ancien_membres = $('.ancien_membres');
+        let $membre_actuels = $(".membres_actuels").empty();
+        let $ancien_membres = $('.ancien_membres').empty();
         for (let name in data) {
             let $liActuel = $("<li />");
             let $tr1 = $('<tr class="tr_normal"/>');
@@ -24,9 +25,9 @@
                             $liActuel.append($('<img />').attr('src', 'img/membres/photo_anonyme.jpg').attr('class', 'img_profil').attr('alt', 'photo de la personne'));
                         } else {
                             $.ajax({
-                                url : 'php/getImage.php',
+                                url: 'php/getImage.php',
                                 method: 'get',
-                                data : 'nomImg=' + data[name]["Photo"],
+                                data: 'nomImg=' + data[name]["Photo"],
                                 dataType: 'json'
                             }).done(function (dataImg) {
                                 $liActuel.prepend($('<img />').attr('src', 'img/membres/' + dataImg[0]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
@@ -53,25 +54,22 @@
                     }
                     $liActuel.append($div_info);
                     $membre_actuels.append($liActuel);
-                }
-                else {
+                } else {
                     $tr1.append($('<td class="td_nom" />').append($("<strong />").append(name)));
                     if (data[name].hasOwnProperty("Mission") && data[name]["Mission"] != '') {
                         $tr1.append($('<td class="td_mission" />').append(data[name]["Mission"]));
                     }
-                    if (data[name].hasOwnProperty("Sujet") && data[name]["Sujet"] != ''){
+                    if (data[name].hasOwnProperty("Sujet") && data[name]["Sujet"] != '') {
                         if (window.screen.width <= 900) {
                             $tr2.append($('<td class="td_sujet" />').append(data[name]["Sujet"]));
-                        }
-                        else {
+                        } else {
                             $tr1.append($('<td class="td_sujet" />').append(data[name]["Sujet"]));
                         }
                     }
                     if (data[name].hasOwnProperty("Date") && data[name]["Date"] != '') {
                         if (window.screen.width <= 900) {
                             $tr2.append($('<td class="td_date" />').append(data[name]["Date"]));
-                        }
-                        else {
+                        } else {
                             $tr1.append($('<td class="td_date" />').append(data[name]["Date"]));
                         }
                     }
@@ -93,7 +91,7 @@
                                     .attr('alt', 'photo document').attr('class', 'img_doc_anciens_membres'))));
                         }
                     }
-                     $ancien_membres.append($tr1,$tr2);
+                    $ancien_membres.append($tr1, $tr2);
                 }
             }
 
@@ -104,4 +102,13 @@
         let msg = jqXHR.responseText + '\n' + textStatus + '\n' + errorThrown
         console.log(msg);
     })
-})()
+}
+
+
+document.getElementById('switch_langage_fr').addEventListener("click", function () {
+    addAlumni("fr");
+})
+document.getElementById('switch_langage_en').addEventListener("click", function () {
+    addAlumni("en");
+})
+addAlumni('fr');
