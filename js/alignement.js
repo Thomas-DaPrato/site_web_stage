@@ -6,7 +6,6 @@ function alignement() {
         if (divMembre[i].offsetHeight > maxHeight) {
             maxHeight = divMembre[i].offsetHeight;
         }
-        console.log(maxHeight);
     }
 
     for (let i = 0; i < divMembre.length; i += 1) {

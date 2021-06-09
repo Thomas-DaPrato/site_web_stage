@@ -1,22 +1,24 @@
 #LIRE LIGNE 1 pour savoir comment ajouter un membre alumni;Pour ajouter un membre, il vous suffit d'entrer les informations demandées. ATTENTION: aucune ligne vide n'est possible;Pour ce qui est de la photo, il faut rentrer son nom et la placée dans le dossier img/membres du site. Mettre des photos carrées pour éviter qu'elles se retrouvent écraser;Merci de ne pas changer le nom des colonnes et de laisser en première position ce commentaire et en seconde position le nom des colonnes ;Merci de s'assurer que le caractère de séparation soit un point-virgule;;;
 Membres;Mission;Sujet;Date;Photo;Id ORCID;Ancien;Document
-Emmanuel MERMOZ;PAST;Conception systèmes complexes;;emmanuel_mermoz;;;
-Jean-Marc LINARES;Enseignant-chercheur;Biomécanique, Métrologie, Conception;;jean-marc_linares;0000-0001-7501-0383;;
-Jean-Michel SPRAUEL;Professeur émérite;Biomécanique, Mécanique matériaux;;jean-michel_sprauel;0000-0003-1066-1534;;
-Loïc TADRIST;Enseignant-chercheur;Biomécanique, Mécanique théorique;;loic_tadrist;0000-0001-6200-9842;;
-Julien CHAVES-JACOB;Enseignant-chercheur;Biomécanique, Structure bio-inspirée, Fabrication Additive;;julien_chaves-jacob;0000-0002-4798-4276;;
-Santiago ARROYAVE TOBON;Enseignant-chercheur;Biomécanique, Conception bio-inspirée;;santiago_arroyave-tobon;0000-0002-6704-0977;;
+Jean-Marc LINARES;Responsable Equipe, Profeseur des Universités;Biomécanique, Métrologie, Conception;;jean-marc_linares;0000-0001-7501-0383;;
+Jean-Michel SPRAUEL;Profeseur Emerite;Biomécanique, Mécanique matériaux;;jean-michel_sprauel;0000-0003-1066-1534;;
+Emmanuel MERMOZ;Profeseur Associé ST - Airbus H;Conception systèmes complexes;;emmanuel_mermoz;;;
+Loïc TADRIST;Maître de Conférénces;Biomécanique, Mécanique théorique;;loic_tadrist;0000-0001-6200-9842;;
+Julien CHAVES-JACOB;Maître de Conférénces;Biomécanique, Structure bio-inspirée, Fabrication Additive;;julien_chaves-jacob;0000-0002-4798-4276;;
+Santiago ARROYAVE TOBON;Maître de Conférénces;Biomécanique, Conception bio-inspirée;;santiago_arroyave-tobon;0000-0002-6704-0977;;
 Quentin LOPEZ;Animateur TechnoPole;Fabrication systèmes;;quentin_lopez;;;
 Julien DIPERI;Technicien CNRS;Experimentation, Fabrication systèmes;;julien_diperi;;;
 Amandine REGIS;Thèse;Contribution à la création de jumeaux numérique pour les ensembles mecaniques des helicoptères;Mars 2020 - Février 2023;amandine_regis;;;
-Amina MLAIKI;Stage Master;Modélisation numérique d'une appareil de référence pour quantifier des chocs sur des cellules neurales de rat;Mars - Mai 2021;;;oui;rapport_de_stage
+Amina MLAIKI;Stage Master 1;Modélisation numérique d'une appareil de référence pour quantifier des chocs sur des cellules neurales de rat;Mars - Mai 2021;;;oui;RStage_Mlaiki_Amina_M1_2021
 Anton KANIEWSKI;Stage Master;Simulation musculosquelettique de la fourmi Messo Barbarus;Février - Juin 2021;anton_kaniewski;;;
-Dylan PANNIER;Stage Master;Correlations entre propriétés macroscopiques et caractéristique musculaires chez tous les animaux;Mars - Mai 2021;;;oui;
+Dylan PANNIER;Stage Master 1;Correlations entre propriétés macroscopiques et caractéristique musculaires chez tous les animaux;Mars - Mai 2021;;;oui;RStage_Pannier_Dylan_M1_2021
 Juliette LEPAGNEUL;Thèse;Méthodologie de dimensionnement des vis a rouleaux;Juin 2021 - Mai 2024;juliette_lepagneul;;;
 Kalenia MARQUEZ-FLOREZ;PostDoc;ANR BioDesign;Mars 2021 - 2024;kalenia_marquez-florez;0000-0001-6388-3208;;
-Mathieu BILHERE;Thèse;Allègement bio-inspirée des pièces mécaniques base sur des os longs;;mathieu_bilhere;;;
+Mathieu BILHERE-DIEUZEIDE;Thèse;Allègement bio-inspirée des pièces mécaniques base sur des os longs;Nov 2020 - Oct 2023;mathieu_bilhere;;;
 Nicolas CADORET;Stage Master;Allègement bio-inspirée des pièces mécaniques base sur des os longs;Février - Juin 2021;nicolas_cadoret;;;
 Paul HEYMANN;Stage Master;Algorithmes de conception mécanique inspirés de la morphogenèse;Février - Juin 2021;paul_heymann;;;
-Paul ROUSSEL;Stage Master;Etude allométrique sur l'articulation du coude chez les quadrupèdes;Mars - Mai 2021;;;oui;
+Paul ROUSSEL;Stage Master 1;Etude allométrique sur l'articulation du coude chez les quadrupèdes;Mars - Mai 2021;;;oui;RStage_2021_M1_Paul_Roussel
 Raphaël PERRIER;Stage Master;Conception d'un actionneur bio-inspirer du muscle;Février - Juin 2021;raphael_perrier;;;
 Thomas DA-PRATO;Stage DUT informatique;Réalisation de 2 sites webs ainsi que mise en réseau d'ordinateur de calcul;Avril - Juin 2021;thomas_da-prato;;;
+Aliona SANZ-IDIRIN;Degree In Biomedical Engineering;Study The Contact Performance Of Bio-Inspired Mechanical Joints;Nov 2020 - Juin 2021;;;oui;RStage_2020_M1_Aliona
+Tanguy PULUHEN;Stage Master 1 IEAP;Développement d'un modèle multi-corps de fourmi Messor Barbarus;Mars - Mai 2020;;;oui;RStage_2020_M1_Puluhen_Tanguy

@@ -1,5 +1,5 @@
 .img_logo {
-    width: 200px;
+    width: 150px;
     align-self: center;
 }
 
@@ -8,19 +8,18 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .collaborations li {
     margin: 10px;
     display: flex;
-    background-color: #f1f1f1;
     color: #5A5A5A;
-    width: 48%;
+    width: 32%;
+    height: 75px;
 }
 
 .div_info_partenaires {
-    margin-left: 10px;
+    margin-left: 20px;
     align-self: center;
 }
 
