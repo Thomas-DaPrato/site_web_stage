@@ -37,7 +37,7 @@ function switchLangage(langue) {
         document.getElementById('switch_langage_en').style.textDecoration = "underline";
     }
 }
-setTimeout(switchLangage("fr"),500);
+setTimeout(switchLangage("fr"),800);
 
 document.getElementById('switch_langage_fr').addEventListener("click",function () {
         switchLangage("fr");

@@ -27,7 +27,7 @@ if(document.location.href.includes('#')) {
     setTimeout(clickOnAnotherPage,100);
 }
 
-let liens = document.getElementsByClassName("lien_menu");
+let liens = document.getElementsByClassName("disable");
 for (let i = 0; i<liens.length; i++){
     liens[i].onclick = clickOnIndex;
 }

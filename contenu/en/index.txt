@@ -3,7 +3,7 @@
 lien_accueil | Home
 lien_equipe | Team
 lien_alumni_1 | Members
-lien_partenaires | Partners
+lien_partenaires_1 | Partners
 lien_theme_recherche | Research topic
 lien_structure_bio-inspiree | Bio-inspired structure
 lien_liaison_bio-inspiree | Bio-inspired joint
@@ -14,8 +14,10 @@ lien_avant_annee_n-5 | Before
 
 #contenu du corp
 
+titre_presentation | Bio-Inspired Conception (BIC)
 equipe | Team
-lien_alumni_2 | Old members
+lien_alumni_2 | Members
+lien_partenaires_2 | Partners
 theme_recherche | Research topic
 titre_structure_bio-inspirees | Project on bio-inspired structure
 mot_cles_structure_bio-inspirees | Bones, mechanical constraints

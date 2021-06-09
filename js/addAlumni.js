@@ -11,14 +11,19 @@ function addAlumni(langue) {
     }).done(function (data) {
         let $membre_actuels = $(".membres_actuels").empty();
         let $ancien_membres = $('.ancien_membres').empty();
+        let $liste_membre = $('.liste_membre').empty();
         for (let name in data) {
             let $liActuel = $("<li />");
+            let $li = $("<li />");
             let $tr1 = $('<tr class="tr_normal"/>');
             let $tr2 = $('<tr class="tr_responsive"/>');
             let $div_info = $('<div class="information_alumni"/>');
 
             if (data.hasOwnProperty(name)) {
                 if (data[name].hasOwnProperty("Ancien") && data[name]["Ancien"] != 'oui') {
+
+                    $li.append(name);
+                    $liste_membre.append($li);
 
                     if (data[name].hasOwnProperty("Photo")) {
                         if (data[name]["Photo"] == '') {

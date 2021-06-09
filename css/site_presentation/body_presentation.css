@@ -102,6 +102,7 @@ button:hover {
     z-index: 2;
     margin: 10px;
     bottom: 91%;
+    text-shadow: 1px 1px 5px black;
 }
 
 #div_projet article {

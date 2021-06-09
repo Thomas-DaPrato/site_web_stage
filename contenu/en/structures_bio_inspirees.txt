@@ -3,7 +3,7 @@
 lien_accueil | Home
 lien_equipe | Team
 lien_alumni_1 | Members
-lien_partenaires | Partners
+lien_partenaires_1 | Partners
 lien_theme_recherche | Research topic
 lien_structure_bio-inspiree | Bio-inspired structure
 lien_liaison_bio-inspiree | Bio-inspired joint

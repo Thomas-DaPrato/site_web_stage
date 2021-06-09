@@ -3,7 +3,7 @@
 lien_accueil | Accueil
 lien_equipe | L'équipe
 lien_alumni_1 | Membres
-lien_partenaires | Partenaires
+lien_partenaires_1 | Partenaires
 lien_theme_recherche | Thème de recherche
 lien_structure_bio-inspiree | Structures bio-inspirées
 lien_liaison_bio-inspiree | Liaisons bio-inspirées

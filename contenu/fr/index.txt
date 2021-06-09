@@ -3,7 +3,7 @@
 lien_accueil | Accueil
 lien_equipe | L'équipe
 lien_alumni_1 | Membres
-lien_partenaires | Partenaires
+lien_partenaires_1 | Partenaires
 lien_theme_recherche | Thème de recherche
 lien_structure_bio-inspiree | Structures bio-inspirées
 lien_liaison_bio-inspiree | Liaisons bio-inspirées
@@ -14,8 +14,10 @@ lien_avant_annee_n-5 | Avant
 
 #contenu du corp
 
+titre_presentation | Conception Bio-inspirée (CBI)
 equipe | L'équipe
 lien_alumni_2 | Membres
+lien_partenaires_2 | Partenaires
 theme_recherche | Thème de recherche
 titre_structure_bio-inspirees | Projet sur les structures bio-inspirées
 mot_cles_structure_bio-inspirees | Os, contraintes mécaniques
