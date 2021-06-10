@@ -14,7 +14,9 @@ lien_avant_annee_n-5 | Before
 
 #contenu du corps
 
+texte_titre_annee | of | before
 art_annee | Research article
 comm_annee | Conferences
 couv_these_annee | Book chapter and thesis
-mentions_legales | Legal mention
+text_footer | Team BIC - All rigths reserved
+lien_mentions_legales | Legals mentions

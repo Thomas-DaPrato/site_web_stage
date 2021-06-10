@@ -17,4 +17,5 @@ lien_avant_annee_n-5 | Avant
 titre_collaborations_universitaires | Collaborations universitaires
 titre_collaborations_recherche_applique | Collaborations recherche apliquées
 titre_professeur_invite | Professeurs Invités
-mentions_legales | Mentions légales
+text_footer | Équipe CBI - Tous droits reservés
+lien_mentions_legales | Mentions légales

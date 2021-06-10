@@ -27,4 +27,5 @@ titre_modification_notice_legale | Modification de la notice légale
 descriptif_modification_notice_legale | L'Université d'Aix-Marseille, propriétaire et exploitant du site, se réserve le droit de modifier la présente notice à tout moment. L'utilisateur s'engage donc à la consulter régulièrement.
 titre_informatique_liberte | Informatique et liberté
 descriptif_informatique_liberte | Ce site web comporte des informations nominatives concernant des personnels, des étudiants ou des partenaires de l'Université d'Aix-Marseille. Conformément à la loi n°78-17 du 6 janvier 1978, relative à l’Informatique, aux Fichiers et aux Libertés (article 38, 39, 40), vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant, en ligne sur ce site. Pour exercer ce droit, vous pouvez vous adresser au Correspondant Informatique et Libertés de l'établissement.
-mentions_legales | Mentions légales
+text_footer | Équipe CBI - Tous droits reservés
+lien_mentions_legales | Mentions légales

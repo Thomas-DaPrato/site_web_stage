@@ -10,7 +10,7 @@
     }).done(function (data) {
         let $offre_stage_these = $("#partie_offres_stage_these");
         let $tab_offre_PostDoc = $('<table />').append($('<th/>').append($('<h3 />').append("Post Doct / ATER")));
-        let $tab_offre_These = $('<table />').append($('<th/>').append($('<h3 />').append("Thèse")));
+        let $tab_offre_These = $('<table />').append($('<th/>').append($('<h3 id="titre_these"/>').append("Thèse")));
         let $tab_offre_M2 = $('<table />').append($('<th/>').append($('<h3 />').append("M2 / PFE")));
         let $tab_offre_M1 = $('<table />').append($('<th/>').append($('<h3 />').append("M1 / L3 / DUT")));
 

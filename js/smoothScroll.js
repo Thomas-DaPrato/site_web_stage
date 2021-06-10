@@ -3,7 +3,7 @@
 * */
 let header = document.getElementsByTagName('header');
 
-if(document.location.href.includes('index.html')) {
+if(document.location.href.includes('index.html') || !(document.location.href.includes('.html'))) {
     $('.disable').click(function(event){
         event.preventDefault();
     });

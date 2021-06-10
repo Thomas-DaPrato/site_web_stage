@@ -9,10 +9,9 @@
     annee_url = annee_url.split('_');
 
     if (annee_url.length < 2) {
-
-        $('#annee_publication').append(" de ", annee_url[0]);
+        $('#annee_publication').append(" ",$('<span id="texte_titre_annee"/>').append('de')," ", annee_url[0]);
     } else {
-        $('#annee_publication').append(' ', annee_url[0], ' ', annee_url[1]);
+        $('#annee_publication').append(' ', $('<span id="texte_titre_annee"/>').append(annee_url[0]), ' ', annee_url[1]);
     }
 
     $(() => {

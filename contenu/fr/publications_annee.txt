@@ -10,12 +10,14 @@ lien_liaison_bio-inspiree | Liaisons bio-inspirées
 lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirees
 lien_offre_stage_these | Offres de stages et thèses
 lien_publication | Publications
-paragraphe_avant_annee_n-5 | Avant
+lien_avant_annee_n-5 | Avant
 
 
 #contenu du corps
 
+texte_titre_annee | de | avant
 art_annee | Articles scientifiques
 comm_annee | Conférences
 couv_these_annee | Chapitres d'ouvrage et thèses
-mentions_legales | Mentions légales
+text_footer | Équipe CBI - Tous droits reservés
+lien_mentions_legales | Mentions légales

@@ -27,4 +27,5 @@ titre_modification_notice_legale | Modification of the legal notice
 descriptif_modification_notice_legale | The University of Aix-Marseille, owner and operator of the site, reserves the right to modify this notice at any time. The user therefore undertakes to consult it regularly. 
 titre_informatique_liberte | Computing and freedom
 descriptif_informatique_liberte | This website contains personal information concerning staff, students or partners of the University of Aix-Marseille. In accordance with the law n ° 78-17 of January 6, 1978, relating to data processing, files and freedoms (article 38, 39, 40), you have the right to access, rectify and delete data concerning you, online on this site. To exercise this right, you can contact the establishment's Data Protection Officer. 
-mentions_legales | Legals mentions
+text_footer | Team BIC - All rigths reserved
+lien_mentions_legales | Legals mentions

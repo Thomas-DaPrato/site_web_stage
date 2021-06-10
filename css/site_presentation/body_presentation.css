@@ -74,9 +74,12 @@ button:hover {
     padding: 10px;
 }
 
-#lien_alumni_2 {
+.membres_partenaires a {
     color: gray;
+    padding: 30px;
 }
+
+
 
 /* CSS pour la partie projet de recherche */
 #div_projet{

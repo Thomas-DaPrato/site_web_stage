@@ -23,3 +23,5 @@ titre_projet_2 | Fabrication, control and validation of bio-inspired joints
 descriptif_projet_2_partie_1 | This theme is about the production and control of bio-inspired mechanical joints based on complex surfaces of high geometric quality and surface finish. Tests will be carried were to validate the operation and the service life of the links thus created. 
 descriptif_projet_2_partie_2 | The scientific challenges of this theme are centered on the transition from the theoretical model to reality. This validation task, fundamental in research, is often neglected in favor of a model/model validation. The realization and the tests require the development of new strategies of finishing of the complex surfaces as well as the development of experiments making it possible to measure the performances of the complex connections (pressure of contact, wear, output?). 
 titre_membres_projet_2 | Project members
+text_footer | Team BIC - All rigths reserved
+lien_mentions_legales | Legals mentions

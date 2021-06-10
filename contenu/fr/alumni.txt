@@ -16,4 +16,5 @@ lien_avant_annee_n-5 | Avant
 
 titre_membres_actuels | Membres actuels
 titre_anciens_membres | Anciens membres
-mentions_legales | Mentions légales
+text_footer | Équipe CBI - Tous droits reservés
+lien_mentions_legales | Mentions légales

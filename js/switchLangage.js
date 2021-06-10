@@ -18,7 +18,17 @@ function switchLangage(langue) {
         }).done(function (data) {
             for (let contenu in data){
                 if(data[contenu].length > 1){
-                    document.getElementById(data[contenu][0]).innerHTML = data[contenu][1];
+                    if (data[contenu][0] == 'texte_titre_annee') {
+                        if (document.getElementById(data[contenu][0]).innerHTML == 'de' || document.getElementById(data[contenu][0]).innerHTML == 'of') {
+                            document.getElementById(data[contenu][0]).innerHTML = data[contenu][1];
+                        }
+                        else {
+                            document.getElementById(data[contenu][0]).innerHTML = data[contenu][2];
+                        }
+                    }
+                    else {
+                        document.getElementById(data[contenu][0]).innerHTML = data[contenu][1];
+                    }
                 }
             }
         }).fail(function (jqXHR,textStatus, errorThrown) {
@@ -37,6 +47,7 @@ function switchLangage(langue) {
         document.getElementById('switch_langage_en').style.textDecoration = "underline";
     }
 }
+
 setTimeout(switchLangage("fr"),800);
 
 document.getElementById('switch_langage_fr').addEventListener("click",function () {

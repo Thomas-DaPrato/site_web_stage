@@ -16,4 +16,5 @@ lien_avant_annee_n-5 | Before
 
 titre_membres_actuels | Actual members
 titre_anciens_membres | Old members
-mentions_legales | Legals mentions
+text_footer | Team BIC - All rigths reserved
+lien_mentions_legales | Legals mentions

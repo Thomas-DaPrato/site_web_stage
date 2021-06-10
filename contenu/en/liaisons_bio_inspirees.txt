@@ -14,7 +14,7 @@ lien_avant_annee_n-5 | Before
 
 #contenu du corps
 
-titre_projet_recherche | research project
+titre_projet_recherche | Research project
 
 #projet 1
 titre_projet_1 | BioDesign : morphogenesis inspired conception
@@ -23,7 +23,7 @@ descritif_projet_1_partie_2 | The input data of the methodology will be the mech
 titre_membres_projet_1 | Project members
 
 #projet 2
-titre_projet_2 | Barbarus : Exosquelettes bio-inspirés
+titre_projet_2 | Barbarus : Bio-inspired exoskeleton
 descritif_projet_2_partie_1 | An exoskeleton is, in most cases today, a motorized armor while nature provides us with extraordinarily efficient models in appearance. The ambition of this project is to develop a bio-inspired exoskeleton faithful to the one observed in Messor Barbarus, an ant that carries loads.
 descritif_projet_2_partie_2 | The efficiency of this species allows it to carry and pull respectively 12 and 35 times its weight. For the biologist, this characteristic explains the survival of the species when the energy yield of the load transport is favorable to it but remains to be explained. For the mechanic, this species proposes a musculoskeletal model selected by the evolution and extraordinarily effective to the loaded locomotion. 
 descritif_projet_2_partie_3 | From the kinematics of the paw and images obtained by CT scan, the faithful reconstruction of the exoskeleton under OpenSim will allow, here, to estimate the internal and external mechanical actions developed during the transport of heavy loads in order to validate the efficiency of the exoskeleton and to direct its reproduction for robotic purposes.
@@ -32,8 +32,10 @@ descritif_projet_2_partie_4 | This project is a collaboration between the Center
 titre_membres_projet_2 | Project members
 
 #projet 3
-titre_projet_2 | Digital twins of helicopter sets
+titre_projet_3 | Digital twins of helicopter sets
 descritif_projet_3_partie_1 | A digital twin is a model of a real product that uses as input values some data extracted from that product to provide additional information about the behavior of that product in operation. Numerical twins of dynamic helicopter systems can be very useful because the instrumentation of all mechanical parts in flight is very difficult.
 descritif_projet_3_partie_2 | The proposed work is part of the improvement of the use of mechanical assemblies of helicopters by the coupled use of simulation models and data recorded in service.
 descritif_projet_3_partie_3 | The objective of this project is to develop a methodology for creating digital twins of a helicopter mechanical assembly where each particular use is taken into account to estimate the real damage of the part and the most appropriate monitoring periodicity. The application area of this research will extend from the turbines to the rotor. This area of study has generated numerous research activities between industrial and academic partners in recent years. 
 titre_membres_projet_3 | Project members
+text_footer | Team BIC - All rigths reserved
+lien_mentions_legales | Legals mentions

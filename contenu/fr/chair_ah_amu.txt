@@ -23,3 +23,5 @@ titre_projet_2 | Fabrication, contrôle et validation des liaisons bio-inspirée
 descriptif_projet_2_partie_1 | Cette thématique sera menée sur l'obtention et le contrôle des liaisons bio-inspirées basées sur des surfaces gauches de haute qualité géométrique et d'état de surface. Des essais seront mis en œuvre afin de valider le fonctionnement et la tenue en service des liaisons ainsi réalisées.
 descriptif_projet_2_partie_2 | Les verrous scientifiques de cette thématique sont centrés sur le passage du modèle théorique au réel. Cette tâche de validation, fondamentale en recherche, est souvent délaissée au profit d'une validation modèle/modèle. La réalisation et les essais demanderont la mise au point de nouvelles stratégies de finition des surfaces complexes ainsi que la mise au point d'expérimentations permettant de mesurer les performances des liaisons complexes (pression de contact, usure, rendement...).
 titre_membres_projet_2 | Membres du projet
+text_footer | Équipe CBI - Tous droits reservés
+lien_mentions_legales | Mentions légales

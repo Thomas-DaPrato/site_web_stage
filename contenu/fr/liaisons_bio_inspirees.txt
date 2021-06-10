@@ -36,3 +36,5 @@ descritif_projet_3_partie_1 | Un jumeau numérique est un modèle de produit ré
 descritif_projet_3_partie_2 | Les travaux proposés s’inscrivent dans le cadre de l’amélioration de l’utilisation des ensembles mécaniques d’hélicoptères par l’utilisation couplée de modèle de simulation et de données enregistrées en service.
 descritif_projet_3_partie_3 | L’objectif de ce projet est de mettre au point une méthodologie de création de jumeaux numériques d’un ensemble mécanique d’hélicoptère ou chaque utilisation particulière est prise en compte pour estimer l’endommagement réel de la pièce et les périodicités de surveillance les plus adaptées. La zone d’application de cette recherche s’étendra des turbines jusqu’au rotor. Cette zone d’étude a généré de nombreuses activités de recherche entre les partenaires industriel et universitaire, ces dernières années. 
 titre_membres_projet_3 | Membres du projet
+text_footer | Équipe CBI - Tous droits reservés
+lien_mentions_legales | Mentions légales

@@ -19,4 +19,5 @@ presentation_theme_recherche | The idea of this project is to take inspiration f
 titre_projet_recherche | Research project
 titre_projet_1 | Bio-inspiration of the internal structure of bones for the lightening of mechanical parts 
 titre_projet_2 | Metal additive manufacturing
-mentions_legales | Legals mentions
+text_footer | Team BIC - All rigths reserved
+lien_mentions_legales | Legals mentions
