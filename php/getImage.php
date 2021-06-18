@@ -1,16 +1,31 @@
 <?php
+$img = array();
+
+$fichierImages = scandir('../img');
+$fichierImagesMembres = scandir('../img/membres');
+$fichierImagesLogo = scandir('../img/logos');
+
 if (isset($_GET['nomImg'])) {
-    $img = array();
-    $fichierMembres = scandir('../img/membres');
-    foreach ($fichierMembres as $nomMembre) {
-        if (strpos($nomMembre,$_GET['nomImg']) !== false) {
-            $img[] = $nomMembre;
+    
+    foreach ($fichierImages as $nomImages) {
+        if (strpos($nomImages,$_GET['nomImg']) !== false) {
+            $img[] = $nomImages;
+        }
+    }
+    foreach ($fichierImagesMembres as $nomImages) {
+        if (strpos($nomImages,$_GET['nomImg']) !== false) {
+            $img[] = 'membres/'.$nomImages;
+        }
+    }
+    foreach ($fichierImagesLogo as $nomImages) {
+        if (strpos($nomImages,$_GET['nomImg']) !== false) {
+            $img[] = 'logos/'.$nomImages;
         }
     }
 
-
-    header('Cache-Control: no-cache, must-revalidate');
-    header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
-    header('Content-type: application/json');
-    echo json_encode($img);
 }
+
+header('Cache-Control: no-cache, must-revalidate');
+header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Content-type: application/json');
+echo json_encode($img);

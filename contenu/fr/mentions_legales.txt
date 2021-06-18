@@ -1,31 +1,31 @@
 #contenu du bandeau
 
-lien_accueil | Accueil
-lien_equipe | L'équipe
-lien_alumni_1 | Membres
-lien_partenaires_1 | Partenaires
-lien_theme_recherche | Thème de recherche
-lien_structure_bio-inspiree | Structures bio-inspirées
-lien_liaison_bio-inspiree | Liaisons bio-inspirées
-lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirees
-lien_offre_stage_these | Offres de stages et thèses
-lien_publication | Publications
-lien_avant_annee_n-5 | Avant
+lien_accueil | Accueil \
+lien_equipe | L'équipe \
+lien_alumni_1 | Membres \
+lien_partenaires_1 | Partenaires \
+lien_theme_recherche | Thèmes de recherche \
+lien_structure_bio-inspiree | Structures bio-inspirées \
+lien_liaison_bio-inspiree | Liaisons bio-inspirées \
+lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirés \
+lien_offre_stage_these | Offres de stages et thèses \
+lien_publication | Publications \
+lien_avant_annee_n-5 | Avant \
 
 #contenu du corps
 
-titre_mentions_legales | Mentions légales
-titre_conception_realisation | Conception et réalisation
-couriel | Courriel
-titre_hebergement | Hébergement
-hebergement | Le site est hébergé à l'adresse suivante
-titre_maj | Contenu editorial et mise à jour
-descriptif_maj | Les informations mises à disposition sur le site n'ont qu'une valeur indicative. Nous rappelons que le contenu du site Internet peut comporter des erreurs ou oublis, et qu'il est susceptible d'être modifié ou mis à jour sans préavis. La responsabilité de l'université d'Aix-Marseille ne peut, en aucune manière, être engagée quant au contenu des informations figurant sur son site ou aux conséquences pouvant résulter de leur utilisation ou interprétation. Les liens hypertextes de notre site Web pointent vers d'autres ressources sur le réseau Internet, pour autant, la responsabilité de l'université ne saurait être engagée au titre d’un site tiers atteint via notre site.
-titre_procedure_notification | Procedure de notification
-descriptif_procedure_notification | L'utilisateur qui constaterait des inexactitudes, des informations erronées ou des informations de caractère manifestement illicite, est tenu d'en informer le responsable de la publication afin que celui-ci y mette fin.
-titre_modification_notice_legale | Modification de la notice légale
-descriptif_modification_notice_legale | L'Université d'Aix-Marseille, propriétaire et exploitant du site, se réserve le droit de modifier la présente notice à tout moment. L'utilisateur s'engage donc à la consulter régulièrement.
-titre_informatique_liberte | Informatique et liberté
-descriptif_informatique_liberte | Ce site web comporte des informations nominatives concernant des personnels, des étudiants ou des partenaires de l'Université d'Aix-Marseille. Conformément à la loi n°78-17 du 6 janvier 1978, relative à l’Informatique, aux Fichiers et aux Libertés (article 38, 39, 40), vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant, en ligne sur ce site. Pour exercer ce droit, vous pouvez vous adresser au Correspondant Informatique et Libertés de l'établissement.
-text_footer | Équipe CBI - Tous droits reservés
-lien_mentions_legales | Mentions légales
+titre_mentions_legales | Mentions légales \
+titre_conception_realisation | Conception et réalisation \
+couriel | Courriel \
+titre_hebergement | Hébergement \
+hebergement | Le site est gracieusement hébergé à l'adresse : \
+titre_maj | Contenu éditorial et mise à jour \
+descriptif_maj | Les informations mises à disposition sur le site n'ont qu'une valeur indicative. Nous rappelons que le contenu du site Internet peut comporter des erreurs ou oublis, et qu'il est susceptible d'être modifié ou mis à jour sans préavis. La responsabilité de l'université d'Aix-Marseille ne peut, en aucune manière, être engagée quant au contenu des informations figurant sur son site ou aux conséquences pouvant résulter de leur utilisation ou interprétation. Les liens hypertextes de notre site Web pointent vers d'autres ressources sur le réseau Internet, pour autant, la responsabilité de l'université ne saurait être engagée au titre d’un site tiers atteint via notre site. \
+titre_procedure_notification | Procédure de notification \
+descriptif_procedure_notification | L'utilisateur qui constaterait des inexactitudes, des informations erronées ou des informations de caractère manifestement illicite, est tenu d'en informer le responsable de la publication afin que celui-ci y mette fin. \
+titre_modification_notice_legale | Modification de la notice légale \
+descriptif_modification_notice_legale | L'équipe Conception-Bio Inspirée, propriétaire du site, se réserve le droit de modifier la présente notice à tout moment. L'utilisateur s'engage donc à la consulter régulièrement. \
+titre_informatique_liberte | Informatique et liberté \
+descriptif_informatique_liberte | Ce site web comporte des informations nominatives concernant des personnels, des étudiants ou des partenaires de l'Université d'Aix-Marseille. Conformément à la loi n°78-17 du 6 janvier 1978, relative à l’Informatique, aux Fichiers et aux Libertés (article 38, 39, 40), vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant, en ligne sur ce site. Pour exercer ce droit, vous pouvez vous adresser à un membre permanent de l'équipe. \
+text_footer | Équipe CBI - Tous droits reservés \
+lien_mentions_legales | Mentions légales \

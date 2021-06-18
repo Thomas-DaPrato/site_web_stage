@@ -1,27 +1,47 @@
 #contenu du bandeau
 
-lien_accueil | Home
-lien_equipe | Team
-lien_alumni_1 | Members
-lien_partenaires_1 | Partners
-lien_theme_recherche | Research topic
-lien_structure_bio-inspiree | Bio-inspired structure
-lien_liaison_bio-inspiree | Bio-inspired joint
-lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
-lien_offre_stage_these | Internship offer and thesis
-lien_publication | Publications
-lien_avant_annee_n-5 | Before
-
+lien_accueil | Home \
+lien_equipe | Team \
+lien_alumni_1 | Members \
+lien_partenaires_1 | Partners \
+lien_theme_recherche | Research topics \
+lien_structure_bio-inspiree | Bio-inspired structures \
+lien_liaison_bio-inspiree | Bio-inspired joints \
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators \
+lien_offre_stage_these | Jobs and internships \
+lien_publication | Publications \
+lien_avant_annee_n-5 | Ante \
 #contenu du corps
 
-titre_projet_recherche | Chair AH / AMU 2015 - 2020
-titre_projet_1 | Inverse and robust design using tools applicable to the modeling of bio-inspired joints
-descriptif_projet_1_partie_1 | This theme is about the reverse design approach to obtain bio-inspired mechanical joints. These joints must be made up of contact surfaces kinematically compatible with the movements associated with the mechanisms of transmission of movement. 
-descriptif_projet_1_partie_2 | Biological or bio-inspired mechanical joints are both hyperstatic to better distribute the transmitted forces and are made of complex surface elements. Today, numerical methods such as finite elements allow to ensure this task whatever the degree of hyperstaticity of one or a set of mechanical joints. Which allows to consider the implementation of a new mode of design of hyperstatic systems.
-titre_membres_projet_1 | Project members
-titre_projet_2 | Fabrication, control and validation of bio-inspired joints 
-descriptif_projet_2_partie_1 | This theme is about the production and control of bio-inspired mechanical joints based on complex surfaces of high geometric quality and surface finish. Tests will be carried were to validate the operation and the service life of the links thus created. 
-descriptif_projet_2_partie_2 | The scientific challenges of this theme are centered on the transition from the theoretical model to reality. This validation task, fundamental in research, is often neglected in favor of a model/model validation. The realization and the tests require the development of new strategies of finishing of the complex surfaces as well as the development of experiments making it possible to measure the performances of the complex connections (pressure of contact, wear, output?). 
-titre_membres_projet_2 | Project members
-text_footer | Team BIC - All rigths reserved
-lien_mentions_legales | Legals mentions
+titre_projet_recherche | Chair Airbus Helicopters / Aix-Marseille University (2015 - 2020) \
+
+#projet 1
+titre_projet_1 | Inverse and robust design of joints using modeling tools of bio-inspired joints \
+descriptif_projet_1_partie_1 | This project aims at reverse design engineering nature to obtain bio-inspired mechanical joints. These joints must be made up of contact surfaces kinematically compatible with the movements of the joint. \
+descriptif_projet_1_partie_2 | Biological mechanical joints are both hyperstatic, to better distribute the transmitted forces, and made of complex surface elements. Today, numerical methods such as finite elements allow to model those contacts undependently of the degree of hyperstaticity of the joint. This allows to create a new mode of design of hyperstatic systems. \
+descriptif_projet_1_partie_3 
+descriptif_projet_1_partie_4
+titre_membres_projet_1 | Project members \
+membre_1_projet_1 | Joanne BECKER, PhD student \
+membre_2_projet_1 | Jean-Marc LINARES \
+membre_3_projet_1 | Emanuel MERMOZ \
+membre_4_projet_1 | Thomas THOUVENY \
+membre_5_projet_1
+membre_6_projet_1
+
+#projet 2
+titre_projet_2 | Fabrication, control and validation of bio-inspired joints \
+descriptif_projet_2_partie_1 | This theme is about the production and control of bio-inspired mechanical joints based on complex surfaces of high geometric quality and surface finish. Tests will be carried out to validate the operation and the service life of the created links. \
+descriptif_projet_2_partie_2 | The scientific challenges of this theme lie in the transition from the theoretical model to reality. The manufacturing and tests require the development of new strategies of finishing of the complex surfaces as well as the development of experiments to measure the performances of the complex joints (pressure of contact, wear, ...). \
+descriptif_projet_2_partie_3 
+descriptif_projet_2_partie_4
+titre_membres_projet_2 | Project members \
+membre_1_projet_2 | Delphine SYSAYKEO \
+membre_2_projet_2 | Jean-Marc LINARES \
+membre_3_projet_2 | Emanuel MERMOZ \
+membre_4_projet_2 | Thomas THOUVENY \
+membre_5_projet_2
+membre_6_projet_2
+
+text_footer | Team BID - All rigths reserved \
+lien_mentions_legales | Legals mentions \

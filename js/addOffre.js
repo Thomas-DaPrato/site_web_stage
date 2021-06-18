@@ -2,13 +2,15 @@
 * Fonction permettant de récuperer les offres stockés dans un fichier au format csv et de les afficher sur la page index.html
 * Fonction qui utilise une requête ajax vers le fichier php getOffre.php et qui reçoit un tableau au format json contenant toutes les offres aisni que leur informations
 * */
-(function () {
+function addOffre (langue) {
     $.ajax({
         url: 'php/getOffre.php',
         method: 'get',
+        data : 'langueOffre='+langue,
         dataType: 'json'
     }).done(function (data) {
-        let $offre_stage_these = $("#partie_offres_stage_these");
+        let $offre_stage_these = $("#contenu_offres_stage_these");
+        $offre_stage_these.empty();
         let $tab_offre_PostDoc = $('<table />').append($('<th/>').append($('<h3 />').append("Post Doct / ATER")));
         let $tab_offre_These = $('<table />').append($('<th/>').append($('<h3 id="titre_these"/>').append("Thèse")));
         let $tab_offre_M2 = $('<table />').append($('<th/>').append($('<h3 />').append("M2 / PFE")));
@@ -33,8 +35,8 @@
                     if (data[offre].hasOwnProperty("Sujet")) {
                         $Sujet.append(data[offre]["Sujet"]);
                     }
-                    if (data[offre].hasOwnProperty("Date limite de candidature")) {
-                        $CAL.append("Candidater avant le : ", data[offre]["Date limite de candidature"]);
+                    if (data[offre].hasOwnProperty(Object.keys(data[offre])[1])) {
+                        $CAL.append(Object.keys(data[offre])[1]," : ", data[offre][Object.keys(data[offre])[1]]);
                     }
                     if (data[offre].hasOwnProperty("Descriptif") && data[offre]["Descriptif"] != '') {
                         $Descriptif.append($('<a />').attr('href', 'offre/' + data[offre]["Descriptif"] + '.pdf').attr("target", "_blank")
@@ -65,11 +67,19 @@
             }
         }
         else {
-            $offre_stage_these.append('Aucune offre disponible pour le moment');
+            $offre_stage_these.append(data['aucune_offre']);
         }
     }).fail(function (jqXHR, textStatus, errorThrown) {
         alert("une erreur est survenue avec l'ajout des offres");
         let msg = jqXHR.responseText + '\n' + textStatus + '\n' + errorThrown
         console.log(msg);
     })
-})()
+}
+
+document.getElementById('switch_langage_fr').addEventListener("click", function () {
+    addOffre("fr");
+})
+document.getElementById('switch_langage_en').addEventListener("click", function () {
+    addOffre("en");
+})
+addOffre('fr');

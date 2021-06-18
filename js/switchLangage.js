@@ -48,7 +48,7 @@ function switchLangage(langue) {
     }
 }
 
-setTimeout(switchLangage("fr"),800);
+setTimeout(switchLangage("fr"),1000);
 
 document.getElementById('switch_langage_fr').addEventListener("click",function () {
         switchLangage("fr");

@@ -1,54 +1,54 @@
 #contenu du bandeau
 
-lien_accueil | Home
-lien_equipe | Team
-lien_alumni_1 | Members
-lien_partenaires_1 | Partners
-lien_theme_recherche | Research topic
-lien_structure_bio-inspiree | Bio-inspired structure
-lien_liaison_bio-inspiree | Bio-inspired joint
-lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
-lien_offre_stage_these | Internship offer and thesis
-lien_publication | Publications
-lien_avant_annee_n-5 | Before
+lien_accueil | Home \
+lien_equipe | Team \
+lien_alumni_1 | Members \
+lien_partenaires_1 | Partners \
+lien_theme_recherche | Research topics \
+lien_structure_bio-inspiree | Bio-inspired structures \
+lien_liaison_bio-inspiree | Bio-inspired joints \
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators \
+lien_offre_stage_these | Jobs and internships \
+lien_publication | Publications \
+lien_avant_annee_n-5 | Ante \
 
 #contenu du corp
 
-titre_presentation | Bio-Inspired Conception (BIC)
-equipe | Team
-lien_alumni_2 | Members
-lien_partenaires_2 | Partners
-theme_recherche | Research topic
-titre_structure_bio-inspirees | Project on bio-inspired structure
-mot_cles_structure_bio-inspirees | Bones, mechanical constraints
-titre_liaisons_bio-inspirees | Project on bio-inspired joint
-mot_cles_liaisons_bio-inspirees | Articulation, topologies, wear
-titre_actionneur_dissipateur_bio-inspirees | Project on bio-inspired actuators and dissipators
-mot_cles_actionneur_dissipateur_bio-inspirees | Muscle, resilience, technologies, impact, protection
-stage_these | Internship offer and thesis
-titre_these | Thesis
-publications | Publications
-art_annee_N | Research article
-art_annee_N_1 | Research article
-art_annee_N_2 | Research article
-art_annee_N_3 | Research article
-art_annee_N_4 | Research article
-art_annee_N_5 | Research article
-art_anneeAvant_N_5 | Research article
-comm_annee_N | Conference
-comm_annee_N_1 | Conference
-comm_annee_N_2 | Conference
-comm_annee_N_3 | Conference
-comm_annee_N_4 | Conference
-comm_annee_N_5 | Conference
-comm_anneeAvant_N_5 | Conference
-couv_these_annee_N | Book chapter and thesis
-couv_these_annee_N_1 | Book chapter and thesis
-couv_these_annee_N_2 | Book chapter and thesis
-couv_these_annee_N_3 | Book chapter and thesis
-couv_these_annee_N_4 | Book chapter and thesis
-couv_these_annee_N_5 | Book chapter and thesis
-couv_these_anneeAvant_N_5 | Book chapter and thesis
-paragraphe_avant_annee_n-5 | Before
-text_footer | Team BIC - All rigths reserved
-lien_mentions_legales | Legals mentions
+titre_presentation | Bio-Inspired Design (BID) \
+equipe | Team \
+lien_alumni_2 | Members \
+lien_partenaires_2 | Partners \
+theme_recherche | Research topics \
+titre_structure_bio-inspirees | Bio-inspired structures \
+mot_cles_structure_bio-inspirees | Bones, mechanical constraints \
+titre_liaisons_bio-inspirees | Bio-inspired joints \
+mot_cles_liaisons_bio-inspirees | Articulation, topologies, wear \
+titre_actionneur_dissipateur_bio-inspirees | Bio-inspired actuators and dampers \
+mot_cles_actionneur_dissipateur_bio-inspirees | Muscle, resilience, impact, protection \
+stage_these | Jobs and internships \
+titre_these | Thesis \
+publications | Publications \
+art_annee_N | Research articles \
+art_annee_N_1 | Research articles \
+art_annee_N_2 | Research articles \
+art_annee_N_3 | Research articles \
+art_annee_N_4 | Research articles \
+art_annee_N_5 | Research articles \
+art_anneeAvant_N_5 | Research articles \
+comm_annee_N | Conference(s) \
+comm_annee_N_1 | Conference(s) \
+comm_annee_N_2 | Conference(s) \
+comm_annee_N_3 | Conference(s) \
+comm_annee_N_4 | Conference(s) \
+comm_annee_N_5 | Conference(s) \
+comm_anneeAvant_N_5 | Conference(s) \
+couv_these_annee_N | Book \
+couv_these_annee_N_1 | Book \
+couv_these_annee_N_2 | Book \
+couv_these_annee_N_3 | Book \
+couv_these_annee_N_4 | Book \
+couv_these_annee_N_5 | Book \
+couv_these_anneeAvant_N_5 | Book \
+paragraphe_avant_annee_n-5 | Ante \
+text_footer | Team BID - All rigths reserved \
+lien_mentions_legales | Legals mentions \

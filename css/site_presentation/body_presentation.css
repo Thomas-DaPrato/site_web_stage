@@ -9,7 +9,7 @@ body {
 }
 
 .contenu {
-    margin : 0 25px;
+    margin : 0 150px;
 }
 
 .ancre {
@@ -185,6 +185,9 @@ th {
     /* CSS général */
     body {
         font-size: 30px;
+    }
+    .contenu {
+        margin: 0 25px;
     }
 
     /* CSS pour la partie équipe */

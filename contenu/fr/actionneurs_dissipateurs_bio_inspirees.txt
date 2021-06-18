@@ -1,33 +1,63 @@
 #contenu du bandeau
 
-lien_accueil | Accueil
-lien_equipe | L'équipe
-lien_alumni_1 | Membres
-lien_partenaires_1 | Partenaires
-lien_theme_recherche | Thème de recherche
-lien_structure_bio-inspiree | Structures bio-inspirées
-lien_liaison_bio-inspiree | Liaisons bio-inspirées
-lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirees
-lien_offre_stage_these | Offres de stages et thèses
-lien_publication | Publications
-lien_avant_annee_n-5 | Avant
+lien_accueil | Accueil \
+lien_equipe | L'équipe \
+lien_alumni_1 | Membres \
+lien_partenaires_1 | Partenaires \
+lien_theme_recherche | Thèmes de recherche \
+lien_structure_bio-inspiree | Structures bio-inspirées \
+lien_liaison_bio-inspiree | Liaisons bio-inspirées \
+lien_actionneur_dissipateur_bio-inspiree | Actionneurs et dissipateurs bio-inspirés \
+lien_offre_stage_these | Offres de stages et thèses \
+lien_publication | Publications \
+lien_avant_annee_n-5 | Avant \
 
 #contenu du corp
 
-titre_projet_recherche | Projets de recherche
+titre_projet_recherche | Projets de recherche \
 
 #projet 1
-titre_projet_1 | Actionneur inspiré du muscle
-descriptif_projet_1 | L'endommagement d'un actionneur peut compromettre le fonctionnement d'une machine ou d'un véhicule. Par conséquent, les mouvements critiques sont souvent assurés par des actionneurs redondants. Cependant, pour certains véhicules ou applications, la redondance n'est pas autorisée, soit en raison de l'encombrement stérique (par exemple pour les hélicoptères), soit en raison du coût du poids comme pour les applications aéronautiques et spatiales. Le but du projet est de s'inspirer du comportement mécanique exceptionnel des muscles pour créer un actionneur délocalisé résilient aux dommages. 
+titre_projet_1 | Actionneur inspiré du muscle \
+descriptif_projet_1_partie_1 | L'endommagement d'un actionneur peut compromettre le fonctionnement d'une machine ou d'un véhicule. Par conséquent, les mouvements critiques sont souvent assurés par des actionneurs redondants. Cependant, pour certains véhicules ou applications, la redondance n'est pas possible, soit en raison de l'encombrement stérique (par exemple pour les hélicoptères), soit en raison du coût du poids pour le spatial. Le but du projet est de s'inspirer du comportement mécanique des muscles pour créer un actionneur délocalisé résilient aux dommages. \
+descriptif_projet_1_partie_2
+descriptif_projet_1_partie_3
+descriptif_projet_1_partie_4
+titre_membres_projet_1 | Membres du projet \
+membre_1_projet_1 | Juliette LEPAGNEUL \
+membre_2_projet_1 | Jean-Marc LINARES \
+membre_3_projet_1 | Loïc TADRIST \
+membre_4_projet_1 | Laurent RUET \
+membre_5_projet_1
+membre_6_projet_1
 
 #projet 2
-titre_projet_2 | Mécannique d'impact d'un ballon gonflé
-descriptif_projet_2 | Les membranes pressurisées sont utilisées dans diverses situations impliquant l'homme (protections, sports, etc.). Dans ce contexte, la mécanique des impacts des membranes est essentielle car une membrane sur ou sous gonflées peut créer des blessures. La pression du gaz et la vitesse d'impact réduisent le temps de contact. Des mesures directes de la pression du gaz et des variations de température (quelques degrés à chaque impact!) Indiquent une compression adiabatique en forte interaction avec la membrane. La compression de gaz rend l'impact avec une membrane pressurisée non linéaire. 
+titre_projet_2 | Mécanique d'impact d'une membrane pressurisée \
+descriptif_projet_2_partie_1 | Les membranes pressurisées sont utilisées dans diverses situations impliquant l'homme (protections, sports, etc.). Dans ce contexte, la mécanique des impacts des membranes est essentielle car une membrane sur ou sous-pressurisée peut créer des blessures. La pression du gaz et la vitesse d'impact réduisent le temps de contact. Des mesures directes de la pression du gaz et des variations de température (quelques degrés à chaque impact!) indiquent une compression adiabatique en forte interaction avec la membrane. La compression de gaz et la géométrie de la membrane rendent l'impact non-linéaire.\
+descriptif_projet_2_partie_2
+descriptif_projet_2_partie_3
+descriptif_projet_2_partie_4
+titre_membres_projet_2 | Membres du projet
+membre_1_projet_2 | Loïc TADRIST \
+membre_2_projet_2 | Baptiste DARBOIS-TEXIER \
+membre_3_projet_2 | François LANZETTA \
+membre_4_projet_2
+membre_5_projet_2
+membre_6_projet_2
 
 #projet 3
-titre_projet_3 | Prévention des dommages à la tête et protections bio-inspirée
-descriptif_projet_3 | Les lésions cérébrales consécutives aux impacts à la tête ne peuvent pas être diagnostiquées immédiatement. Cela conduit à une sous-estimation de la gravité des blessures et à une prise de risque renouvelée avant le rétablissement. Il n'existe pas de solution thérapeutique efficace pour les traumatismes cérébraux (TCC), ce qui rend encore plus urgente l'amélioration des dispositifs de prévention des blessures. 
+titre_projet_3 | Prévention des dommages à la tête et protections bio-inspirées \
+descriptif_projet_3_partie_1 | Les lésions cérébrales consécutives aux chocs à la tête ne peuvent pas être diagnostiquées immédiatement. Cela conduit à une sous-estimation de la gravité des blessures et à une prise de risque renouvelée avant le rétablissement. Il n'existe pas de solution thérapeutique efficace pour les traumatismes craniens de faible et moyenne intensité, ce qui rend encore plus urgente l'amélioration des dispositifs de prévention des blessures. \
+descriptif_projet_3_partie_2
+descriptif_projet_3_partie_3
+descriptif_projet_3_partie_4
+titre_membres_projet_3 | Membres du projet
+membre_1_projet_3 | Loïc TADRIST \
+membre_2_projet_3 | Santiago RIVERA \
+membre_3_projet_3
+membre_4_projet_3
+membre_5_projet_3
+membre_6_projet_3
 
-text_footer | Équipe CBI - Tous droits reservés
-lien_mentions_legales | Mentions légales
+text_footer | Équipe CBI - Tous droits reservés \
+lien_mentions_legales | Mentions légales \
 

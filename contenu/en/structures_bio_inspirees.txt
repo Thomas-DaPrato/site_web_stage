@@ -1,23 +1,51 @@
 #contenu du bandeau
 
-lien_accueil | Home
-lien_equipe | Team
-lien_alumni_1 | Members
-lien_partenaires_1 | Partners
-lien_theme_recherche | Research topic
-lien_structure_bio-inspiree | Bio-inspired structure
-lien_liaison_bio-inspiree | Bio-inspired joint
-lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
-lien_offre_stage_these | Internship offer and thesis
-lien_publication | Publications
-lien_avant_annee_n-5 | Before
+lien_accueil | Home \
+lien_equipe | Team \
+lien_alumni_1 | Members \
+lien_partenaires_1 | Partners \
+lien_theme_recherche | Research topics \
+lien_structure_bio-inspiree | Bio-inspired structures \
+lien_liaison_bio-inspiree | Bio-inspired joints \
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators \
+lien_offre_stage_these | Jobs and internships \
+lien_publication | Publications \
+lien_avant_annee_n-5 | Ante \
 
 #contenu du corps
 
-titre_theme_recherche | Bio-inspired structure
-presentation_theme_recherche | The idea of this project is to take inspiration from endoskeletons and the structure of bones and apply it to mechanical parts in order to lighten them. Recent work by the CBI ISM team [Au. 2018] have implemented a method of bio-inspiration of bone structure for application to mechanical parts. This work has shown in the case of three-point bending that the bio-inspired structure gives better results than the topological optimization method commonly used in mechanics. These first results suggest a strong potential to find more optimal structures in inspiration from nature. This bio-inspiration of the structure of bones applied to the design of mechanical parts is notably made possible today thanks to the development of additive manufacturing. 
-titre_projet_recherche | Research project
-titre_projet_1 | Bio-inspiration of the internal structure of bones for the lightening of mechanical parts 
-titre_projet_2 | Metal additive manufacturing
-text_footer | Team BIC - All rigths reserved
-lien_mentions_legales | Legals mentions
+titre_theme_recherche | Bio-inspired structures \
+presentation_theme_recherche | The idea of this project is to take inspiration from endoskeletons and the structure of bones and apply it to mechanical parts in order to lighten them. Recent work by the CBI ISM team [Au. 2018] have implemented a method of bio-inspiration of bone structure for application to mechanical parts. This work has shown in the case of three-point bending that the bio-inspired structure gives better results than the topological optimization method commonly used in mechanics. These first results suggest a strong potential to find more optimal structures in inspiration from nature. This bio-inspiration of the structure of bones applied to the design of mechanical parts is notably made possible today thanks to the development of additive manufacturing. \
+titre_projet_recherche | Research projects \
+
+#projet 1
+titre_projet_1 | Bio-inspiration of the internal structure of bones for the lightening of mechanical parts \
+descritif_projet_1_partie_1
+descritif_projet_1_partie_2
+descritif_projet_1_partie_3
+descritif_projet_1_partie_4
+titre_membres_projet_1 | Membres du projet \
+membre_1_projet_1
+membre_2_projet_1
+membre_3_projet_1
+membre_4_projet_1
+membre_5_projet_1
+membre_6_projet_1
+
+#projet 2 
+titre_projet_2 | Metal additive manufacturing \
+descritif_projet_2_partie_1
+descritif_projet_2_partie_2
+descritif_projet_2_partie_3
+descritif_projet_2_partie_4
+titre_membres_projet_2 | Membres du projet \
+membre_1_projet_2
+membre_2_projet_2
+membre_3_projet_2
+membre_4_projet_2
+membre_5_projet_2
+membre_6_projet_2
+
+
+text_footer | Team BID - All rigths reserved \
+lien_mentions_legales | Legals mentions \

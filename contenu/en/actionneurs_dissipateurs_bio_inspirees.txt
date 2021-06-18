@@ -1,33 +1,63 @@
 #contenu du bandeau
 
-lien_accueil | Home
-lien_equipe | Team
-lien_alumni_1 | Members
-lien_partenaires_1 | Partners
-lien_theme_recherche | Research topic
-lien_structure_bio-inspiree | Bio-inspired structure
-lien_liaison_bio-inspiree | Bio-inspired joint
-lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
-lien_offre_stage_these | Internship offer and thesis
-lien_publication | Publications
-lien_avant_annee_n-5 | Before
+lien_accueil | Home \
+lien_equipe | Team \
+lien_alumni_1 | Members \
+lien_partenaires_1 | Partners \
+lien_theme_recherche | Research topics \
+lien_structure_bio-inspiree | Bio-inspired structures \
+lien_liaison_bio-inspiree | Bio-inspired joints \
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators \
+lien_offre_stage_these | Jobs and internships \
+lien_publication | Publications \
+lien_avant_annee_n-5 | Ante \
 
 #contenu du corp
 
-titre_projet_recherche | Research project
+titre_projet_recherche | Research projects \
 
 #projet 1
-titre_projet_1 | Muscle actuators inspired 
-descriptif_projet_1 | Damage of an actuator may jeopardize the functioning of a machine or a vehicle. Hence, critical motions are often ensured by redundant actuators. However, for some vehicles or applications, redundancy is not permitted, either because of steric hindering (e.g. for helicopters) or because of weight cost as for aeronautical and spatial applications. The aim of the project is to draw inspiration from the outstanding mechanical behaviour of muscles to create a delocalised actuator resilient to damage. 
+titre_projet_1 | Muscle-inspired actuator \
+descriptif_projet_1_partie_1 | Damage of an actuator may jeopardize the functioning of a machine or a vehicle. Hence, critical motions are often ensured by redundant actuators. However, for some vehicles or applications, redundancy is not permitted, either because of steric hindering (e.g. for helicopters) or because of weight cost as for aeronautical and spatial applications. The aim of the project is to draw inspiration from the outstanding mechanical behaviour of muscles to create a delocalised actuator resilient to damage. \
+descriptif_projet_1_partie_2
+descriptif_projet_1_partie_3
+descriptif_projet_1_partie_4
+titre_membres_projet_1 | Project members \
+membre_1_projet_1 | Juliette LEPAGNEUL \
+membre_2_projet_1 | Jean-Marc LINARES \
+membre_3_projet_1 | Loïc TADRIST \
+membre_4_projet_1 | Laurent RUET \
+membre_5_projet_1
+membre_6_projet_1
 
 #projet 2
-titre_projet_2 | Impacts of pressurized membranes
-descriptif_projet_2 | Pressurised membranes are used in various situations involving humans (protections, sports, etc). In this context, impacts mechanics of membranes is critical since under or over inflated membranes may create injuries. Both gas pressure and impact speed decrease contact time. Direct measurements of gas pressure and temperature variations (few degrees at each impact !) indicate an adiabatic compression in strong interaction with the membrane. The gas compression makes the impact with a pressurized membrane non-linear. 
+titre_projet_2 | Impacts of pressurized membranes \
+descriptif_projet_2_partie_1 | Pressurised membranes are used in various situations involving humans (protections, sports, etc). In this context, impacts mechanics of membranes is critical since under or over inflated membranes may create injuries. Both gas pressure and impact speed decrease contact time. Direct measurements of gas pressure and temperature variations (few degrees at each impact !) indicate an adiabatic compression in strong interaction with the membrane. The gas compression and membrane geometry makes the impact non-linear. \
+descriptif_projet_2_partie_2
+descriptif_projet_2_partie_3
+descriptif_projet_2_partie_4
+titre_membres_projet_2 | Project members \
+membre_1_projet_2 | Loïc TADRIST \
+membre_2_projet_2 | Baptiste DARBOIS-TEXIER \
+membre_3_projet_2 | François LANZETTA \
+membre_4_projet_2
+membre_5_projet_2
+membre_6_projet_2
 
 #projet 3
-titre_projet_3 | Head impacts: prevention and protection
-descriptif_projet_3 | Brain damages consecutives to head impacts cannot be diagnosed immediately. This leads to underestimation of injury seriousness and renewed risk-taking before recovery. There is no effective therapeutic solution for Traumatic Brain Injury (TBI), making it even more urgent to improve injury prevention devices. 
+titre_projet_3 | Head impacts: prevention and protection \
+descriptif_projet_3_partie_1 | Brain damages consecutives to head impacts cannot be diagnosed immediately. This leads to underestimation of injury seriousness and renewed risk-taking before recovery. There is no effective therapeutic solution for Traumatic Brain Injury (TBI), making it even more urgent to improve injury prevention devices. \
+descriptif_projet_3_partie_2
+descriptif_projet_3_partie_3
+descriptif_projet_3_partie_4
+titre_membres_projet_3 | Project members \
+membre_1_projet_3 | Loïc TADRIST \
+membre_2_projet_3 | Santiago RIVERA \
+membre_3_projet_3
+membre_4_projet_3
+membre_5_projet_3
+membre_6_projet_3
 
-text_footer | Team BIC - All rigths reserved
-lien_mentions_legales | Legals mentions
+text_footer | Team BID - All rigths reserved \
+lien_mentions_legales | Legals mentions \
 

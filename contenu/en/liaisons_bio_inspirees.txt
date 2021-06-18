@@ -1,41 +1,64 @@
 #contenu du bandeau
 
-lien_accueil | Home
-lien_equipe | Team
-lien_alumni_1 | Members
-lien_partenaires_1 | Partners
-lien_theme_recherche | Research topic
-lien_structure_bio-inspiree | Bio-inspired structure
-lien_liaison_bio-inspiree | Bio-inspired joint
-lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators
-lien_offre_stage_these | Internship offer and thesis
-lien_publication | Publications
-lien_avant_annee_n-5 | Before
+lien_accueil | Home \
+lien_equipe | Team \
+lien_alumni_1 | Members \
+lien_partenaires_1 | Partners \
+lien_theme_recherche | Research topics \
+lien_structure_bio-inspiree | Bio-inspired structures \
+lien_liaison_bio-inspiree | Bio-inspired joints \
+lien_actionneur_dissipateur_bio-inspiree | Bio-inspired actuators and dissipators \
+lien_offre_stage_these | Jobs and internships \
+lien_publication | Publications \
+lien_avant_annee_n-5 | Ante \
 
 #contenu du corps
 
-titre_projet_recherche | Research project
+titre_projet_recherche | Research projects \
 
 #projet 1
-titre_projet_1 | BioDesign : morphogenesis inspired conception
-descritif_projet_1_partie_1 | BioDesign project will investigate the hypothesis that biological mechanisms of endoskeleton growth can be mimicked in an engineering context to automate mechanism design. In order to verify this hypothesis, the objective of this project is to formulate new design methodologies and implement numerical tools inspired by bone growth theories for the development of engineering applications. The idea is to capitalize on the possibilities of additive manufacturing to obtain already assembled mechanisms with complex geometry.
-descritif_projet_1_partie_2 | The input data of the methodology will be the mechanical loads external to the studied mechanical system and its topology. The algorithm, mimicking the processes of bone morphogenesis, will shape the elementary parts according to the mechanical stresses generated during the system operation. In an iterative formulation, all parts will be shaped simultaneously. The result of the methodology will be the optimized external geometry of the elementary parts of the system. Algorithms will be developed in the form of a demonstrator. Experimental and numerical evaluations will be performed. 
-titre_membres_projet_1 | Project members
+titre_projet_1 | BioDesign : morphogenesis inspired conception \
+descritif_projet_1_partie_1 | BioDesign project will investigate the hypothesis that biological mechanisms of endoskeleton growth can be mimicked in an engineering context to automate mechanism design. In order to verify this hypothesis, the objective of this project is to formulate new design methodologies and implement numerical tools inspired by bone growth theories for the development of engineering applications. The idea is to capitalize on the possibilities of additive manufacturing to obtain already assembled mechanisms with complex geometry. \
+descritif_projet_1_partie_2 | The input data of the methodology will be the mechanical loads external to the studied mechanical system and its topology. The algorithm, mimicking the processes of bone morphogenesis, will shape the elementary parts according to the mechanical stresses generated during the system operation. In an iterative formulation, all parts will be shaped simultaneously. The result of the methodology will be the optimized external geometry of the elementary parts of the system. Algorithms will be developed in the form of a demonstrator. Experimental and numerical evaluations will be performed. \
+descritif_projet_1_partie_3 
+descritif_projet_1_partie_4
+titre_membres_projet_1 | Project members \
+membre_1_projet_1 | Jean-Marc LINARES \
+membre_2_projet_1 | Santiago ARROYAVE-TOBON \
+membre_3_projet_1 | Kalenia MARQUEZ-FLOREZ \
+membre_4_projet_1
+membre_5_projet_1
+membre_6_projet_1
+
 
 #projet 2
-titre_projet_2 | Barbarus : Bio-inspired exoskeleton
-descritif_projet_2_partie_1 | An exoskeleton is, in most cases today, a motorized armor while nature provides us with extraordinarily efficient models in appearance. The ambition of this project is to develop a bio-inspired exoskeleton faithful to the one observed in Messor Barbarus, an ant that carries loads.
-descritif_projet_2_partie_2 | The efficiency of this species allows it to carry and pull respectively 12 and 35 times its weight. For the biologist, this characteristic explains the survival of the species when the energy yield of the load transport is favorable to it but remains to be explained. For the mechanic, this species proposes a musculoskeletal model selected by the evolution and extraordinarily effective to the loaded locomotion. 
-descritif_projet_2_partie_3 | From the kinematics of the paw and images obtained by CT scan, the faithful reconstruction of the exoskeleton under OpenSim will allow, here, to estimate the internal and external mechanical actions developed during the transport of heavy loads in order to validate the efficiency of the exoskeleton and to direct its reproduction for robotic purposes.
-descritif_projet_2_partie_4 | This project is a collaboration between the Center of Integrative Biology of Toulouse and the Institute of Movement Science.
+titre_projet_2 | Barbarus : Bio-inspired exoskeleton \
+descritif_projet_2_partie_1 | An exoskeleton is, in most cases today, a motorized armor while nature provides us with extraordinarily efficient models in appearance. The ambition of this project is to develop a bio-inspired exoskeleton faithful to the one observed in Messor Barbarus, an ant that carries loads. \
+descritif_projet_2_partie_2 | The efficiency of this species allows it to carry and pull respectively 12 and 35 times its weight. For the biologist, this characteristic explains the survival of the species when the energy yield of the load transport is favorable to it but remains to be explained. For the mechanic, this species proposes a musculoskeletal model selected by the evolution and extraordinarily effective to the loaded locomotion. \
+descritif_projet_2_partie_3 | From the kinematics of the paw and images obtained by CT scan, the faithful reconstruction of the exoskeleton under OpenSim will allow, here, to estimate the internal and external mechanical actions developed during the transport of heavy loads in order to validate the efficiency of the exoskeleton and to direct its reproduction for robotic purposes. \
+descritif_projet_2_partie_4 | This project is a collaboration between the Center of Integrative Biology of Toulouse and the Institute of Movement Science. \
+titre_membres_projet_2 | Project members \
+membre_1_projet_2 | Jean-Marc LINARES \
+membre_2_projet_2 | Santiago ARROYAVE-TOBON \
+membre_3_projet_2 | Kalenia MARQUEZ-FLOREZ \
+membre_4_projet_2
+membre_5_projet_2
+membre_6_projet_2
 
-titre_membres_projet_2 | Project members
 
 #projet 3
-titre_projet_3 | Digital twins of helicopter sets
-descritif_projet_3_partie_1 | A digital twin is a model of a real product that uses as input values some data extracted from that product to provide additional information about the behavior of that product in operation. Numerical twins of dynamic helicopter systems can be very useful because the instrumentation of all mechanical parts in flight is very difficult.
-descritif_projet_3_partie_2 | The proposed work is part of the improvement of the use of mechanical assemblies of helicopters by the coupled use of simulation models and data recorded in service.
-descritif_projet_3_partie_3 | The objective of this project is to develop a methodology for creating digital twins of a helicopter mechanical assembly where each particular use is taken into account to estimate the real damage of the part and the most appropriate monitoring periodicity. The application area of this research will extend from the turbines to the rotor. This area of study has generated numerous research activities between industrial and academic partners in recent years. 
-titre_membres_projet_3 | Project members
-text_footer | Team BIC - All rigths reserved
-lien_mentions_legales | Legals mentions
+titre_projet_3 | Digital twins of helicopter sets \
+descritif_projet_3_partie_1 | A digital twin is a model of a real product that uses as input values some data extracted from that product to provide additional information about the behavior of that product in operation. Numerical twins of dynamic helicopter systems can be very useful because the instrumentation of all mechanical parts in flight is very difficult. \
+descritif_projet_3_partie_2 | The proposed work is part of the improvement of the use of mechanical assemblies of helicopters by the coupled use of simulation models and data recorded in service. \
+descritif_projet_3_partie_3 | The objective of this project is to develop a methodology for creating digital twins of a helicopter mechanical assembly where each particular use is taken into account to estimate the real damage of the part and the most appropriate monitoring periodicity. The application area of this research will extend from the turbines to the rotor. This area of study has generated numerous research activities between industrial and academic partners in recent years. \
+descritif_projet_3_partie_4
+titre_membres_projet_3 | Project members \
+membre_1_projet_3 | Jean-Marc LINARES \
+membre_2_projet_3 | Santiago ARROYAVE-TOBON \
+membre_3_projet_3 | Amandine REGIS \
+membre_4_projet_3
+membre_5_projet_3
+membre_6_projet_3
+
+text_footer | Team BID - All rigths reserved \
+lien_mentions_legales | Legals mentions \

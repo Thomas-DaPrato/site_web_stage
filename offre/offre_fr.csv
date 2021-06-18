@@ -1,0 +1,8 @@
+#LIRE LIGNE 1 en entière pour savoir comment ajouter une offre.;Pour ajouter une offre, il vous suffit de remplir les informations demandées. ATTENTION : aucune ligne vide n'est possible. Pour ce qui est du descriptif, il faut rentrer un nom de fichier sans son extension.;" Ce fichier doit obligatoirement etre au format PDF et être placé dans le dossier offre du site. Si la case est vide, le code affichera ""aucun descriptif donné"".";Pour ce qui est de la mission, il doit obligatoirement avoir un des termes suivants : Postdoct, ATER, Thèse, M1, PFE, M2, L3, DUT. Cela permet de classer les offres sur le site;Merci de ne pas changer le nom des colonnes et de laisser en première position ce commentaire et en seconde position le nom des colonnes 
+Mission;Sujet;Candidater avant le;Descriptif;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;

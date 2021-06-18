@@ -35,7 +35,7 @@ function addAlumni(langue) {
                                 data: 'nomImg=' + data[name]["Photo"],
                                 dataType: 'json'
                             }).done(function (dataImg) {
-                                $liActuel.prepend($('<img />').attr('src', 'img/membres/' + dataImg[0]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
+                                $liActuel.prepend($('<img />').attr('src', 'img/' + dataImg[0]).attr('class', 'img_profil').attr('alt', 'photo de la personne'));
                             }).fail(function (jqXHR, textStatus, errorThrown) {
                                 alert("une erreur est survenue avec l'ajout des photos des membres");
                                 let msg = jqXHR.responseText + '\n' + textStatus + '\n' + errorThrown
